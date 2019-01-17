@@ -1,0 +1,1929 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Infornag Operating Part</h4>
+                        <p class="text-muted">인포랑 크리에이티브팀 운영파트 템플릿</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white">자주 쓰이는 부품들</a></li>
+                            <li><a href="useful_web.html" class="text-white">유용한 웹사이트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <strong>Oparating Templete</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">인포랑 운영파트 템플릿</h1>
+                <p class="lead text-muted">자주 쓰이는 것들을 모아둠으로써, 쉽고 빠르게 써먹을 수 있도록.
+                    <br>css는 크롬브라우저에서 ctrl + shift + c를 눌러서 style.css에 정리해두었음.
+                </p>
+            </div>
+        </section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">탭 기능</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <div class="ygt-nav">
+                                        <a rel="tab1" class="active">Popular</a>
+                                        <a rel="tab2">Pairings</a>
+                                        <a rel="tab3">lorem</a>
+                                        <a rel="tab3">itsum</a>
+                                        <a class="highlight" style="left: 0px; height: 29px; width: 82px;"></a>
+                                        <!-- highlight는 공간을 변조하지 마세요. -->
+                                    </div>
+
+                                    <div class="tab_container">
+                                        <!-- #tab1 -->
+                                        <div id="tab1" class="tab_content">
+                                            tab1 us Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+                                            similique odit ab! Enim nisi ex illo obcaecati,
+                                            explicabo animi nemo maxime? Nemo dolores eligendi odio soluta consequuntur
+                                            laboriosam animi harum.
+
+                                        </div>
+
+                                        <!-- #tab2 -->
+                                        <div id="tab2" class="tab_content">tab2 is Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Enim aliquid consequatur ut ipsam minima
+                                            numquam quia
+                                            libero suscipit fugiat, ratione ullam eius distinctio aspernatur voluptas
+                                            obcaecati quibusdam dolorem ipsa non. combat.
+                                        </div>
+
+
+                                        <!-- #tab3 -->
+                                        <div id="tab3" class="tab_content">tab3 is Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Repellendus sunt eos quod odit! Harum error,
+                                            vel molestiae
+                                            libero quibusdam ex consectetur, praesentium vero nobis ipsam id sint
+                                            quaerat accusamus sapiente!
+                                        </div>
+                                        <!-- #tab4 -->
+                                        <div id="tab4" class="tab_content">tab3 is Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Repellendus sunt eos quod odit! Harum error,
+                                            vel molestiae
+                                            libero quibusdam ex consectetur, praesentium vero nobis ipsam id sint
+                                            quaerat accusamus sapiente!
+                                        </div>
+
+                                    </div>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                    <script>
+                                        $(function () {
+
+                                            $(".tab_content").hide();
+                                            $(".tab_content:first").show();
+
+                                            $(".ygt-nav a").click(function () {
+                                                $(".ygt-nav a").removeClass("active");
+                                                $(this).addClass("active");
+                                                $(".tab_content").hide()
+                                                var activeTab = $(this).attr("rel");
+                                                $("#" + activeTab).fadeIn()
+                                            });
+                                        });
+                                    </script>
+                                    <script type="text/javascript">
+                                        var nav = $(".ygt-nav"),
+                                            navigation_links = $(".ygt-nav a"),
+                                            highlight = $(".ygt-nav a.highlight");
+
+                                        // 처음 시작용
+                                        $(navigation_links[0]).addClass("active");
+                                        highlight.css({
+                                            left: navigation_links[0].offsetLeft + "px",
+                                            height: navigation_links[0].offsetHeight + "px",
+                                            width: navigation_links[0].offsetWidth + "px"
+                                        });
+                                        // highlight.css("height", navigation_links[0].offsetHeight + "px");
+
+                                        $(navigation_links).on("click", function () {
+                                            $(navigation_links).removeClass("active");
+                                            $(this).addClass("active");
+                                            highlight.css({
+                                                left: this.offsetLeft + "px",
+                                                width: this.offsetWidth + "px"
+                                            });
+                                        });
+                                    </script>
+
+                                    </p>
+                                    <div class="d-flex justify-content-start align-items-center mt-2">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                                data-target="#exampleModal">View Code</button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">View Code
+                                                            Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <textarea class="code-view-box" readonly rows="25">
+                                                        <div class="ygt-nav">
+                                                            <a rel="tab1" class="active">Popular</a>
+                                                            <a rel="tab2">Pairings</a>
+                                                            <a rel="tab3">with</a>
+                                                            <a class="highlight" style="left: 0px; height: 29px; width: 82px;"></a>
+                                                            <!-- highlight는 공간을 변조하지 마세요. -->
+                                                        </div>
+                                                                                
+                                                                                
+                                                        <div class="tab_container">
+                                                                                
+                                                            <!-- #tab1 -->
+                                                            <div id="tab1" class="tab_content">
+                                                                tab1 us Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+                                                                similique odit ab! Enim nisi ex illo obcaecati,
+                                                                explicabo animi nemo maxime? Nemo dolores eligendi odio soluta consequuntur
+                                                                laboriosam animi harum.
+                                                                                
+                                                            </div>
+                                                                                
+                                                                                
+                                                            <!-- #tab2 -->
+                                                            <div id="tab2" class="tab_content">tab2 is Lorem ipsum dolor sit amet
+                                                                consectetur adipisicing elit. Enim aliquid consequatur ut ipsam minima
+                                                                numquam quia
+                                                                libero suscipit fugiat, ratione ullam eius distinctio aspernatur voluptas
+                                                                obcaecati quibusdam dolorem ipsa non. combat.
+                                                            </div>
+                                                                                
+                                                                                
+                                                            <!-- #tab3 -->
+                                                            <div id="tab3" class="tab_content">tab3 is Lorem ipsum dolor sit amet
+                                                                consectetur adipisicing elit. Repellendus sunt eos quod odit! Harum error,
+                                                                vel molestiae
+                                                                libero quibusdam ex consectetur, praesentium vero nobis ipsam id sint
+                                                                quaerat accusamus sapiente!
+                                                            </div>
+                                                                                
+                                                        </div>
+                     
+                                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                 
+                                                        <script>
+                                                            $(function () {
+                                                                                
+                                                                $(".tab_content").hide();
+                                                                $(".tab_content:first").show();
+                                                                                
+                                                                $(".ygt-nav a").click(function () {
+                                                                    $(".ygt-nav a").removeClass("active");
+                                                                    $(this).addClass("active");
+                                                                    $(".tab_content").hide()
+                                                                    var activeTab = $(this).attr("rel");
+                                                                    $("#" + activeTab).fadeIn()
+                                                                });
+                                                            });
+                                                        </script>       
+                                                        <script type="text/javascript">
+                                                            var nav = $(".ygt-nav"),
+                                                                navigation_links = $(".ygt-nav a"),
+                                                                highlight = $(".ygt-nav a.highlight");
+                                                                                
+                                                            // 처음 시작용
+                                                            $(navigation_links[0]).addClass("active");
+                                                            highlight.css({
+                                                                left: navigation_links[0].offsetLeft + "px",
+                                                                height: navigation_links[0].offsetHeight + "px",
+                                                                width: navigation_links[0].offsetWidth + "px"
+                                                            });
+                                                            // highlight.css("height", navigation_links[0].offsetHeight + "px");
+                                                                                
+                                                            $(navigation_links).on("click", function () {
+                                                                $(navigation_links).removeClass("active");
+                                                                $(this).addClass("active");
+                                                                highlight.css({
+                                                                    left: this.offsetLeft + "px",
+                                                                    width: this.offsetWidth + "px"
+                                                                });
+                                                            });
+                                                        </script>
+                                                    </textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">Hover</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <div class="map-wrap">
+                                        <div class="map1"></div>
+                                        <div class="map2"></div>
+                                    </div>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('.map2').mouseenter(function () {
+                                                $(this).css('z-index', -2)
+                                            })
+                                
+                                            $('.map1').mouseleave(function () {
+                                
+                                                $('.map2').css('z-index', 15)
+                                
+                                            })
+                                
+                                        })
+                                    </script>
+                                    </p>
+                                    <div class="d-flex justify-content-start align-items-center mt-2">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                                data-target="#exampleModal2">View Code</button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">View Code
+                                                            Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <textarea class="code-view-box" readonly rows="25">
+                                                        <div class="map-wrap">
+                                                            <div class="map1"></div>
+                                                            <div class="map2"></div>
+                                                        </div>
+                                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                                                        <script>
+                                                            $(document).ready(function () {
+                                                                $('.map2').mouseenter(function () {
+                                                                    $(this).css('z-index', -2)
+                                                                })
+                                                    
+                                                                $('.map1').mouseleave(function () {
+                                                    
+                                                                    $('.map2').css('z-index', 15)
+                                                    
+                                                                })
+                                                    
+                                                            })
+                                                        </script>
+                                                    </textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">랜덤등장</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <div class="tri-wrap">
+                                        <div class="tri1"></div>
+                                        <div class="tri2"></div>
+                                        <div class="tri3"></div>
+                                        <div class="tri4"></div>
+                                        <div class="tri5"></div>
+                                    </div>
+                                    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                                        crossorigin="anonymous"></script>
+                                    <script>
+                                        $(document).ready(function () {
+                                                        for (var z = 1; z < 13; z++) {
+                                                            //자기 선언함수 써서 for문 안에 있는것이 순서대로 적용됨. 이거 안쓰고 그냥 함수 쓰면 한번에 10개가 뭉뚱그려서 적용되어 동일한 증상 발생. 
+                                                            (function (z) {
+                                                                //1~12 정수가 랜덤으로 나오도록
+                                                                var randoms = Math.floor((Math.random() * 13) + 1)
+                                                                $('.tri' + z).stop(true).delay(randoms * 200).animate({
+                                                                    opacity: 1
+                                                                }, 1500);
+                                                            })(z)
+                                                        }
+                                                    })
+                                    </script>
+                                    </p>
+                                    <div class="d-flex justify-content-start align-items-center mt-2">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                                data-target="#exampleModal3">View Code</button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">View
+                                                            Code Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <textarea class="code-view-box" readonly rows="25">
+                                                                    <div class="tri-wrap">
+                                                                        <div class="tri1"></div>
+                                                                        <div class="tri2"></div>
+                                                                        <div class="tri3"></div>
+                                                                        <div class="tri4"></div>
+                                                                        <div class="tri5"></div>
+                                                                    </div>
+                                                                    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                                                                        crossorigin="anonymous"></script>
+                                                                    <script>
+                                                                        $(document).ready(function () {
+                                                                            for (var z = 1; z < 13; z++) {
+                                                                                //자기 선언함수 써서 for문 안에 있는것이 순서대로 적용됨. 이거 안쓰고 그냥 함수 쓰면 한번에 10개가 뭉뚱그려서 적용되어 동일한 증상 발생. 
+                                                                                (function (z) {
+                                                                                    //1~12 정수가 랜덤으로 나오도록
+                                                                                    var randoms = Math.floor((Math.random() * 13) + 1)
+                                                                                    $('.tri' + z).stop(true).delay(randoms * 200).animate({
+                                                                                        opacity: 1
+                                                                                    }, 1500);
+                                                                                })(z)
+                                                                            }
+                                                                        })
+                                                                    </script>
+                                                        </textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">버튼</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <div class="button--aylen">Reservation Form ▶</div>
+
+                                    </p>
+                                    <div class="d-flex justify-content-start align-items-center mt-2">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                                data-target="#exampleModal4">View Code</button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">View
+                                                            Code Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <textarea class="code-view-box" readonly rows="25">
+                                                        <style type="text/css">
+                                                            /* Aylen */
+                                                            .button--aylen {
+                                                                width: 156px;
+                                                                display: block;
+                                                                margin: 1em;
+                                                                padding: 1em 2em;
+                                                                border: none;
+                                                                color: white;
+                                                                position: relative;
+                                                                z-index: 1;
+                                                                background-color:#af4c95;
+                                                                color: #ffffff;
+                                                                font-weight:bold;
+                                                                overflow: hidden;
+                                                                -webkit-transition: color 0.3s;
+                                                                transition: color 0.3s;
+                                                                cursor:pointer;
+                                                                border:solid 1px #cccccc;
+                                                            }
+                                                            
+                                                            
+                                                            .button--aylen::before,
+                                                            .button--aylen::after {
+                                                                content: '';
+                                                                position: absolute;
+                                                                height: 100%;
+                                                                width: 100%;
+                                                                bottom: 100%;
+                                                                left: 0;
+                                                                z-index: -1;
+                                                                -webkit-transition: -webkit-transform 0.3s;
+                                                                transition: transform 0.3s;
+                                                                -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+                                                                transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+                                                            }
+                                                            .button--aylen::before {
+                                                                background: #7986cb;
+                                                            }
+                                                            .button--aylen::after {
+                                                                background: #3f51b5;
+                                                            }
+                                                            .button--aylen:hover {
+                                                                color: #fff;
+                                                            }
+                                                            .button--aylen:hover::before,
+                                                            .button--aylen:hover::after {
+                                                                -webkit-transform: translate3d(0, 100%, 0);
+                                                                transform: translate3d(0, 100%, 0);
+                                                            }
+                                                            .button--aylen:hover::after {
+                                                                -webkit-transition-delay: 0.175s;
+                                                                transition-delay: 0.175s;
+                                                            }
+                                                            </style>
+                                                            <div class="button--aylen">Reservation Form ▶</div>
+
+                                                    </textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">버튼2</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <a href="https://elimchan.com/concerts" class="btnW btnW--border btnW--center btnW--tour-home">
+                                        <span class="btnW-text">다운로드</span>
+                                        <span class="btnW-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="7" viewBox="0 0 16 7">
+                                                <path fill="#174233" fill-rule="nonzero" d="M12.727 0L16 3.394l-3.273 3.394V4.245H0V2.74h12.73z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </a>
+
+
+                                    </p>
+                                    <div class="d-flex justify-content-start align-items-center mt-2">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                                data-target="#exampleModal5">View
+                                                Code</button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">View
+                                                            Code Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <code>
+                                                            <pre>test</pre>
+                                                        </code>
+                                                        <textarea class="code-view-box" readonly rows="25">
+                                                        <a href="https://elimchan.com/concerts" class="btnW btnW--border btnW--center btnW--tour-home"> 
+                                                          <span class="btnW-text">입회원서 다운로드</span> 
+                                                          <span class="btnW-arrow"> 
+                                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="7" viewBox="0 0 16 7">
+                                                                <path fill="#174233" fill-rule="nonzero" d="M12.727 0L16 3.394l-3.273 3.394V4.245H0V2.74h12.73z">
+                                                                </path>
+                                                              </svg> 
+                                                          </span> 
+                                                        </a>
+                                                        
+
+                                                    </textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">버튼3</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <button class="button button--nina button--border-thin button--round-s" data-text="Create">
+                                        <span>C</span>
+                                        <span>r</span>
+                                        <span>e</span>
+                                        <span>a</span>
+                                        <span>t</span>
+                                        <span>e</span>
+                                    </button>
+
+                                    <div class="d-flex justify-content-start align-items-center mt-2">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                                data-target="#exampleModal6">View
+                                                Code
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+                                                          <button class="button button--nina button--border-thin button--round-s" data-text="Create">
+                                                            <span>C</span>
+                                                            <span>r</span>
+                                                            <span>e</span>
+                                                            <span>a</span>
+                                                            <span>t</span>
+                                                            <span>e</span>
+                                                        </button>
+                                                    </textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">버튼4</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <div class="progress-btn progress-btn-striped progress-btn-animated">
+                                        사전등록 바로가기
+                                    </div>
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal15">View
+                                            Code
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">View
+                                                    Code Details</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea class="code-view-box" readonly rows="25">
+                                                            <div class="progress-btn progress-btn-striped progress-btn-animated">
+                                                                사전등록 바로가기
+                                                            </div>
+                                                    </textarea>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">버튼5</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <div class='outline-btn'>
+                                        <a class='btn' href='#'>
+                                            Abstract Submision
+                                            <span class='line-1'></span>
+                                            <span class='line-2'></span>
+                                            <span class='line-3'></span>
+                                            <span class='line-4'></span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal15-1">View
+                                            Code
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal15-1" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">View
+                                                    Code Details</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea class="code-view-box" readonly rows="25">
+                                                    <a class='btn' href='#'>
+                                                        Abstract Submision
+                                                        <span class='line-1'></span>
+                                                        <span class='line-2'></span>
+                                                        <span class='line-3'></span>
+                                                        <span class='line-4'></span>
+                                                    </a>
+                                                </textarea>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">퀵배너</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal7">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+
+
+                                                                <div id="miniArticle" style="top:137px;">
+                                                                    <ul>
+                                                                        <li><img src="https://via.placeholder.com/50x50"></li>
+                                                                        <li><img src="https://via.placeholder.com/50x50"></li>
+                                                                        <li><img src="https://via.placeholder.com/50x50"></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <script src="js/jquery-3.3.1.js"></script>
+                                                                <script>
+                                                                    $(function () {
+                                                                        var quick_menu = $("#miniArticle");
+                                                                        var quick_top = 137;
+                                                                        // quick menu initialization
+                                                                        quick_menu.css('top', $(window).height());
+                                                                        $(document).ready(function () {
+                                                                            quick_menu.animate({
+                                                                                "top": $(document).scrollTop() + quick_top + "px"
+                                                                            }, 100); //스크롤이 올라갈 때의 속도 값이 높아질수록 부드럽게 움직임
+                                                                            $(window).scroll(function () {
+                                                                                quick_menu.stop();
+                                                                                quick_menu.animate({
+                                                                                    "top": $(document).scrollTop() + quick_top + "px"
+                                                                                }, 500); //스크롤 내려갈 때의 속도
+                                                                            });
+                                                                        });
+                                                                    });
+                                                                </script>
+                                                            </textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <div class="card mb-4 shadow-sm">
+                        <h5 class="shadow p-3 mb-2 bg-white rounded">풀페이지 네비게이션</h5>
+                        <div class="card-body">
+                            <div class="card-text h-big">
+
+                                <ul class="gnb">
+                                    <li>
+                                        <a href="#" name="menu1">안내
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" name="menu2">프로그램
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" name="menu3">사전등록
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" name="menu4">전시부스
+                                        </a>
+
+                                    </li>
+
+                                    <li><a href="#" name="menu5">오시는길</a></li>
+
+                                    <div class="depth2">
+                                        <ul>
+                                            <li><a href="/abstract/2018_wclc/intro.html">안내</a></li>
+                                            <li><a href="/abstract/2018_wclc/info.html">행사안내</a></li>
+                                            <li><a href="/abstract/2018_wclc/organization.html">조직위원회</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="/abstract/2018_wclc/program.html">프로그램</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="/abstract/2018_wclc/entry/info.html">사전등록</a></li>
+                                            <li><a href="/abstract/2018_wclc/entry/login.html">등록확인</a></li>
+
+                                        </ul>
+                                        <ul>
+                                            <li><a href="/abstract/2018_wclc/booth/info.html">전시부스</a></li>
+                                            <li><a href="http://www.ksmo.or.kr/abstract/2018_wclc/booth/login.html">부스신청확인</a></li>
+
+                                        </ul>
+                                        <ul>
+                                            <li><a href="/abstract/2018_wclc/map.html">오시는길</a></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center mt-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                        data-target="#exampleModal8">View
+                                        Code</button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">View
+                                                    Code Details</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea class="code-view-box" readonly rows="25">
+    <ul class="gnb">
+        <li>
+            <a href="#" name="menu1" >안내
+            </a>
+        </li>
+        <li>
+            <a href="#" name="menu2" >프로그램
+            </a>
+        </li>
+        <li>
+            <a href="#" name="menu3" >사전등록
+            </a>
+        </li>
+        <li>
+            <a href="#" name="menu4" >전시부스
+            </a>
+    
+        </li>
+    
+        <li><a href="#" name="menu5" >오시는길</a></li>
+    
+        <div class="depth2">
+            <ul>
+                <li><a href="/abstract/2018_wclc/intro.html">안내</a></li>
+                <li><a href="/abstract/2018_wclc/info.html">행사안내</a></li>
+                <li><a href="/abstract/2018_wclc/organization.html">조직위원회</a></li>
+            </ul>
+            <ul>
+                <li><a href="/abstract/2018_wclc/program.html">프로그램</a></li>
+            </ul>
+            <ul>
+                <li><a href="/abstract/2018_wclc/entry/info.html">사전등록</a></li>
+                <li><a href="/abstract/2018_wclc/entry/login.html">등록확인</a></li>
+    
+            </ul>
+            <ul>
+                <li><a href="/abstract/2018_wclc/booth/info.html">전시부스</a></li>
+                <li><a href="http://www.ksmo.or.kr/abstract/2018_wclc/booth/login.html">부스신청확인</a></li>
+    
+            </ul>
+            <ul>
+                <li><a href="/abstract/2018_wclc/map.html">오시는길</a></li>
+            </ul>
+        </div>
+    </ul>
+</textarea>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100"></div>
+
+
+                <div class="col">
+                    <div class="card mb-4 shadow-sm">
+                        <h5 class="shadow p-3 mb-2 bg-white rounded">왼쪽 슬라이드 메뉴</h5>
+                        <div class="card-body">
+                            <div class="card-text h-big">
+
+                                <ul id="gnb-left">
+                                    <li class="depth1-left_li">
+                                        <a href="" class="depth1-left_menu">리스트1</a>
+                                        <ul class="depth2_ul">
+                                            <li><a href="">서브 리스트1</a></li>
+                                            <li><a href="">서브 리스트1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth1-left_li">
+                                        <a href="" class="depth1-left_menu">리스트2</a>
+                                        <ul class="depth2_ul">
+                                            <li><a href="">서브 리스트1</a></li>
+                                            <li><a href="">서브 리스트1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                <script>
+                                    $(document).ready(function(){
+                                        $("#gnb-left .depth1-left_li").mouseenter(function () {
+                                            $(".depth2_ul", this).slideDown(300);
+                                        });
+
+                                        $("#gnb-left .depth1-left_li").mouseleave(function () {
+                                            $(".depth2_ul", this).stop().slideUp(300);
+                                        });
+                                    })
+                                </script>
+
+
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center mt-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                        data-target="#exampleModal9_1">View
+                                        Code</button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal9_1" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">View
+                                                    Code Details</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea class="code-view-box" readonly rows="25">
+        <ul id="gnb-left">
+                <li class="depth1-left_li">
+                    <a href="" class="depth1-left_menu">리스트1</a>
+                    <ul class="depth2_ul">
+                        <li><a href="">서브 리스트1</a></li>
+                        <li><a href="">서브 리스트1</a></li>
+                    </ul>
+                </li>
+                <li class="depth1-left_li">
+                    <a href="" class="depth1-left_menu">리스트2</a>
+                    <ul class="depth2_ul">
+                        <li><a href="">서브 리스트1</a></li>
+                        <li><a href="">서브 리스트1</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("#gnb-left .depth1-left_li").mouseenter(function () {
+                        $(".depth2_ul", this).slideDown(300);
+                    });
+
+                    $("#gnb-left .depth1-left_li").mouseleave(function () {
+                        $(".depth2_ul", this).stop().slideUp(300);
+                    });
+                })
+            </script>
+                                                        
+</textarea>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="w-100"></div>
+
+                <div class="row">
+
+                    <div class="col-xl-12 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">테이블 레이아웃0</h5>
+                            <div class="card-body">
+                                <div class="card-text h-auto mb-3">
+
+                                    <table class="op-table">
+                                        <colgroup>
+                                            <col style="width:20%">
+                                            <col style="width:50%">
+                                            <col style="width:30%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>Lorem ips
+                                                    consequuntur eum quaerat, dignissimos quia animi atque</th>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                                                    error harum aliquam dolorem</td>
+                                                <td>Lorem ipsum dolor</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Lorem ipsum dolor sit amet consectetur</th>
+                                                <td>Lorem ipsum</td>
+                                                <td>Lorem</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Quibusdam, error harum aliquam dolorem</th>
+                                                <td>Lorem ipsum</td>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                                                    error harum aliquam dolorem</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                                                    error adipisci ut voluptas quae consequatur, necessitatibus debitis
+                                                    voluptatibus provident qui rem architecto corrupti. Suscipit,
+                                                    neque. Neque voluptas a maiores quae.</td>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                                                    libero beatae veritatis fugit eum, maxime quibusdam dicta,</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal9-1">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal9-1" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+                                                        <table class="op-table">
+                                                            <colgroup>
+                                                                <col style="width:20%">
+                                                                <col style="width:50%">
+                                                                <col style="width:30%">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Lorem ips
+                                                                        consequuntur eum quaerat, dignissimos quia animi atque</th>
+                                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</td>
+                                                                    <td>Lorem ipsum dolor</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Lorem ipsum dolor sit amet consectetur</th>
+                                                                    <td>Lorem ipsum</td>
+                                                                    <td>Lorem</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th rowspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</th>
+                                                                    <td>Lorem ipsum</td>
+                                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error adipisci ut voluptas quae consequatur, necessitatibus debitis voluptatibus provident qui rem architecto corrupti. Suscipit, neque. Neque voluptas a maiores quae.</td>
+                                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero beatae veritatis fugit eum, maxime quibusdam dicta,</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">테이블 레이아웃1</h5>
+                            <div class="card-body">
+                                <div class="card-text h-big">
+
+                                    <table class="type01">
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal9">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+
+<table class="type01">
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">테이블 레이아웃2</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <table class="type11">
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal10">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+
+    <table class="type11">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">테이블 레이아웃3</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <table class="type07">
+                                        <thead>
+                                            <tr>
+                                                <th>1</th>
+                                                <th>2</th>
+                                                <th>3</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <th>2</th>
+                                                <th>3</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal11">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal11" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+        <table class="type07">
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+            
+                </tbody>
+            </table>
+</textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">네온사인 텍스트</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <div class="neon">text</div>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal12">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+       <div class="neon">text</div>
+</textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">내어쓰기</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <ul class="outdent">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste
+                                            aperiam consequuntur magnam ad officia</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste
+                                            aperiam consequuntur magnam ad officia</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal13">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal13" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+                                                        <ul class="outdent">
+                                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste
+                                                                aperiam consequuntur magnam ad officia</li>
+                                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste
+                                                                aperiam consequuntur magnam ad officia</li>
+                                                        </ul>
+                                                    </textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">비디오 탭</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+                                    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+
+
+                                    <div id="vid">
+                                        <div class="box">
+                                            <div class="tab-panels">
+                                                <ul>
+                                                    <li rel="panel1" class="active">Video 1
+                                                        <div></div>
+                                                    </li>
+                                                    <li rel="panel2">Video 2
+                                                        <div></div>
+                                                    </li>
+                                                </ul>
+                                                <div id="panel1" class="panel-vid active">
+                                                    <video class="video-js" width="100%" height="215px" poster="Reversed MRL-LDLT by using donor with situs inversus totalis.PNG">
+                                                        <source src="Reversed MRL-LDLT by using donor with situs inversus totalis.mp4"
+                                                            type="video/mp4">
+                                                    </video>
+                                                    <div class="vid-bottom-txt">
+                                                        <p class="credits">
+                                                            Reversed MRL-LDLT by using donor with situs inversus
+                                                            totalis
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div id="panel2" class="panel-vid">
+                                                    <video class="video-js" width="100%" height="215px" poster="Donor hepatectomy_ Left trisegmentectomy with caudate lobe.PNG">
+                                                        <source src="Donor hepatectomy_ Left trisegmentectomy with caudate lobe.mp4"
+                                                            type="video/mp4">
+                                                    </video>
+                                                    <div class="vid-bottom-txt">
+                                                        <p class="credits">
+                                                            Donor hepatectomy: Left trisegmentectomy with caudate lobe
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+                                    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                                        crossorigin="anonymous"></script>
+                                    <script>
+                                        $(function () {
+            $(".tab-panels ul li").on("click", function () {
+                $(".tab-panels ul li.active").removeClass("active");
+                $(this).addClass("active");
+                var toShow = $(this).attr("rel");
+                $(".panel-vid.active").slideUp(125, function () {
+                    $(this).removeClass("active");
+                    $("#" + toShow).slideDown(125, function () {
+                        $(this).addClass("active");
+                    });
+                });
+            });
+        })
+    </script>
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal13_1">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal13_1" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+                                                        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+
+
+    <div id="vid">
+        <div class="box">
+            <div class="tab-panels">
+                <ul>
+                    <li rel="panel1" class="active">Video 1
+                        <div></div>
+                    </li>
+                    <li rel="panel2">Video 2
+                        <div></div>
+                    </li>
+                    <div></div>
+                    </li>
+                </ul>
+                <div id="panel1" class="panel-vid active">
+                    <video class="video-js" width="100%" height="215px" poster="Reversed MRL-LDLT by using donor with situs inversus totalis.PNG">
+                        <source src="Reversed MRL-LDLT by using donor with situs inversus totalis.mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-bottom-txt">
+                        <p class="credits">
+                            Reversed MRL-LDLT by using donor with situs inversus totalis
+                        </p>
+                    </div>
+                </div>
+                <div id="panel2" class="panel-vid">
+                    <video class="video-js" width="100%" height="215px" poster="Donor hepatectomy_ Left trisegmentectomy with caudate lobe.PNG">
+                        <source src="Donor hepatectomy_ Left trisegmentectomy with caudate lobe.mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-bottom-txt">
+                        <p class="credits">
+                            Donor hepatectomy: Left trisegmentectomy with caudate lobe
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".tab-panels ul li").on("click", function () {
+                $(".tab-panels ul li.active").removeClass("active");
+                $(this).addClass("active");
+                var toShow = $(this).attr("rel");
+                $(".panel-vid.active").slideUp(125, function () {
+                    $(this).removeClass("active");
+                    $("#" + toShow).slideDown(125, function () {
+                        $(this).addClass("active");
+                    });
+                });
+            });
+        })
+    </script>
+
+                                                    </textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">십자가 버튼</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <div class="three col">
+                                        <div class="hamburger" id="hamburger-8">
+                                            <span class="line"></span>
+                                            <span class="line"></span>
+                                            <span class="line"></span>
+                                        </div>
+                                    </div>
+                                    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                                        crossorigin="anonymous"></script>
+                                    <script>
+                                        $(document).ready(function () {
+                                          $(".hamburger").hover(function () {
+                                              $(this).toggleClass("is-active");
+                                            },
+                                            function () {
+                                              $(this).toggleClass("is-active");
+                                            });
+                                        });
+                                      </script>
+
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal13_2">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal13_2" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+                                                        <div class="three col">
+                                                            <div class="hamburger" id="hamburger-8">
+                                                              <span class="line"></span>
+                                                              <span class="line"></span>
+                                                              <span class="line"></span>
+                                                            </div>
+                                                          </div>
+                                                          <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                                                            crossorigin="anonymous"></script>
+                                                          <script>
+                                                            $(document).ready(function () {
+                                                              $(".hamburger").hover(function () {
+                                                                  $(this).toggleClass("is-active");
+                                                                },
+                                                                function () {
+                                                                  $(this).toggleClass("is-active");
+                                                                });
+                                                            });
+                                                          </script>
+                                                    </textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">자주쓰이는 PHP 코드</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    바로 써먹을 수 있는 간단한 PHP부품들
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                            data-target="#exampleModal14">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal14" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+                                                        +간단한 클릭 팝업창+
+                                                        onClick="window.open('test.html', '팝업제목', 'top=0, left=0, width=1000, height=750, scrollbars=yes');"
+
+                                                        +상세한 팝업창+
+                                                        <script type="text/javascript" language="javascript">
+                                                            function getCookie(name) {
+                                                                var nameOfCookie = name + "=";
+                                                                var x = 0;
+                                                                while ( x <= document.cookie.length ) {
+                                                                    var y = (x+nameOfCookie.length);
+                                                                    if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+                                                                        if ( (endOfCookie=document.cookie.indexOf( ";",y )) == -1 ) endOfCookie = document.cookie.length;
+                                                                        return unescape( document.cookie.substring(y, endOfCookie ) );
+                                                                    }
+                                                                    var x = document.cookie.indexOf( " ", x ) + 1;
+                                                                    if ( x == 0 ) break;
+                                                                }
+                                                                return "";
+                                                            }
+                                                            function openCookieWin() {
+                                                            
+                                                            }
+                                                            
+                                                            
+                                                            <?
+                                                            $now = time();
+                                                            $pop_Finish = mktime(17,0,0,5,3,2015);
+                                                            if( $now < $pop_Finish ) {
+                                                                ?>
+                                                                if ( getCookie( "130321" ) != "130321" ){
+                                                                    window.open('/popup/130321_booth.html','130321','left=0,top=0,width=485,height=675,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');
+                                                                }
+                                                            
+                                                            <? }?>
+                                                            </script>
+
+
+                                                            +기간 설정+
+                                                            <? 
+$now = time();
+$li_banner_start=mktime(0,0,0,8,9,2018);//"시","분","초","월","일","년" 시작 기간
+$li_banner_finish=mktime(23,59,59,12,31,2018); //끝나는 기간
+if($now>$li_banner_start && $now<$li_banner_finish)
+{?>
+
+    넣은 곳
+
+<?}?>
+
+
++url 이동했을때 클릭해야지만 열리는 영역 열리는 방법+
+
+(예시)
+http://archives.otologicalsociety.or.kr/index4.html?view=popup01
+
+<? if($_GET['view']) { ?>
+<script>
+		$("#popup,.dimmed").fadeIn();
+		$("body").addClass("hidden");
+		$("#<?=$_GET['view']?>").fadeIn();
+</script>
+<? } ?>
+
+                                                            
+
+
+                                                        
+                                                    </textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Inforang IT creative team : operating part &copy; <b>email</b> : <a href="mailto:yanggitak@inforang.com">yanggitak@inforang.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <div id="miniArticle" style="top: 137px;">
+        <ul>
+            <li><img src="https://via.placeholder.com/50x50?text=Quick"></li>
+            <li><img src="https://via.placeholder.com/50x50?text=me"></li>
+            <li><img src="https://via.placeholder.com/50x50?text=nu"></li>
+        </ul>
+    </div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script>
+        $(function () {
+            var quick_menu = $("#miniArticle");
+            var quick_top = 137;
+            // quick menu initialization
+            quick_menu.css('top', $(window).height());
+            $(document).ready(function () {
+                quick_menu.animate({
+                    "top": $(document).scrollTop() + quick_top + "px"
+                }, 100); //스크롤이 올라갈 때의 속도 값이 높아질수록 부드럽게 움직임
+                $(window).scroll(function () {
+                    quick_menu.stop();
+                    quick_menu.animate({
+                        "top": $(document).scrollTop() + quick_top + "px"
+                    }, 500); //스크롤 내려갈 때의 속도
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
