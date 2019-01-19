@@ -374,8 +374,48 @@ a.btnW {
 .btnW--tour-home:hover path {
     fill: #fff
 }
-
 /* 버튼2 */
+
+/* 버튼2-2 */
+.ae_btn {
+    position: relative;
+    box-sizing: border-box;
+    width: 220px;
+    height: 65px;
+    background-color: #45c0fd;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all .5s;
+    
+}
+
+.ae_btn .text {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+    left: 62%;
+    font-size: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition:  all 0.8s;
+}
+
+.ae_btn #bm {
+    opacity: 0;
+    position: absolute;
+    top: -45px;
+    right: -40px;
+    width: 140px;
+    transition: all 0.5s;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 90;
+}
+/* 버튼2-2 */
+
 
 
 /* 버튼3 */
