@@ -15,8 +15,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">Infornag Operating Part</h4>
-                        <p class="text-muted">인포랑 크리에이티브팀 운영파트 템플릿</p>
+                        <h4 class="text-white">Inforang Operating Part</h4>
+                        <p class="text-muted">운영파트 템플릿</p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
                         <ul class="list-unstyled">
@@ -48,7 +48,7 @@
     <main role="main">
         <section class="jumbotron text-center">
             <div class="container">
-                <h1 class="jumbotron-heading">인포랑 운영파트 템플릿</h1>
+                <h1 class="jumbotron-heading">운영파트 템플릿</h1>
                 <p class="lead text-muted">자주 쓰이는 것들을 모아둠으로써, 쉽고 빠르게 써먹을 수 있도록.
                     <br>css는 크롬브라우저에서 ctrl + shift + c를 눌러서 style.css에 정리해두었음.
                 </p>
@@ -168,86 +168,86 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <textarea class="code-view-box" readonly rows="25">
-                                                        <div class="ygt-nav">
-                                                            <a rel="tab1" class="active">Popular</a>
-                                                            <a rel="tab2">Pairings</a>
-                                                            <a rel="tab3">with</a>
-                                                            <a class="highlight" style="left: 0px; height: 29px; width: 82px;"></a>
-                                                            <!-- highlight는 공간을 변조하지 마세요. -->
-                                                        </div>
-                                                                                
-                                                                                
-                                                        <div class="tab_container">
-                                                                                
-                                                            <!-- #tab1 -->
-                                                            <div id="tab1" class="tab_content">
-                                                                tab1 us Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-                                                                similique odit ab! Enim nisi ex illo obcaecati,
-                                                                explicabo animi nemo maxime? Nemo dolores eligendi odio soluta consequuntur
-                                                                laboriosam animi harum.
-                                                                                
-                                                            </div>
-                                                                                
-                                                                                
-                                                            <!-- #tab2 -->
-                                                            <div id="tab2" class="tab_content">tab2 is Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Enim aliquid consequatur ut ipsam minima
-                                                                numquam quia
-                                                                libero suscipit fugiat, ratione ullam eius distinctio aspernatur voluptas
-                                                                obcaecati quibusdam dolorem ipsa non. combat.
-                                                            </div>
-                                                                                
-                                                                                
-                                                            <!-- #tab3 -->
-                                                            <div id="tab3" class="tab_content">tab3 is Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Repellendus sunt eos quod odit! Harum error,
-                                                                vel molestiae
-                                                                libero quibusdam ex consectetur, praesentium vero nobis ipsam id sint
-                                                                quaerat accusamus sapiente!
-                                                            </div>
-                                                                                
-                                                        </div>
+<div class="ygt-nav">
+<a rel="tab1" class="active">Popular</a>
+<a rel="tab2">Pairings</a>
+<a rel="tab3">with</a>
+<a class="highlight" style="left: 0px; height: 29px; width: 82px;"></a>
+<!-- highlight는 공간을 변조하지 마세요. -->
+</div>
+                    
+                    
+<div class="tab_container">
+                    
+<!-- #tab1 -->
+<div id="tab1" class="tab_content">
+    tab1 us Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+    similique odit ab! Enim nisi ex illo obcaecati,
+    explicabo animi nemo maxime? Nemo dolores eligendi odio soluta consequuntur
+    laboriosam animi harum.
+                    
+</div>
+                    
+                    
+<!-- #tab2 -->
+<div id="tab2" class="tab_content">tab2 is Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Enim aliquid consequatur ut ipsam minima
+    numquam quia
+    libero suscipit fugiat, ratione ullam eius distinctio aspernatur voluptas
+    obcaecati quibusdam dolorem ipsa non. combat.
+</div>
+                    
+                    
+<!-- #tab3 -->
+<div id="tab3" class="tab_content">tab3 is Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Repellendus sunt eos quod odit! Harum error,
+    vel molestiae
+    libero quibusdam ex consectetur, praesentium vero nobis ipsam id sint
+    quaerat accusamus sapiente!
+</div>
+                    
+</div>
                      
-                                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                  
-                                                        <script>
-                                                            $(function () {
-                                                                                
-                                                                $(".tab_content").hide();
-                                                                $(".tab_content:first").show();
-                                                                                
-                                                                $(".ygt-nav a").click(function () {
-                                                                    $(".ygt-nav a").removeClass("active");
-                                                                    $(this).addClass("active");
-                                                                    $(".tab_content").hide()
-                                                                    var activeTab = $(this).attr("rel");
-                                                                    $("#" + activeTab).fadeIn()
-                                                                });
-                                                            });
-                                                        </script>       
-                                                        <script type="text/javascript">
-                                                            var nav = $(".ygt-nav"),
-                                                                navigation_links = $(".ygt-nav a"),
-                                                                highlight = $(".ygt-nav a.highlight");
-                                                                                
-                                                            // 처음 시작용
-                                                            $(navigation_links[0]).addClass("active");
-                                                            highlight.css({
-                                                                left: navigation_links[0].offsetLeft + "px",
-                                                                height: navigation_links[0].offsetHeight + "px",
-                                                                width: navigation_links[0].offsetWidth + "px"
-                                                            });
-                                                            // highlight.css("height", navigation_links[0].offsetHeight + "px");
-                                                                                
-                                                            $(navigation_links).on("click", function () {
-                                                                $(navigation_links).removeClass("active");
-                                                                $(this).addClass("active");
-                                                                highlight.css({
-                                                                    left: this.offsetLeft + "px",
-                                                                    width: this.offsetWidth + "px"
-                                                                });
-                                                            });
-                                                        </script>
+<script>
+$(function () {
+                    
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+                    
+    $(".ygt-nav a").click(function () {
+        $(".ygt-nav a").removeClass("active");
+        $(this).addClass("active");
+        $(".tab_content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+    });
+});
+</script>       
+<script type="text/javascript">
+var nav = $(".ygt-nav"),
+    navigation_links = $(".ygt-nav a"),
+    highlight = $(".ygt-nav a.highlight");
+                    
+// 처음 시작용
+$(navigation_links[0]).addClass("active");
+highlight.css({
+    left: navigation_links[0].offsetLeft + "px",
+    height: navigation_links[0].offsetHeight + "px",
+    width: navigation_links[0].offsetWidth + "px"
+});
+// highlight.css("height", navigation_links[0].offsetHeight + "px");
+                    
+$(navigation_links).on("click", function () {
+    $(navigation_links).removeClass("active");
+    $(this).addClass("active");
+    highlight.css({
+        left: this.offsetLeft + "px",
+        width: this.offsetWidth + "px"
+    });
+});
+</script>
                                                     </textarea>
                                                     </div>
                                                     <div class="modal-footer">
@@ -310,25 +310,25 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <textarea class="code-view-box" readonly rows="25">
-                                                        <div class="map-wrap">
-                                                            <div class="map1"></div>
-                                                            <div class="map2"></div>
-                                                        </div>
-                                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                                                        <script>
-                                                            $(document).ready(function () {
-                                                                $('.map2').mouseenter(function () {
-                                                                    $(this).css('z-index', -2)
-                                                                })
+<div class="map-wrap">
+<div class="map1"></div>
+<div class="map2"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.map2').mouseenter(function () {
+        $(this).css('z-index', -2)
+    })
                                                     
-                                                                $('.map1').mouseleave(function () {
+    $('.map1').mouseleave(function () {
                                                     
-                                                                    $('.map2').css('z-index', 15)
+        $('.map2').css('z-index', 15)
                                                     
-                                                                })
+    })
                                                     
-                                                            })
-                                                        </script>
+})
+</script>
                                                     </textarea>
                                                     </div>
                                                     <div class="modal-footer">
@@ -360,16 +360,16 @@
                                         crossorigin="anonymous"></script>
                                     <script>
                                         $(document).ready(function () {
-                                                        for (var z = 1; z < 13; z++) {
-                                                            //자기 선언함수 써서 for문 안에 있는것이 순서대로 적용됨. 이거 안쓰고 그냥 함수 쓰면 한번에 10개가 뭉뚱그려서 적용되어 동일한 증상 발생. 
-                                                            (function (z) {
-                                                                //1~12 정수가 랜덤으로 나오도록
-                                                                var randoms = Math.floor((Math.random() * 13) + 1)
-                                                                $('.tri' + z).stop(true).delay(randoms * 200).animate({
-                                                                    opacity: 1
-                                                                }, 1500);
-                                                            })(z)
-                                                        }
+for (var z = 1; z < 13; z++) {
+//자기 선언함수 써서 for문 안에 있는것이 순서대로 적용됨. 이거 안쓰고 그냥 함수 쓰면 한번에 10개가 뭉뚱그려서 적용되어 동일한 증상 발생. 
+(function (z) {
+    //1~12 정수가 랜덤으로 나오도록
+    var randoms = Math.floor((Math.random() * 13) + 1)
+    $('.tri' + z).stop(true).delay(randoms * 200).animate({
+        opacity: 1
+    }, 1500);
+})(z)
+}
                                                     })
                                     </script>
                                     </p>
@@ -393,30 +393,30 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <textarea class="code-view-box" readonly rows="25">
-                                                                    <div class="tri-wrap">
-                                                                        <div class="tri1"></div>
-                                                                        <div class="tri2"></div>
-                                                                        <div class="tri3"></div>
-                                                                        <div class="tri4"></div>
-                                                                        <div class="tri5"></div>
-                                                                    </div>
-                                                                    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                                                                        crossorigin="anonymous"></script>
-                                                                    <script>
-                                                                        $(document).ready(function () {
-                                                                            for (var z = 1; z < 13; z++) {
-                                                                                //자기 선언함수 써서 for문 안에 있는것이 순서대로 적용됨. 이거 안쓰고 그냥 함수 쓰면 한번에 10개가 뭉뚱그려서 적용되어 동일한 증상 발생. 
-                                                                                (function (z) {
-                                                                                    //1~12 정수가 랜덤으로 나오도록
-                                                                                    var randoms = Math.floor((Math.random() * 13) + 1)
-                                                                                    $('.tri' + z).stop(true).delay(randoms * 200).animate({
-                                                                                        opacity: 1
-                                                                                    }, 1500);
-                                                                                })(z)
-                                                                            }
-                                                                        })
-                                                                    </script>
-                                                        </textarea>
+        <div class="tri-wrap">
+            <div class="tri1"></div>
+            <div class="tri2"></div>
+            <div class="tri3"></div>
+            <div class="tri4"></div>
+            <div class="tri5"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                for (var z = 1; z < 13; z++) {
+                    //자기 선언함수 써서 for문 안에 있는것이 순서대로 적용됨. 이거 안쓰고 그냥 함수 쓰면 한번에 10개가 뭉뚱그려서 적용되어 동일한 증상 발생. 
+                    (function (z) {
+                        //1~12 정수가 랜덤으로 나오도록
+                        var randoms = Math.floor((Math.random() * 13) + 1)
+                        $('.tri' + z).stop(true).delay(randoms * 200).animate({
+                            opacity: 1
+                        }, 1500);
+                    })(z)
+                }
+            })
+        </script>
+</textarea>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -459,64 +459,8 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <textarea class="code-view-box" readonly rows="25">
-                                                        <style type="text/css">
-                                                            /* Aylen */
-                                                            .button--aylen {
-                                                                width: 156px;
-                                                                display: block;
-                                                                margin: 1em;
-                                                                padding: 1em 2em;
-                                                                border: none;
-                                                                color: white;
-                                                                position: relative;
-                                                                z-index: 1;
-                                                                background-color:#af4c95;
-                                                                color: #ffffff;
-                                                                font-weight:bold;
-                                                                overflow: hidden;
-                                                                -webkit-transition: color 0.3s;
-                                                                transition: color 0.3s;
-                                                                cursor:pointer;
-                                                                border:solid 1px #cccccc;
-                                                            }
-                                                            
-                                                            
-                                                            .button--aylen::before,
-                                                            .button--aylen::after {
-                                                                content: '';
-                                                                position: absolute;
-                                                                height: 100%;
-                                                                width: 100%;
-                                                                bottom: 100%;
-                                                                left: 0;
-                                                                z-index: -1;
-                                                                -webkit-transition: -webkit-transform 0.3s;
-                                                                transition: transform 0.3s;
-                                                                -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-                                                                transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-                                                            }
-                                                            .button--aylen::before {
-                                                                background: #7986cb;
-                                                            }
-                                                            .button--aylen::after {
-                                                                background: #3f51b5;
-                                                            }
-                                                            .button--aylen:hover {
-                                                                color: #fff;
-                                                            }
-                                                            .button--aylen:hover::before,
-                                                            .button--aylen:hover::after {
-                                                                -webkit-transform: translate3d(0, 100%, 0);
-                                                                transform: translate3d(0, 100%, 0);
-                                                            }
-                                                            .button--aylen:hover::after {
-                                                                -webkit-transition-delay: 0.175s;
-                                                                transition-delay: 0.175s;
-                                                            }
-                                                            </style>
-                                                            <div class="button--aylen">Reservation Form ▶</div>
-
-                                                    </textarea>
+<div class="button--aylen">Reservation Form ▶</div>
+                                                        </textarea>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -573,16 +517,16 @@
                                                             <pre>test</pre>
                                                         </code>
                                                         <textarea class="code-view-box" readonly rows="25">
-                                                        <a href="https://elimchan.com/concerts" class="btnW btnW--border btnW--center btnW--tour-home"> 
-                                                          <span class="btnW-text">입회원서 다운로드</span> 
-                                                          <span class="btnW-arrow"> 
-                                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="7" viewBox="0 0 16 7">
-                                                                <path fill="#174233" fill-rule="nonzero" d="M12.727 0L16 3.394l-3.273 3.394V4.245H0V2.74h12.73z">
-                                                                </path>
-                                                              </svg> 
-                                                          </span> 
-                                                        </a>
-                                                        
+<a href="https://elimchan.com/concerts" class="btnW btnW--border btnW--center btnW--tour-home"> 
+  <span class="btnW-text">입회원서 다운로드</span> 
+  <span class="btnW-arrow"> 
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="7" viewBox="0 0 16 7">
+    <path fill="#174233" fill-rule="nonzero" d="M12.727 0L16 3.394l-3.273 3.394V4.245H0V2.74h12.73z">
+    </path>
+  </svg> 
+  </span> 
+</a>
+
 
                                                     </textarea>
                                                     </div>
@@ -600,7 +544,7 @@
                     </div>
                     <div class="w-100"></div>
 
-                    <div class="col-xl-4 col-sm-12">
+                    <div class="col-xl-4 col-md-4 col-sm-12">
                         <div class="card mb-4 shadow-sm">
                             <h5 class="shadow p-3 mb-2 bg-white rounded">버튼2-2</h5>
                             <div class="card-body">
@@ -662,41 +606,41 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                        <div class="ae_btn">
-                                                            <div class="text">사전등록 바로가기</div>
-                                                            <div id="bm"></div>
-                                                        </div>
+<div class="ae_btn">
+<div class="text">사전등록 바로가기</div>
+<div id="bm"></div>
+</div>
                                                     
-                                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
-                                                        <script>
-                                                            var ae_btn = document.querySelector('.ae_btn')
-                                                            var svgWarp = document.getElementById('bm')
-                                                            var animation = bodymovin.loadAnimation({
-                                                                container: svgWarp,
-                                                                renderer: 'svg',
-                                                                loop: false,
-                                                                autoplay: false,
-                                                                path: 'ball_throwing.json'
-                                                            })
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
+<script>
+var ae_btn = document.querySelector('.ae_btn')
+var svgWarp = document.getElementById('bm')
+var animation = bodymovin.loadAnimation({
+    container: svgWarp,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'ball_throwing.json'
+})
                                                     
-                                                            var isComplete = true;
-                                                            ae_btn.addEventListener('mouseenter', function () {
-                                                                if (isComplete) {
-                                                                    $(".ae_btn").css("width", "+=40");
-                                                                    $("#bm").css("opacity", "1");
-                                                                    animation.goToAndPlay(0);
-                                                                    isComplete = false;
-                                                                }
-                                                            })
+var isComplete = true;
+ae_btn.addEventListener('mouseenter', function () {
+    if (isComplete) {
+        $(".ae_btn").css("width", "+=40");
+        $("#bm").css("opacity", "1");
+        animation.goToAndPlay(0);
+        isComplete = false;
+    }
+})
                                                     
-                                                            animation.addEventListener('complete', function () {
-                                                                isComplete = true;
-                                                                $(".ae_btn").css("width", "-=40");
-                                                                $("#bm").css("opacity", "0");
-                                                            })
-                                                        </script>
-                                                        </button>
+animation.addEventListener('complete', function () {
+    isComplete = true;
+    $(".ae_btn").css("width", "-=40");
+    $("#bm").css("opacity", "0");
+})
+</script>
+</button>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -711,7 +655,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-sm-12">
+                    <div class="col-xl-4 col-md-4 col-sm-12">
                         <div class="card mb-4 shadow-sm">
                             <h5 class="shadow p-3 mb-2 bg-white rounded">버튼3</h5>
                             <div class="card-body">
@@ -747,14 +691,14 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                          <button class="button button--nina button--border-thin button--round-s" data-text="Create">
-                                                            <span>C</span>
-                                                            <span>r</span>
-                                                            <span>e</span>
-                                                            <span>a</span>
-                                                            <span>t</span>
-                                                            <span>e</span>
-                                                        </button>
+  <button class="button button--nina button--border-thin button--round-s" data-text="Create">
+<span>C</span>
+<span>r</span>
+<span>e</span>
+<span>a</span>
+<span>t</span>
+<span>e</span>
+</button>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -769,7 +713,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-sm-12">
+                    <div class="col-xl-4 col-md-4 col-sm-12">
                         <div class="card mb-4 shadow-sm">
                             <h5 class="shadow p-3 mb-2 bg-white rounded">버튼4</h5>
                             <div class="card-body">
@@ -802,9 +746,9 @@
                                             </div>
                                             <div class="modal-body">
                                                 <textarea class="code-view-box" readonly rows="25">
-                                                            <div class="progress-btn progress-btn-striped progress-btn-animated">
-                                                                사전등록 바로가기
-                                                            </div>
+<div class="progress-btn progress-btn-striped progress-btn-animated">
+    사전등록 바로가기
+</div>
                                                     </textarea>
                                             </div>
                                             <div class="modal-footer">
@@ -818,7 +762,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-sm-12">
+                    <div class="col-xl-4 col-md-4 col-sm-12">
                         <div class="card mb-4 shadow-sm">
                             <h5 class="shadow p-3 mb-2 bg-white rounded">버튼5</h5>
                             <div class="card-body">
@@ -858,11 +802,11 @@
                                             <div class="modal-body">
                                                 <textarea class="code-view-box" readonly rows="25">
                                                     <a class='btn' href='#'>
-                                                        Abstract Submision
-                                                        <span class='line-1'></span>
-                                                        <span class='line-2'></span>
-                                                        <span class='line-3'></span>
-                                                        <span class='line-4'></span>
+Abstract Submision
+<span class='line-1'></span>
+<span class='line-2'></span>
+<span class='line-3'></span>
+<span class='line-4'></span>
                                                     </a>
                                                 </textarea>
                                             </div>
@@ -877,8 +821,7 @@
                         </div>
                     </div>
 
-
-                    <div class="col-xl-4 col-sm-12">
+                    <div class="col-xl-4 col-md-4 col-sm-12">
                         <div class="card mb-4 shadow-sm">
                             <h5 class="shadow p-3 mb-2 bg-white rounded">퀵배너</h5>
                             <div class="card-body">
@@ -908,34 +851,34 @@
                                                     <textarea class="code-view-box" readonly rows="25">
 
 
-                                                                <div id="miniArticle" style="top:137px;">
-                                                                    <ul>
-                                                                        <li><img src="https://via.placeholder.com/50x50"></li>
-                                                                        <li><img src="https://via.placeholder.com/50x50"></li>
-                                                                        <li><img src="https://via.placeholder.com/50x50"></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <script src="js/jquery-3.3.1.js"></script>
-                                                                <script>
-                                                                    $(function () {
-                                                                        var quick_menu = $("#miniArticle");
-                                                                        var quick_top = 137;
-                                                                        // quick menu initialization
-                                                                        quick_menu.css('top', $(window).height());
-                                                                        $(document).ready(function () {
-                                                                            quick_menu.animate({
-                                                                                "top": $(document).scrollTop() + quick_top + "px"
-                                                                            }, 100); //스크롤이 올라갈 때의 속도 값이 높아질수록 부드럽게 움직임
-                                                                            $(window).scroll(function () {
-                                                                                quick_menu.stop();
-                                                                                quick_menu.animate({
-                                                                                    "top": $(document).scrollTop() + quick_top + "px"
-                                                                                }, 500); //스크롤 내려갈 때의 속도
-                                                                            });
-                                                                        });
-                                                                    });
-                                                                </script>
-                                                            </textarea>
+    <div id="miniArticle" style="top:137px;">
+        <ul>
+            <li><img src="https://via.placeholder.com/50x50"></li>
+            <li><img src="https://via.placeholder.com/50x50"></li>
+            <li><img src="https://via.placeholder.com/50x50"></li>
+        </ul>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            var quick_menu = $("#miniArticle");
+            var quick_top = 137;
+            // quick menu initialization
+            quick_menu.css('top', $(window).height());
+            $(document).ready(function () {
+                quick_menu.animate({
+                    "top": $(document).scrollTop() + quick_top + "px"
+                }, 100); //스크롤이 올라갈 때의 속도 값이 높아질수록 부드럽게 움직임
+                $(window).scroll(function () {
+                    quick_menu.stop();
+                    quick_menu.animate({
+                        "top": $(document).scrollTop() + quick_top + "px"
+                    }, 500); //스크롤 내려갈 때의 속도
+                });
+            });
+        });
+    </script>
+</textarea>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -1176,7 +1119,7 @@
                     });
                 })
             </script>
-                                                        
+
 </textarea>
                                             </div>
                                             <div class="modal-footer">
@@ -1262,37 +1205,37 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                        <table class="op-table">
-                                                            <colgroup>
-                                                                <col style="width:20%">
-                                                                <col style="width:50%">
-                                                                <col style="width:30%">
-                                                            </colgroup>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Lorem ips
-                                                                        consequuntur eum quaerat, dignissimos quia animi atque</th>
-                                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</td>
-                                                                    <td>Lorem ipsum dolor</td>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <th>Lorem ipsum dolor sit amet consectetur</th>
-                                                                    <td>Lorem ipsum</td>
-                                                                    <td>Lorem</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th rowspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</th>
-                                                                    <td>Lorem ipsum</td>
-                                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error adipisci ut voluptas quae consequatur, necessitatibus debitis voluptatibus provident qui rem architecto corrupti. Suscipit, neque. Neque voluptas a maiores quae.</td>
-                                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero beatae veritatis fugit eum, maxime quibusdam dicta,</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+<table class="op-table">
+<colgroup>
+    <col style="width:20%">
+    <col style="width:50%">
+    <col style="width:30%">
+</colgroup>
+<thead>
+    <tr>
+        <th>Lorem ips
+            consequuntur eum quaerat, dignissimos quia animi atque</th>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</td>
+        <td>Lorem ipsum dolor</td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th>Lorem ipsum dolor sit amet consectetur</th>
+        <td>Lorem ipsum</td>
+        <td>Lorem</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</th>
+        <td>Lorem ipsum</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error harum aliquam dolorem</td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error adipisci ut voluptas quae consequatur, necessitatibus debitis voluptatibus provident qui rem architecto corrupti. Suscipit, neque. Neque voluptas a maiores quae.</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero beatae veritatis fugit eum, maxime quibusdam dicta,</td>
+    </tr>
+</tbody>
+</table>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -1312,7 +1255,7 @@
                         <div class="card mb-4 shadow-sm">
                             <h5 class="shadow p-3 mb-2 bg-white rounded">테이블 레이아웃1</h5>
                             <div class="card-body">
-                                <div class="card-text h-big">
+                                <div class="card-text">
 
                                     <table class="type01">
                                         <tr>
@@ -1612,12 +1555,12 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                        <ul class="outdent">
-                                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste
-                                                                aperiam consequuntur magnam ad officia</li>
-                                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste
-                                                                aperiam consequuntur magnam ad officia</li>
-                                                        </ul>
+<ul class="outdent">
+<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste
+    aperiam consequuntur magnam ad officia</li>
+<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste
+    aperiam consequuntur magnam ad officia</li>
+</ul>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -1719,7 +1662,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
 
 
@@ -1839,25 +1782,25 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                        <div class="three col">
-                                                            <div class="hamburger" id="hamburger-8">
-                                                              <span class="line"></span>
-                                                              <span class="line"></span>
-                                                              <span class="line"></span>
-                                                            </div>
-                                                          </div>
-                                                          <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-                                                            crossorigin="anonymous"></script>
-                                                          <script>
-                                                            $(document).ready(function () {
-                                                              $(".hamburger").hover(function () {
-                                                                  $(this).toggleClass("is-active");
-                                                                },
-                                                                function () {
-                                                                  $(this).toggleClass("is-active");
-                                                                });
-                                                            });
-                                                          </script>
+<div class="three col">
+<div class="hamburger" id="hamburger-8">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+  <script>
+$(document).ready(function () {
+  $(".hamburger").hover(function () {
+      $(this).toggleClass("is-active");
+    },
+    function () {
+      $(this).toggleClass("is-active");
+    });
+});
+  </script>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -1899,45 +1842,44 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                        +간단한 클릭 팝업창+
-                                                        onClick="window.open('test.html', '팝업제목', 'top=0, left=0, width=1000, height=750, scrollbars=yes');"
++간단한 클릭 팝업창+
+onClick="window.open('test.html', '팝업제목', 'top=0, left=0, width=1000, height=750, scrollbars=yes');"
 
-                                                        +상세한 팝업창+
-                                                        <script type="text/javascript" language="javascript">
-                                                            function getCookie(name) {
-                                                                var nameOfCookie = name + "=";
-                                                                var x = 0;
-                                                                while ( x <= document.cookie.length ) {
-                                                                    var y = (x+nameOfCookie.length);
-                                                                    if ( document.cookie.substring( x, y ) == nameOfCookie ) {
-                                                                        if ( (endOfCookie=document.cookie.indexOf( ";",y )) == -1 ) endOfCookie = document.cookie.length;
-                                                                        return unescape( document.cookie.substring(y, endOfCookie ) );
-                                                                    }
-                                                                    var x = document.cookie.indexOf( " ", x ) + 1;
-                                                                    if ( x == 0 ) break;
-                                                                }
-                                                                return "";
-                                                            }
-                                                            function openCookieWin() {
-                                                            
-                                                            }
-                                                            
-                                                            
-                                                            <?
-                                                            $now = time();
-                                                            $pop_Finish = mktime(17,0,0,5,3,2015);
-                                                            if( $now < $pop_Finish ) {
-                                                                ?>
-                                                                if ( getCookie( "130321" ) != "130321" ){
-                                                                    window.open('/popup/130321_booth.html','130321','left=0,top=0,width=485,height=675,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');
-                                                                }
-                                                            
-                                                            <? }?>
-                                                            </script>
++상세한 팝업창+
+<script type="text/javascript" language="javascript">
+function getCookie(name) {
+    var nameOfCookie = name + "=";
+    var x = 0;
+    while ( x <= document.cookie.length ) {
+        var y = (x+nameOfCookie.length);
+        if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+            if ( (endOfCookie=document.cookie.indexOf( ";",y )) == -1 ) endOfCookie = document.cookie.length;
+            return unescape( document.cookie.substring(y, endOfCookie ) );
+        }
+        var x = document.cookie.indexOf( " ", x ) + 1;
+        if ( x == 0 ) break;
+    }
+    return "";
+}
+function openCookieWin() {
+
+}
 
 
-                                                            +기간 설정+
-                                                            <? 
+<?
+$now = time();
+$pop_Finish = mktime(17,0,0,5,3,2015);
+if( $now < $pop_Finish ) {
+    ?>
+    if ( getCookie( "130321" ) != "130321" ){
+        window.open('/popup/130321_booth.html','130321','left=0,top=0,width=485,height=675,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');
+    }
+
+<? }?>
+</script>
+
++기간 설정+
+<? 
 $now = time();
 $li_banner_start=mktime(0,0,0,8,9,2018);//"시","분","초","월","일","년" 시작 기간
 $li_banner_finish=mktime(23,59,59,12,31,2018); //끝나는 기간
@@ -1961,11 +1903,6 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01
 		$("#<?=$_GET['view']?>").fadeIn();
 </script>
 <? } ?>
-
-                                                            
-
-
-                                                        
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -1999,7 +1936,7 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01
             <p class="float-right">
                 <a href="#">Back to top</a>
             </p>
-            <p>Inforang IT creative team : operating part &copy; <b>email</b> : <a href="mailto:yanggitak@inforang.com">yanggitak@inforang.com</a>
+            <p>operating part &copy; <b>email</b> : <a href="mailto:yanggitak@naver.com">yanggitak@naver.com</a>
             </p>
         </div>
     </footer>

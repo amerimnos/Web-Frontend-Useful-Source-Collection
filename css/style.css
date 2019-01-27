@@ -272,15 +272,15 @@ a.btnW {
     text-decoration: none;
     line-height: inherit;
     word-wrap: break-word;
-    min-width: 175px;
+    min-width: 153px;
 }
 
 .btnW {
     position: relative;
     font-family: Arial, Tahoma, Calibri, "sans-serif";
-    font-size: 1.125em;
+    font-size: 0.925em;
     text-align: center;
-    padding: 12px 40px;
+    padding: 12px 30px;
 }
 
 .btnW:before {
@@ -602,7 +602,7 @@ a.btnW {
 
 .outline-btn .btn {
     position: relative;
-    padding: 10px 20px;
+    padding: 10px 14px;
     border: 1px solid #114c83;
     color: rgb(8, 49, 124);
     text-decoration: none;
