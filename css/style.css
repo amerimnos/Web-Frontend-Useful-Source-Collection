@@ -374,6 +374,7 @@ a.btnW {
 .btnW--tour-home:hover path {
     fill: #fff
 }
+
 /* 버튼2 */
 
 /* 버튼2-2 */
@@ -386,7 +387,7 @@ a.btnW {
     border-radius: 15px;
     overflow: hidden;
     transition: all .5s;
-    
+
 }
 
 .ae_btn .text {
@@ -400,7 +401,7 @@ a.btnW {
     font-size: 20px;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition:  all 0.8s;
+    transition: all 0.8s;
 }
 
 .ae_btn #bm {
@@ -414,6 +415,7 @@ a.btnW {
     vertical-align: middle;
     z-index: 90;
 }
+
 /* 버튼2-2 */
 
 
@@ -970,7 +972,7 @@ a.btnW {
 
 /* 테이블 레이아웃0 */
 .op-table {
-    width:100%;
+    width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
     word-break: break-all;
@@ -980,7 +982,7 @@ a.btnW {
     background-color: bisque;
     border-top: solid 3px #cccccc;
     border-bottom: solid 5px #cccccc;
-    border-bottom-style:double;
+    border-bottom-style: double;
 }
 
 .op-table tr {
@@ -996,154 +998,37 @@ a.btnW {
 .op-table th {
     background-color: #eeeeee;
 }
+
 /* 테이블 레이아웃0 */
 
 
-/* 테이블 레이아웃1 */
 
-table.type01 {
-    border-collapse: collapse;
-    text-align: left;
-    line-height: 1.5;
-    margin: 20px 10px;
-}
-
-table.type01 th {
-    width: 150px;
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: top;
-    border: 1px solid #cccccc;
-}
-
-table.type01 td {
-    width: 350px;
-    padding: 10px;
-    vertical-align: top;
-    border: 1px solid #cccccc;
-}
-
-/* 테이블 레이아웃1 */
-
-
-
-/*테이블 레이아웃2 */
-table.type11 {
-    border-collapse: separate;
-    border-spacing: 1px;
-    text-align: center;
-    line-height: 1.5;
-    margin: 20px 10px;
-}
-
-table.type11 th {
-    width: 155px;
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: top;
-    color: #ffffff;
-    background: #ce4869;
-}
-
-table.type11 td {
-    width: 155px;
-    padding: 10px;
-    vertical-align: top;
-    border-bottom: 1px solid #cccccc;
-    background: #eeeeee;
-}
-
-/*테이블 레이아웃2 */
-
-
-/* 테이블 레이아웃3 */
-table.type07 {
-    border-collapse: collapse;
-    text-align: left;
-    line-height: 1.5;
-    border: 1px solid #ccc;
-    margin: 20px 10px;
-}
-
-table.type07 thead {
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    background: #e7708d;
-}
-
-table.type07 thead th {
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: top;
-    color: #fff;
-}
-
-table.type07 tbody th {
-    width: 150px;
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: top;
-    border-bottom: 1px solid #ccc;
-    background: #fcf1f4;
-}
-
-table.type07 td {
-    width: 350px;
-    padding: 10px;
-    vertical-align: top;
-    border-bottom: 1px solid #ccc;
-}
-
-/* 테이블 레이아웃3 */
 
 
 /* 네온사인 텍스트 */
 .neon {
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     animation: neon 3s linear infinite alternate;
 }
 
 @keyframes neon {
     0% {
-        text-shadow:
-            0px 0px 20px rgb(226, 139, 25),
-            0px 0px 50px rgb(226, 139, 25),
-            0px 0px 70px rgb(226, 139, 25),
-            0px 0px 90px rgb(226, 139, 25),
-            0px 0px 100px rgb(226, 139, 25);
+        text-shadow: 0px 0px 5px #e6bd88, 0px 0px 10px #e6bd88, 0px 0px 15px #e6bd88, 0px 0px 20px #e6bd88, 0px 0px 25px #e6bd88;
     }
 
     33% {
-        text-shadow:
-            0px 0px 30px #03dd65,
-            0px 0px 60px #03dd65,
-            0px 0px 80px #03dd65,
-            0px 0px 100px #03dd65,
-            0px 0px 110px #03dd65;
-
+        text-shadow: 0px 0px 5px #e5e688, 0px 0px 10px #e5e688, 0px 0px 15px #e5e688, 0px 0px 20px #e5e688, 0px 0px 25px #e5e688;
     }
 
     66% {
-        text-shadow:
-            0px 0px 40px #032bdd,
-            0px 0px 70px #032bdd,
-            0px 0px 90px #032bdd,
-            0px 0px 110px #032bdd,
-            0px 0px 140px #032bdd;
+        text-shadow: 0px 0px 5px #d092d8, 0px 0px 10px #d092d8, 0px 0px 15px #d092d8, 0px 0px 20px #d092d8, 0px 0px 25px #d092d8;
     }
 
     100% {
-        text-shadow:
-            0px 0px 90px #dd03d2,
-            0px 0px 120px #dd03d2,
-            0px 0px 140px #dd03d2,
-            0px 0px 160px #dd03d2,
-            0px 0px 170px #dd03d2;
-
+        text-shadow: 0px 0px 5px #b35cae, 0px 0px 10px #b35cae, 0px 0px 15px #b35cae, 0px 0px 20px #b35cae, 0px 0px 25px #b35cae;
     }
 }
-
 /* 네온사인 텍스트 */
 
 
@@ -1275,7 +1160,7 @@ video {
 
 .tab-panels ul li div {
     bottom: 0;
-    background: #e97547;
+    background: #34adae;
     height: 2px;
     width: 0%;
     transition: width .2s ease-in-out;
