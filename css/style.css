@@ -149,7 +149,7 @@
 
 .tri1 {
     width: 100%;
-    height: 40px;
+    height: 15px;
     background-color: rgb(42, 126, 182);
     border: solid 1px gray;
     opacity: 0;
@@ -157,7 +157,7 @@
 
 .tri2 {
     width: 100%;
-    height: 40px;
+    height: 15px;
     background-color: bisque;
     border: solid 1px gray;
     opacity: 0;
@@ -165,7 +165,7 @@
 
 .tri3 {
     width: 100%;
-    height: 40px;
+    height: 15px;
     background-color: rgb(196, 255, 211);
     border: solid 1px gray;
     opacity: 0;
@@ -173,7 +173,7 @@
 
 .tri4 {
     width: 100%;
-    height: 40px;
+    height: 15px;
     background-color: rgb(200, 196, 255);
     border: solid 1px gray;
     opacity: 0;
@@ -181,7 +181,7 @@
 
 .tri5 {
     width: 100%;
-    height: 40px;
+    height: 15px;
     background-color: rgb(255, 196, 228);
     border: solid 1px gray;
     opacity: 0;
@@ -1272,5 +1272,22 @@ video {
     -o-transform: translateY(0px) rotate(0deg);
     transform: translateY(0px) rotate(0deg);
 }
-
 /* 십자가 버튼 */
+
+/* 동그라미 숫자 */
+.circle-num{
+    margin: 0;
+    padding: 0;
+    width: 21px;
+    line-height: 20px;
+    box-sizing: border-box;
+    height: 24px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 0px;
+    display: inline-block;
+    background: url(https://github.com/Medrang-Inforang/Amerimnos/blob/master/source/circle-bg.png) no-repeat 2px -3px;
+    font-family: 'Nanum Gothic', sans-serif;
+	}
+
+/* 동그라미 숫자 */
