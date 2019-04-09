@@ -1296,7 +1296,7 @@ video {
 
 
 
-/* 접혔다 펴졌다 */
+/* 클릭시 접히고 펼쳐지는 기능 */
 .faq-list {
     margin-top: 40px;
     border-top: 1px solid #ddd;
@@ -1353,4 +1353,4 @@ video {
     background-image: url("https://5g.kt.com/shop5g/images/pc/main/arrow-top.png");
 }
 
-/* 접혔다 펴졌다 */
+/* 클릭시 접히고 펼쳐지는 기능 */
