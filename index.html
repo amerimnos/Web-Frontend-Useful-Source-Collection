@@ -32,8 +32,10 @@
             <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mr-2">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                        </path>
                         <circle cx="12" cy="13" r="4"></circle>
                     </svg>
                     <strong>Oparating Templete</strong>
@@ -108,7 +110,8 @@
                                         </div>
 
                                     </div>
-                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                    <script
+                                        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                                     <script>
                                         $(function () {
 
@@ -151,8 +154,8 @@
                                     </p>
                                     <div class="d-flex justify-content-start align-items-center mt-2">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                                data-target="#exampleModal">View Code</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-toggle="modal" data-target="#exampleModal">View Code</button>
                                         </div>
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -212,47 +215,48 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                  
 <script>
-$(function () {
-                    
-    $(".tab_content").hide();
-    $(".tab_content:first").show();
-                    
-    $(".ygt-nav a").click(function () {
-        $(".ygt-nav a").removeClass("active");
-        $(this).addClass("active");
-        $(".tab_content").hide()
-        var activeTab = $(this).attr("rel");
-        $("#" + activeTab).fadeIn()
+    $(function () {
+
+        $(".tab_content").hide();
+        $(".tab_content:first").show();
+
+        $(".ygt-nav a").click(function () {
+            $(".ygt-nav a").removeClass("active");
+            $(this).addClass("active");
+            $(".tab_content").hide()
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn()
+        });
     });
-});
 </script>       
 <script type="text/javascript">
-var nav = $(".ygt-nav"),
-    navigation_links = $(".ygt-nav a"),
-    highlight = $(".ygt-nav a.highlight");
-                    
-// 처음 시작용
-$(navigation_links[0]).addClass("active");
-highlight.css({
-    left: navigation_links[0].offsetLeft + "px",
-    height: navigation_links[0].offsetHeight + "px",
-    width: navigation_links[0].offsetWidth + "px"
-});
-// highlight.css("height", navigation_links[0].offsetHeight + "px");
-                    
-$(navigation_links).on("click", function () {
-    $(navigation_links).removeClass("active");
-    $(this).addClass("active");
+    var nav = $(".ygt-nav"),
+        navigation_links = $(".ygt-nav a"),
+        highlight = $(".ygt-nav a.highlight");
+
+    // 처음 시작용
+    $(navigation_links[0]).addClass("active");
     highlight.css({
-        left: this.offsetLeft + "px",
-        width: this.offsetWidth + "px"
+        left: navigation_links[0].offsetLeft + "px",
+        height: navigation_links[0].offsetHeight + "px",
+        width: navigation_links[0].offsetWidth + "px"
     });
-});
+    // highlight.css("height", navigation_links[0].offsetHeight + "px");
+
+    $(navigation_links).on("click", function () {
+        $(navigation_links).removeClass("active");
+        $(this).addClass("active");
+        highlight.css({
+            left: this.offsetLeft + "px",
+            width: this.offsetWidth + "px"
+        });
+    });
 </script>
                                                     </textarea>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
 
                                                     </div>
                                                 </div>
@@ -275,26 +279,27 @@ $(navigation_links).on("click", function () {
                                         <div class="map1"></div>
                                         <div class="map2"></div>
                                     </div>
-                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                                    <script
+                                        src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                                     <script>
                                         $(document).ready(function () {
                                             $('.map2').mouseenter(function () {
                                                 $(this).css('z-index', -2)
                                             })
-                                
+
                                             $('.map1').mouseleave(function () {
-                                
+
                                                 $('.map2').css('z-index', 15)
-                                
+
                                             })
-                                
+
                                         })
                                     </script>
                                     </p>
                                     <div class="d-flex justify-content-start align-items-center mt-2">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                                data-target="#exampleModal2">View Code</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-toggle="modal" data-target="#exampleModal2">View Code</button>
                                         </div>
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
@@ -317,23 +322,24 @@ $(navigation_links).on("click", function () {
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-$(document).ready(function () {
-    $('.map2').mouseenter(function () {
-        $(this).css('z-index', -2)
+    $(document).ready(function () {
+        $('.map2').mouseenter(function () {
+            $(this).css('z-index', -2)
+        })
+
+        $('.map1').mouseleave(function () {
+
+            $('.map2').css('z-index', 15)
+
+        })
+
     })
-                                                    
-    $('.map1').mouseleave(function () {
-                                                    
-        $('.map2').css('z-index', 15)
-                                                    
-    })
-                                                    
-})
 </script>
                                                     </textarea>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -357,27 +363,28 @@ $(document).ready(function () {
                                         <div class="tri4"></div>
                                         <div class="tri5"></div>
                                     </div>
-                                    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                                    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                                        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                                         crossorigin="anonymous"></script>
                                     <script>
                                         $(document).ready(function () {
-for (var z = 1; z < 13; z++) {
-//자기 선언함수 써서 for문 안에 있는것이 순서대로 적용됨. 이거 안쓰고 그냥 함수 쓰면 한번에 10개가 뭉뚱그려서 적용되어 동일한 증상 발생. 
-(function (z) {
-    //1~12 정수가 랜덤으로 나오도록
-    var randoms = Math.floor((Math.random() * 13) + 1)
-    $('.tri' + z).stop(true).delay(randoms * 200).animate({
-        opacity: 1
-    }, 1500);
-})(z)
-}
-                                                    })
+                                            for (var z = 1; z < 13; z++) {
+                                                //자기 선언함수 써서 for문 안에 있는것이 순서대로 적용됨. 이거 안쓰고 그냥 함수 쓰면 한번에 10개가 뭉뚱그려서 적용되어 동일한 증상 발생. 
+                                                (function (z) {
+                                                    //1~12 정수가 랜덤으로 나오도록
+                                                    var randoms = Math.floor((Math.random() * 13) + 1)
+                                                    $('.tri' + z).stop(true).delay(randoms * 200).animate({
+                                                        opacity: 1
+                                                    }, 1500);
+                                                })(z)
+                                            }
+                                        })
                                     </script>
                                     </p>
                                     <div class="d-flex justify-content-start align-items-center mt-2">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                                data-target="#exampleModal3">View Code</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-toggle="modal" data-target="#exampleModal3">View Code</button>
                                         </div>
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
@@ -420,7 +427,8 @@ for (var z = 1; z < 13; z++) {
 </textarea>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -442,8 +450,8 @@ for (var z = 1; z < 13; z++) {
                                     </p>
                                     <div class="d-flex justify-content-start align-items-center mt-2">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                                data-target="#exampleModal4">View Code</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-toggle="modal" data-target="#exampleModal4">View Code</button>
                                         </div>
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog"
@@ -464,7 +472,8 @@ for (var z = 1; z < 13; z++) {
                                                         </textarea>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -482,11 +491,14 @@ for (var z = 1; z < 13; z++) {
                             <div class="card-body">
                                 <div class="card-text">
 
-                                    <a href="https://elimchan.com/concerts" class="btnW btnW--border btnW--center btnW--tour-home">
+                                    <a href="https://elimchan.com/concerts"
+                                        class="btnW btnW--border btnW--center btnW--tour-home">
                                         <span class="btnW-text">다운로드</span>
                                         <span class="btnW-arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="7" viewBox="0 0 16 7">
-                                                <path fill="#174233" fill-rule="nonzero" d="M12.727 0L16 3.394l-3.273 3.394V4.245H0V2.74h12.73z">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="7"
+                                                viewBox="0 0 16 7">
+                                                <path fill="#174233" fill-rule="nonzero"
+                                                    d="M12.727 0L16 3.394l-3.273 3.394V4.245H0V2.74h12.73z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -496,8 +508,8 @@ for (var z = 1; z < 13; z++) {
                                     </p>
                                     <div class="d-flex justify-content-start align-items-center mt-2">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                                data-target="#exampleModal5">View
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-toggle="modal" data-target="#exampleModal5">View
                                                 Code</button>
                                         </div>
                                         <!-- Modal -->
@@ -532,7 +544,8 @@ for (var z = 1; z < 13; z++) {
                                                     </textarea>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -555,8 +568,10 @@ for (var z = 1; z < 13; z++) {
                                         <div id="bm"></div>
                                     </div>
 
-                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
+                                    <script
+                                        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                    <script
+                                        src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
                                     <script>
                                         var ae_btn = document.querySelector('.ae_btn')
                                         var svgWarp = document.getElementById('bm')
@@ -567,7 +582,7 @@ for (var z = 1; z < 13; z++) {
                                             autoplay: false,
                                             path: 'ball_throwing.json'
                                         })
-                                
+
                                         var isComplete = true;
                                         ae_btn.addEventListener('mouseenter', function () {
                                             if (isComplete) {
@@ -577,7 +592,7 @@ for (var z = 1; z < 13; z++) {
                                                 isComplete = false;
                                             }
                                         })
-                                
+
                                         animation.addEventListener('complete', function () {
                                             isComplete = true;
                                             $(".ae_btn").css("width", "-=40");
@@ -587,8 +602,8 @@ for (var z = 1; z < 13; z++) {
 
                                     <div class="d-flex justify-content-start align-items-center mt-2">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                                data-target="#exampleModal5-1">View
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-toggle="modal" data-target="#exampleModal5-1">View
                                                 Code
                                             </button>
                                         </div>
@@ -601,7 +616,8 @@ for (var z = 1; z < 13; z++) {
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -615,37 +631,38 @@ for (var z = 1; z < 13; z++) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
 <script>
-var ae_btn = document.querySelector('.ae_btn')
-var svgWarp = document.getElementById('bm')
-var animation = bodymovin.loadAnimation({
-    container: svgWarp,
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    path: 'ball_throwing.json'
-})
-                                                    
-var isComplete = true;
-ae_btn.addEventListener('mouseenter', function () {
-    if (isComplete) {
-        $(".ae_btn").css("width", "+=40");
-        $("#bm").css("opacity", "1");
-        animation.goToAndPlay(0);
-        isComplete = false;
-    }
-})
-                                                    
-animation.addEventListener('complete', function () {
-    isComplete = true;
-    $(".ae_btn").css("width", "-=40");
-    $("#bm").css("opacity", "0");
-})
+    var ae_btn = document.querySelector('.ae_btn')
+    var svgWarp = document.getElementById('bm')
+    var animation = bodymovin.loadAnimation({
+        container: svgWarp,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: 'ball_throwing.json'
+    })
+
+    var isComplete = true;
+    ae_btn.addEventListener('mouseenter', function () {
+        if (isComplete) {
+            $(".ae_btn").css("width", "+=40");
+            $("#bm").css("opacity", "1");
+            animation.goToAndPlay(0);
+            isComplete = false;
+        }
+    })
+
+    animation.addEventListener('complete', function () {
+        isComplete = true;
+        $(".ae_btn").css("width", "-=40");
+        $("#bm").css("opacity", "0");
+    })
 </script>
 </button>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -661,7 +678,8 @@ animation.addEventListener('complete', function () {
                             <h5 class="shadow p-3 mb-2 bg-white rounded">버튼3</h5>
                             <div class="card-body">
                                 <div class="card-text">
-                                    <button class="button button--nina button--border-thin button--round-s" data-text="Create">
+                                    <button class="button button--nina button--border-thin button--round-s"
+                                        data-text="Create">
                                         <span>C</span>
                                         <span>r</span>
                                         <span>e</span>
@@ -672,8 +690,8 @@ animation.addEventListener('complete', function () {
 
                                     <div class="d-flex justify-content-start align-items-center mt-2">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                                data-target="#exampleModal6">View
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-toggle="modal" data-target="#exampleModal6">View
                                                 Code
                                             </button>
                                         </div>
@@ -686,7 +704,8 @@ animation.addEventListener('complete', function () {
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -703,7 +722,8 @@ animation.addEventListener('complete', function () {
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -727,21 +747,22 @@ animation.addEventListener('complete', function () {
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal15">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal15">View
                                             Code
                                         </button>
                                     </div>
                                 </div>
                                 <!-- Modal -->
-                                <div class="modal fade" id="exampleModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                                    aria-hidden="true">
+                                <div class="modal fade" id="exampleModal15" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">View
                                                     Code Details</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -753,7 +774,8 @@ animation.addEventListener('complete', function () {
                                                     </textarea>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
                                             </div>
                                         </div>
                                     </div>
@@ -782,8 +804,8 @@ animation.addEventListener('complete', function () {
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal15-1">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal15-1">View
                                             Code
                                         </button>
                                     </div>
@@ -796,7 +818,8 @@ animation.addEventListener('complete', function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">View
                                                     Code Details</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -812,7 +835,8 @@ Abstract Submision
                                                 </textarea>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
                                             </div>
                                         </div>
                                     </div>
@@ -832,8 +856,8 @@ Abstract Submision
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal7">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal7">View
                                             Code</button>
                                     </div>
                                     <!-- Modal -->
@@ -844,7 +868,8 @@ Abstract Submision
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -882,7 +907,8 @@ Abstract Submision
 </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -941,7 +967,9 @@ Abstract Submision
                                         </ul>
                                         <ul>
                                             <li><a href="/abstract/2018_wclc/booth/info.html">전시부스</a></li>
-                                            <li><a href="http://www.ksmo.or.kr/abstract/2018_wclc/booth/login.html">부스신청확인</a></li>
+                                            <li><a
+                                                    href="http://www.ksmo.or.kr/abstract/2018_wclc/booth/login.html">부스신청확인</a>
+                                            </li>
 
                                         </ul>
                                         <ul>
@@ -958,14 +986,15 @@ Abstract Submision
                                         Code</button>
                                 </div>
                                 <!-- Modal -->
-                                <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                                    aria-hidden="true">
+                                <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">View
                                                     Code Details</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -1019,7 +1048,8 @@ Abstract Submision
 </textarea>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1058,7 +1088,7 @@ Abstract Submision
 
                                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                                 <script>
-                                    $(document).ready(function(){
+                                    $(document).ready(function () {
                                         $("#gnb-left .depth1-left_li").mouseenter(function () {
                                             $(".depth2_ul", this).slideDown(300);
                                         });
@@ -1085,7 +1115,8 @@ Abstract Submision
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">View
                                                     Code Details</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -1110,7 +1141,7 @@ Abstract Submision
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script>
-                $(document).ready(function(){
+                $(document).ready(function () {
                     $("#gnb-left .depth1-left_li").mouseenter(function () {
                         $(".depth2_ul", this).slideDown(300);
                     });
@@ -1124,7 +1155,166 @@ Abstract Submision
 </textarea>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card mb-4 shadow-sm">
+                        <h5 class="shadow p-3 mb-2 bg-white rounded">클릭시 접히고 펼쳐지는 기능</h5>
+                        <div class="card-body">
+                            <div class="card-text h-big">
+
+                                <ul class="faq-list">
+                                    <li>
+                                        <div class="head">
+                                            <a href="javascript:;" class="question" title="내용 보기"><span
+                                                    class="hidden">질문</span>5G가 상용화 되면 지금 폰은 그대로 쓸 수
+                                                있나요?</a>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="answer"><span class="hidden">답변</span>
+                                                5G의 빠른 속도와 고품질 서비스는
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="head">
+                                            <a href="javascript:;" class="question" title="내용 보기"><span
+                                                    class="hidden">질문</span>KT는 어떤 5G 장비를 사용하나요?</a>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="answer"><span class="hidden">답변</span>
+                                                KT는 지난 11월 8일 보도를 통해 삼성전자
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="head">
+                                            <a href="javascript:;" class="question" title="내용 보기"><span
+                                                    class="hidden">질문</span>LTE랑 호환해서 사용한다면</a>
+                                        </div>
+                                        <div class="cont">
+                                            <p class="answer"><span class="hidden">답변</span>
+                                                초기 5G단말은 화면이 커지고, 고화질/고품질 서비스
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+                                <script>
+                                    // main - FAQ
+                                    var $faq = $('.faq-list');
+                                    var $faq_question = $faq.find('li .head');
+
+                                    $faq_question.on('click', function (e) {
+                                        e.preventDefault();
+
+                                        $faq.find('.cont').slideUp();
+                                        $faq.find('.question').attr('title', '내용 보기');
+                                        $faq_question.removeClass('active');
+
+                                        if (!$(this).next().is(':visible')) {
+                                            $(this).next().slideDown();
+                                            $(this).find('.question').attr('title', '내용 닫기');
+                                            $(this).addClass('active');
+                                        }
+                                    });
+                                </script>
+
+
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center mt-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                                        data-target="#exampleModal9_2">View
+                                        Code</button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal9_2" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">View
+                                                    Code Details</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea class="code-view-box" readonly rows="25">
+                                                    <ul class="faq-list">
+                                                        <li>
+                                                           <div class="head">
+                                                              <a href="javascript:;" class="question" title="내용 보기"><span class="hidden">질문</span>5G가 상용화 되면 지금 폰은 그대로 쓸 수
+                                                                 있나요?</a>
+                                                           </div>
+                                                           <div class="cont">
+                                                              <div class="answer"><span class="hidden">답변</span>
+                                                                 5G의 빠른 속도와 고품질 서비스는 
+                                                              </div>
+                                                           </div>
+                                                        </li>
+                                                        <li>
+                                                           <div class="head">
+                                                              <a href="javascript:;" class="question" title="내용 보기"><span class="hidden">질문</span>KT는 어떤 5G 장비를 사용하나요?</a>
+                                                           </div>
+                                                           <div class="cont">
+                                                              <div class="answer"><span class="hidden">답변</span>
+                                                                 KT는 지난 11월 8일 보도를 통해 삼성전자
+                                                              </div>
+                                                           </div>
+                                                        </li>
+                                                        <li>
+                                                           <div class="head">
+                                                              <a href="javascript:;" class="question" title="내용 보기"><span class="hidden">질문</span>LTE랑 호환해서 사용한다면</a>
+                                                           </div>
+                                                           <div class="cont">
+                                                              <p class="answer"><span class="hidden">답변</span>
+                                                                 초기 5G단말은 화면이 커지고, 고화질/고품질 서비스
+                                                              </p>
+                                                           </div>
+                                                        </li>
+                                                     </ul>
+
+            <script src="https://5g.kt.com/common/pc/js/jquery-1.11.3.min.js"></script>
+   <script>
+    // main - FAQ
+    var $faq = $('.faq-list');
+    var $faq_question = $faq.find('li .head');
+
+    $faq_question.on('click', function (e) {
+        e.preventDefault();
+
+        $faq.find('.cont').slideUp();
+        $faq.find('.question').attr('title', '내용 보기');
+        $faq_question.removeClass('active');
+
+        if (!$(this).next().is(':visible')) {
+            $(this).next().slideDown();
+            $(this).find('.question').attr('title', '내용 닫기');
+            $(this).addClass('active');
+        }
+    });
+</script>
+
+</textarea>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1188,8 +1378,8 @@ Abstract Submision
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal9-1">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal9-1">View
                                             Code</button>
                                     </div>
                                     <!-- Modal -->
@@ -1200,7 +1390,8 @@ Abstract Submision
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -1240,7 +1431,8 @@ Abstract Submision
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1260,8 +1452,8 @@ Abstract Submision
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal12">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal12">View
                                             Code</button>
                                     </div>
                                     <!-- Modal -->
@@ -1272,7 +1464,8 @@ Abstract Submision
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -1282,7 +1475,8 @@ Abstract Submision
 </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1307,8 +1501,8 @@ Abstract Submision
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal13">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal13">View
                                             Code</button>
                                     </div>
                                     <!-- Modal -->
@@ -1319,7 +1513,8 @@ Abstract Submision
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -1334,7 +1529,8 @@ Abstract Submision
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1366,8 +1562,10 @@ Abstract Submision
                                                     </li>
                                                 </ul>
                                                 <div id="panel1" class="panel-vid active">
-                                                    <video class="video-js" width="100%" height="215px" poster="Reversed MRL-LDLT by using donor with situs inversus totalis.PNG">
-                                                        <source src="Reversed MRL-LDLT by using donor with situs inversus totalis.mp4"
+                                                    <video class="video-js" width="100%" height="215px"
+                                                        poster="Reversed MRL-LDLT by using donor with situs inversus totalis.PNG">
+                                                        <source
+                                                            src="Reversed MRL-LDLT by using donor with situs inversus totalis.mp4"
                                                             type="video/mp4">
                                                     </video>
                                                     <div class="vid-bottom-txt">
@@ -1378,8 +1576,10 @@ Abstract Submision
                                                     </div>
                                                 </div>
                                                 <div id="panel2" class="panel-vid">
-                                                    <video class="video-js" width="100%" height="215px" poster="Donor hepatectomy_ Left trisegmentectomy with caudate lobe.PNG">
-                                                        <source src="Donor hepatectomy_ Left trisegmentectomy with caudate lobe.mp4"
+                                                    <video class="video-js" width="100%" height="215px"
+                                                        poster="Donor hepatectomy_ Left trisegmentectomy with caudate lobe.PNG">
+                                                        <source
+                                                            src="Donor hepatectomy_ Left trisegmentectomy with caudate lobe.mp4"
                                                             type="video/mp4">
                                                     </video>
                                                     <div class="vid-bottom-txt">
@@ -1393,29 +1593,30 @@ Abstract Submision
                                     </div>
 
                                     <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
-                                    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                                    <script src="https://code.jquery.com/jquery-3.3.1.js"
+                                        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
                                         crossorigin="anonymous"></script>
                                     <script>
                                         $(function () {
-            $(".tab-panels ul li").on("click", function () {
-                $(".tab-panels ul li.active").removeClass("active");
-                $(this).addClass("active");
-                var toShow = $(this).attr("rel");
-                $(".panel-vid.active").slideUp(125, function () {
-                    $(this).removeClass("active");
-                    $("#" + toShow).slideDown(125, function () {
-                        $(this).addClass("active");
-                    });
-                });
-            });
-        })
-    </script>
+                                            $(".tab-panels ul li").on("click", function () {
+                                                $(".tab-panels ul li.active").removeClass("active");
+                                                $(this).addClass("active");
+                                                var toShow = $(this).attr("rel");
+                                                $(".panel-vid.active").slideUp(125, function () {
+                                                    $(this).removeClass("active");
+                                                    $("#" + toShow).slideDown(125, function () {
+                                                        $(this).addClass("active");
+                                                    });
+                                                });
+                                            });
+                                        })
+                                    </script>
 
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal13_1">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal13_1">View
                                             Code</button>
                                     </div>
                                     <!-- Modal -->
@@ -1426,7 +1627,8 @@ Abstract Submision
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -1495,7 +1697,8 @@ Abstract Submision
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1517,25 +1720,26 @@ Abstract Submision
                                             <span class="line"></span>
                                         </div>
                                     </div>
-                                    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                                    <script src="https://code.jquery.com/jquery-3.3.1.js"
+                                        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
                                         crossorigin="anonymous"></script>
                                     <script>
                                         $(document).ready(function () {
-                                          $(".hamburger").hover(function () {
-                                              $(this).toggleClass("is-active");
+                                            $(".hamburger").hover(function () {
+                                                $(this).toggleClass("is-active");
                                             },
-                                            function () {
-                                              $(this).toggleClass("is-active");
-                                            });
+                                                function () {
+                                                    $(this).toggleClass("is-active");
+                                                });
                                         });
-                                      </script>
+                                    </script>
 
 
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal13_2">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal13_2">View
                                             Code</button>
                                     </div>
                                     <!-- Modal -->
@@ -1546,7 +1750,8 @@ Abstract Submision
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -1562,19 +1767,20 @@ Abstract Submision
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 crossorigin="anonymous"></script>
   <script>
-$(document).ready(function () {
-  $(".hamburger").hover(function () {
-      $(this).toggleClass("is-active");
-    },
-    function () {
-      $(this).toggleClass("is-active");
+    $(document).ready(function () {
+        $(".hamburger").hover(function () {
+            $(this).toggleClass("is-active");
+        },
+            function () {
+                $(this).toggleClass("is-active");
+            });
     });
-});
-  </script>
+</script>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1593,8 +1799,8 @@ $(document).ready(function () {
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal14">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal14">View
                                             Code</button>
                                     </div>
                                     <!-- Modal -->
@@ -1605,7 +1811,8 @@ $(document).ready(function () {
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -1616,7 +1823,8 @@ $(document).ready(function () {
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1636,8 +1844,8 @@ $(document).ready(function () {
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                                            data-target="#exampleModal14">View
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal14">View
                                             Code</button>
                                     </div>
                                     <!-- Modal -->
@@ -1648,7 +1856,8 @@ $(document).ready(function () {
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLabel">View
                                                         Code Details</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -1659,33 +1868,33 @@ onClick="window.open('test.html', '팝업제목', 'top=0, left=0, width=1000, he
 
 +상세한 팝업창+
 <script type="text/javascript" language="javascript">
-function getCookie(name) {
-    var nameOfCookie = name + "=";
-    var x = 0;
-    while ( x <= document.cookie.length ) {
-        var y = (x+nameOfCookie.length);
-        if ( document.cookie.substring( x, y ) == nameOfCookie ) {
-            if ( (endOfCookie=document.cookie.indexOf( ";",y )) == -1 ) endOfCookie = document.cookie.length;
-            return unescape( document.cookie.substring(y, endOfCookie ) );
+    function getCookie(name) {
+        var nameOfCookie = name + "=";
+        var x = 0;
+        while (x <= document.cookie.length) {
+            var y = (x + nameOfCookie.length);
+            if (document.cookie.substring(x, y) == nameOfCookie) {
+                if ((endOfCookie = document.cookie.indexOf(";", y)) == -1) endOfCookie = document.cookie.length;
+                return unescape(document.cookie.substring(y, endOfCookie));
+            }
+            var x = document.cookie.indexOf(" ", x) + 1;
+            if (x == 0) break;
         }
-        var x = document.cookie.indexOf( " ", x ) + 1;
-        if ( x == 0 ) break;
+        return "";
     }
-    return "";
-}
-function openCookieWin() {
+    function openCookieWin() {
 
-}
+    }
 
 
 <?
-$now = time();
-$pop_Finish = mktime(17,0,0,5,3,2015);
-if( $now < $pop_Finish ) {
+        $now = time();
+    $pop_Finish = mktime(17, 0, 0, 5, 3, 2015);
+    if ($now < $pop_Finish) {
     ?>
-    if ( getCookie( "130321" ) != "130321" ){
-        window.open('/popup/130321_booth.html','130321','left=0,top=0,width=485,height=675,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');
-    }
+    if (getCookie("130321") != "130321") {
+            window.open('/popup/130321_booth.html', '130321', 'left=0,top=0,width=485,height=675,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');
+        }
 
 <? }?>
 </script>
@@ -1710,15 +1919,16 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01
 
 <? if($_GET['view']) { ?>
 <script>
-		$("#popup,.dimmed").fadeIn();
-		$("body").addClass("hidden");
-		$("#<?=$_GET['view']?>").fadeIn();
+        $("#popup,.dimmed").fadeIn();
+    $("body").addClass("hidden");
+    $("#<?=$_GET['view']?>").fadeIn();
 </script>
 <? } ?>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
