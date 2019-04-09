@@ -1029,6 +1029,7 @@ a.btnW {
         text-shadow: 0px 0px 5px #b35cae, 0px 0px 10px #b35cae, 0px 0px 15px #b35cae, 0px 0px 20px #b35cae, 0px 0px 25px #b35cae;
     }
 }
+
 /* 네온사인 텍스트 */
 
 
@@ -1272,10 +1273,11 @@ video {
     -o-transform: translateY(0px) rotate(0deg);
     transform: translateY(0px) rotate(0deg);
 }
+
 /* 십자가 버튼 */
 
 /* 동그라미 숫자 */
-.circle-num{
+.circle-num {
     margin: 0;
     padding: 0;
     width: 21px;
@@ -1288,6 +1290,67 @@ video {
     display: inline-block;
     background: url(https://raw.githubusercontent.com/Medrang-Inforang/Amerimnos/master/source/circle-bg.png) no-repeat 2px -3px;
     font-family: 'Nanum Gothic', sans-serif;
-	}
+}
 
 /* 동그라미 숫자 */
+
+
+
+/* 접혔다 펴졌다 */
+.faq-list {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    list-style-type: none;
+}
+
+.faq-list li:not(:first-child) {
+    border-top: 1px solid #ddd;
+}
+
+.faq-list .head {
+    position: relative;
+    padding: 8px 0;
+}
+
+.faq-list .head .question {
+    display: block;
+    padding: 4px 50px 5px 50px;
+    background: url("https://5g.kt.com/shop5g/images/pc/main/icon-q.png") no-repeat left 10px top;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faq-list .head .question:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    width: 30px;
+    height: 16px;
+    background-image: url("https://5g.kt.com/shop5g/images/pc/main/arrow-bottom.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+
+.faq-list .cont {
+    display: none;
+    padding: 12px 50px;
+    border-top: 1px dashed #cacaca;
+    background: #f8f8f8;
+}
+
+.faq-list .cont .answer {
+    padding: 4px 40px 8px 40px;
+    background: url("https://5g.kt.com/shop5g/images/pc/main/icon-a.png") no-repeat left top;
+    color: #666;
+    font-size: 15px;
+}
+
+.faq-list .active .question:after {
+    background-image: url("https://5g.kt.com/shop5g/images/pc/main/arrow-top.png");
+}
+
+/* 접혔다 펴졌다 */
