@@ -1354,3 +1354,29 @@ video {
 }
 
 /* 클릭시 접히고 펼쳐지는 기능 */
+
+
+/* 모달 팝업 */
+#pos {position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7);z-index:99999; }
+#popUp {
+	width:400px;
+	height:400px;
+	position:absolute;
+	top:53%; 
+	left:50%; 
+	margin:-200px 0 0 -200px; 
+	padding:15px 20px;
+	z-index:99999;
+	font-family:'나눔고딕','맑은 고딕';
+}
+.popup_view {
+	background:rgb(255,255,255); 
+	z-index:999;
+	border-radius:10px;
+}
+.popup_view ul { margin-left:0px; font-size:14px;line-height:25px; margin-bottom:20px; }
+.popup_view ul li { line-height:20px; }
+.pop_title { color:#000000;font-weight:bold;text-align:center; font-size:22px; height:60px; line-height:60px; margin-bottom:20px;}
+.pop_title span { background-color:red; padding:5px 10px; }
+
+/* 모달 팝업 */
