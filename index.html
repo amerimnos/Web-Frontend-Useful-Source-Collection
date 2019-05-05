@@ -1334,7 +1334,8 @@ Abstract Submision
                                 <div class="wrapper-updown">
                                     <ui class="mainMenu">
                                         <li class="updown-item" id="account">
-                                            <a href="#account" class="updown-btn"><i class="fas fa-user-circle"></i>My Account</a>
+                                            <a href="#account" class="updown-btn"><i class="fas fa-user-circle"></i>My
+                                                Account</a>
                                             <div class="subMenu">
                                                 <a href="">item-1</a>
                                                 <a href="">item-2</a>
@@ -1342,7 +1343,8 @@ Abstract Submision
                                             </div>
                                         </li>
                                         <li class="updown-item" id="about">
-                                            <a href="#about" class="updown-btn"><i class="fas fa-address-card"></i>About</a>
+                                            <a href="#about" class="updown-btn"><i
+                                                    class="fas fa-address-card"></i>About</a>
                                             <div class="subMenu">
                                                 <a href="">item-1</a>
                                                 <a href="">item-2</a>
@@ -1350,7 +1352,7 @@ Abstract Submision
                                         </li>
                                     </ui>
                                 </div>
-                        
+
                             </div>
                             <div class="d-flex justify-content-start align-items-center mt-2">
                                 <div class="btn-group">
@@ -1925,25 +1927,66 @@ crossorigin="anonymous"></script>
                             <h5 class="shadow p-3 mb-2 bg-white rounded">모달 팝업</h5>
                             <div class="card-body">
                                 <div class="card-text">
-                                    <div id='lay'>
-                                        <div id="pos" class="pos_box">	
-                                            <div id="popUp" class="popup_view">
-                                                <div class="pop_title"><input style="position:absolute;right:20px;" type="image" src="http://www.ophthalmology.org/abstract/2018_119/img/pop_x2.png" onclick="document.getElementById('lay').style.display='none';" />
-                                               컨텐츠 
-                                    
-                                    </div>
-                                    
-                                                <table class="popup_table" align="center">
-                                    
-                                                    <tbody>
-                                                    <tr>
-                                                        <td height="50"><span onclick="document.getElementById('lay').style.display='none';" style="padding:10px 60px;cursor:pointer; background-color:#4b40b8; color:#fff; font-weight:bold; font-size:16px;border-radius:5px;">확인</span></td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                    <div id="pos" class="pos_box">
+                                        <div id="popUp" class="popup_view">
+                                            <div class="pop_title"><input style="position:absolute;right:20px;"
+                                                    type="image"
+                                                    src="http://www.ophthalmology.org/abstract/2018_119/img/pop_x2.png"
+                                                    onclick="document.getElementById('lay').style.display='none';" />컨텐츠
                                             </div>
+
+                                            <div class="ppo_close_today"><a href="javascript:void(0);"
+                                                    onclick="closePopupNotToday();" style="color:#000000">오늘 하루 열지
+                                                    않기</a></div>
                                         </div>
                                     </div>
+
+                                    <script
+                                        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+                                    <script>
+                                        function setCookie(name, value, expiredays) {
+                                            var today = new Date();
+                                            today.setDate(today.getDate() + expiredays);
+                                            document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + ';'
+                                        }
+
+                                        function getCookie(name) {
+                                            var cName = name + "=";
+                                            var x = 0;
+                                            var i = 0;
+                                            while (i <= document.cookie.length) {
+                                                var y = (x + cName.length);
+                                                if (document.cookie.substring(x, y) == cName) {
+                                                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+                                                        endOfCookie = document.cookie.length;
+                                                    return unescape(document.cookie.substring(y, endOfCookie));
+                                                }
+                                                x = document.cookie.indexOf(" ", x) + 1;
+                                                if (x == 0)
+                                                    break;
+                                            }
+                                            return "";
+                                        }
+                                        function closePopupNotToday() {
+                                            setCookie('notToday', 'Y', 1);
+                                            $("#pos").hide('fade');
+                                        }
+                                        function closePopup() {
+                                            $("#pos").hide('fade');
+                                        }
+
+                                        $("#pos_close").click(function () {
+                                            closePopup();
+                                        });
+                                        $("#pos_close_today").click(function () {
+                                            closePopupNotToday();
+                                        });
+                                        if (getCookie("notToday") != "Y") {
+                                            $('#pos').show('fade');
+                                        } else {
+                                            $('#pos').hide('fade');
+                                        }
+                                    </script>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
@@ -1966,25 +2009,61 @@ crossorigin="anonymous"></script>
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                        <div id='lay'>
+
                                                             <div id="pos" class="pos_box">	
                                                                 <div id="popUp" class="popup_view">
-                                                                    <div class="pop_title"><input style="position:absolute;right:20px;" type="image" src="http://www.ophthalmology.org/abstract/2018_119/img/pop_x2.png" onclick="document.getElementById('lay').style.display='none';" />
-                                                                   컨텐츠 
+                                                                    <div class="pop_title"><input style="position:absolute;right:20px;" type="image" src="http://www.ophthalmology.org/abstract/2018_119/img/pop_x2.png" onclick="document.getElementById('lay').style.display='none';" />컨텐츠</div>
                                                         
-                                                        </div>
-                                                        
-                                                                    <table class="popup_table" align="center">
-                                                        
-                                                                        <tbody>
-                                                                        <tr>
-                                                                            <td height="50"><span onclick="document.getElementById('lay').style.display='none';" style="padding:10px 60px;cursor:pointer; background-color:#4b40b8; color:#fff; font-weight:bold; font-size:16px;border-radius:5px;">확인</span></td>
-                                                                        </tr>
-                                                                        </tbody>
-                                                                    </table>
+                                                                    <div class="ppo_close_today"><a href="javascript:void(0);" onclick="closePopupNotToday();"
+                                                                        style="color:#000000">오늘 하루 열지 않기</a></div>
                                                                 </div>
                                                             </div>
-                                                        </div>
+
+                                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script>
+    function setCookie(name, value, expiredays) {
+        var today = new Date();
+        today.setDate(today.getDate() + expiredays);
+        document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + ';'
+    }
+
+    function getCookie(name) {
+        var cName = name + "=";
+        var x = 0;
+        var i = 0;
+        while (i <= document.cookie.length) {
+            var y = (x + cName.length);
+            if (document.cookie.substring(x, y) == cName) {
+                if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+                    endOfCookie = document.cookie.length;
+                return unescape(document.cookie.substring(y, endOfCookie));
+            }
+            x = document.cookie.indexOf(" ", x) + 1;
+            if (x == 0)
+                break;
+        }
+        return "";
+    }
+    function closePopupNotToday() {
+        setCookie('notToday', 'Y', 1);
+        $("#pos").hide('fade');
+    }
+    function closePopup() {
+        $("#pos").hide('fade');
+    }
+
+    $("#pos_close").click(function () {
+        closePopup();
+    });
+    $("#pos_close_today").click(function () {
+        closePopupNotToday();
+    });
+    if (getCookie("notToday") != "Y") {
+        $('#pos').show('fade');
+    } else {
+        $('#pos').hide('fade');
+    }
+</script>
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -2005,58 +2084,61 @@ crossorigin="anonymous"></script>
                             <h5 class="shadow p-3 mb-2 bg-white rounded">직접 글씨 쓰는 효과</h5>
                             <div class="card-body">
                                 <div class="card-text">
-                                    <div class="txt-flow">tsetse tset s ets tse tset se Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et expedita eum
-                                        dolores accusantium ullam ratione adipisci temporibus esse ipsam doloribus reprehenderit fugiat perferendis minus,
+                                    <div class="txt-flow">tsetse tset s ets tse tset se Lorem, ipsum dolor sit amet
+                                        consectetur adipisicing elit. Et expedita eum
+                                        dolores accusantium ullam ratione adipisci temporibus esse ipsam doloribus
+                                        reprehenderit fugiat perferendis minus,
                                         non atque earum dolorem aut. Fuga.
-                                        Non cum ab blanditiis voluptatum voluptas laborum officia fugiat cupiditate ut! Culpa, perspiciatis voluptates vero
-                                     </div>
-                                     
-                                     
-                                     <body onload="h1Setup()">
+                                        Non cum ab blanditiis voluptatum voluptas laborum officia fugiat cupiditate ut!
+                                        Culpa, perspiciatis voluptates vero
+                                    </div>
+
+
+                                    <body onload="h1Setup()">
                                         <script type="text/javascript">
-                                           var h1Arr = [];
-                                     
-                                           function h1Setup() {
-                                              h1Arr = document.querySelectorAll('.txt-flow');
-                                              for (var h = 0; h < h1Arr.length; h++) {
-                                                 var h1 = h1Arr[h],
-                                                    text = h1.firstChild.nodeValue;
-                                                 h1.removeChild(h1.firstChild);
-                                                 h1.animNodes = [];
-                                                 for (var i = 0; i < text.length; i++) {
-                                                    var span = document.createElement('span');
-                                                    span.appendChild(document.createTextNode(text.substring(i, i + 1)));
-                                                    h1.appendChild(span);
-                                                    h1.animNodes[h1.animNodes.length] = span
-                                                 }
-                                                 h1.animCount = 0;
-                                                 h1.animTimer = setInterval('h1Anim(' + h + ')', 50)
-                                              }
-                                           };
-                                     
-                                     
-                                           function h1Anim(h) {
-                                     
-                                              var h1 = h1Arr[h],
-                                                 c = h1.animCount++,
-                                                 noAnim = 1;
-                                     
-                                              for (var i = 0; i < h1.animNodes.length; i++) {
-                                                 var s = h1.animNodes[i];
-                                                 var frac = Math.max(0, Math.min(1, (c - i) / 10));
-                                                 if (s.animDone) continue;
-                                                 noAnim = 0;
-                                                 s.style.color = 'rgb(' + parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) + ')';
-                                                 if (frac == 1) {
-                                                    s.style.marginLeft = 'auto';
-                                                    s.animDone = 1
-                                                 } else if (frac > 0) s.style.marginLeft = 0.6 * (1 - frac) + 'em'
-                                              }
-                                              if (noAnim) clearInterval(h1.animTimer);
-                                              h1.style.visibility = 'visible'
-                                           };
-                                     
-                                     
+                                            var h1Arr = [];
+
+                                            function h1Setup() {
+                                                h1Arr = document.querySelectorAll('.txt-flow');
+                                                for (var h = 0; h < h1Arr.length; h++) {
+                                                    var h1 = h1Arr[h],
+                                                        text = h1.firstChild.nodeValue;
+                                                    h1.removeChild(h1.firstChild);
+                                                    h1.animNodes = [];
+                                                    for (var i = 0; i < text.length; i++) {
+                                                        var span = document.createElement('span');
+                                                        span.appendChild(document.createTextNode(text.substring(i, i + 1)));
+                                                        h1.appendChild(span);
+                                                        h1.animNodes[h1.animNodes.length] = span
+                                                    }
+                                                    h1.animCount = 0;
+                                                    h1.animTimer = setInterval('h1Anim(' + h + ')', 50)
+                                                }
+                                            };
+
+
+                                            function h1Anim(h) {
+
+                                                var h1 = h1Arr[h],
+                                                    c = h1.animCount++,
+                                                    noAnim = 1;
+
+                                                for (var i = 0; i < h1.animNodes.length; i++) {
+                                                    var s = h1.animNodes[i];
+                                                    var frac = Math.max(0, Math.min(1, (c - i) / 10));
+                                                    if (s.animDone) continue;
+                                                    noAnim = 0;
+                                                    s.style.color = 'rgb(' + parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) + ')';
+                                                    if (frac == 1) {
+                                                        s.style.marginLeft = 'auto';
+                                                        s.animDone = 1
+                                                    } else if (frac > 0) s.style.marginLeft = 0.6 * (1 - frac) + 'em'
+                                                }
+                                                if (noAnim) clearInterval(h1.animTimer);
+                                                h1.style.visibility = 'visible'
+                                            };
+
+
                                         </script>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
@@ -2099,50 +2181,50 @@ crossorigin="anonymous"></script>
 
 <body onload="h1Setup()">
    <script type="text/javascript">
-      var h1Arr = [];
+    var h1Arr = [];
 
-      function h1Setup() {
-         h1Arr = document.querySelectorAll('.txt-flow');
-         for (var h = 0; h < h1Arr.length; h++) {
+    function h1Setup() {
+        h1Arr = document.querySelectorAll('.txt-flow');
+        for (var h = 0; h < h1Arr.length; h++) {
             var h1 = h1Arr[h],
-               text = h1.firstChild.nodeValue;
+                text = h1.firstChild.nodeValue;
             h1.removeChild(h1.firstChild);
             h1.animNodes = [];
             for (var i = 0; i < text.length; i++) {
-               var span = document.createElement('span');
-               span.appendChild(document.createTextNode(text.substring(i, i + 1)));
-               h1.appendChild(span);
-               h1.animNodes[h1.animNodes.length] = span
+                var span = document.createElement('span');
+                span.appendChild(document.createTextNode(text.substring(i, i + 1)));
+                h1.appendChild(span);
+                h1.animNodes[h1.animNodes.length] = span
             }
             h1.animCount = 0;
             h1.animTimer = setInterval('h1Anim(' + h + ')', 50)
-         }
-      };
+        }
+    };
 
 
-      function h1Anim(h) {
+    function h1Anim(h) {
 
-         var h1 = h1Arr[h],
+        var h1 = h1Arr[h],
             c = h1.animCount++,
             noAnim = 1;
 
-         for (var i = 0; i < h1.animNodes.length; i++) {
+        for (var i = 0; i < h1.animNodes.length; i++) {
             var s = h1.animNodes[i];
             var frac = Math.max(0, Math.min(1, (c - i) / 10));
             if (s.animDone) continue;
             noAnim = 0;
             s.style.color = 'rgb(' + parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) + ')';
             if (frac == 1) {
-               s.style.marginLeft = 'auto';
-               s.animDone = 1
+                s.style.marginLeft = 'auto';
+                s.animDone = 1
             } else if (frac > 0) s.style.marginLeft = 0.6 * (1 - frac) + 'em'
-         }
-         if (noAnim) clearInterval(h1.animTimer);
-         h1.style.visibility = 'visible'
-      };
+        }
+        if (noAnim) clearInterval(h1.animTimer);
+        h1.style.visibility = 'visible'
+    };
 
 
-   </script>
+</script>
 </body>
 
 </html>
