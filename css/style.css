@@ -850,6 +850,7 @@ a.btnW {
     clear: both;
     width: 100%;
     z-index: 111;
+    overflow: hidden;
 }
 
 .gnb img {
