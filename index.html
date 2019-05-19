@@ -2246,10 +2246,10 @@ crossorigin="anonymous"></script>
 
                     <div class="col-xl-4 col-sm-12">
                         <div class="card mb-4 shadow-sm">
-                            <h5 class="shadow p-3 mb-2 bg-white rounded">자주쓰이는 PHP 코드</h5>
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">유용한 php 및 자바스크립트 코드</h5>
                             <div class="card-body">
                                 <div class="card-text">
-                                    바로 써먹을 수 있는 간단한 PHP부품들
+                                    유용한 php 및 자바스크립트 코드 부품들
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
@@ -2272,10 +2272,11 @@ crossorigin="anonymous"></script>
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-+간단한 클릭 팝업창+
++++간단한 클릭 팝업창+++
 onClick="window.open('test.html', '팝업제목', 'top=0, left=0, width=1000, height=750, scrollbars=yes');"
 
-+상세한 팝업창+
+
++++새창으로 팝업+++
 <script type="text/javascript" language="javascript">
     function getCookie(name) {
         var nameOfCookie = name + "=";
@@ -2308,7 +2309,8 @@ onClick="window.open('test.html', '팝업제목', 'top=0, left=0, width=1000, he
 <? }?>
 </script>
 
-+기간 설정+
+
++++기간 설정+++
 <? 
 $now = time();
 $li_banner_start=mktime(0,0,0,8,9,2018);//"시","분","초","월","일","년" 시작 기간
@@ -2321,8 +2323,7 @@ if($now>$li_banner_start && $now<$li_banner_finish)
 <?}?>
 
 
-+url 이동했을때 클릭해야지만 열리는 영역 열리는 방법+
-
++++url 이동했을때 클릭해야지만 열리는 영역을 특정 url 입력하면 열리는 방법+++
 (예시)
 http://archives.otologicalsociety.or.kr/index4.html?view=popup01
 
@@ -2333,6 +2334,80 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01
     $("#<?=$_GET['view']?>").fadeIn();
 </script>
 <? } ?>
+
+
++++이미지등 덮어씌워도 캐시값 상관없이 보이도록하는 것+++
+<img src="/img/info/2018_kor_greeting_190104.jpg
+?v=<?php echo date('ymdhi')?>" />
+
+
++++ 특정 구간 이후에 나타나는 해당 소스 나타나도록하는 방법 +++
+<? if(date("Y-m-d H") > "2018-09-10 08") { ?>
+//소스 넣는 곳
+<? } ?>
+
+
++++ 해당 변수가 뭔지 아는 방법+++
+<?php var_dump('$subject')?>
+
+
++++ 특정 구간에 해당 소스가 보일 수 있도록하는 소스 +++
+<? 
+$now = time();
+$li_banner_start=mktime(0,0,0,8,9,2018);//"시","분","초","월","일","년"
+$li_banner_finish=mktime(23,59,59,12,31,2018);
+if($now>$li_banner_start && $now<$li_banner_finish)
+{?>
+30,000원
+<?}?>
+<? 
+$now = time();
+$li_banner_start=mktime(23,59,59,12,31,2018);//"시","분","초","월","일","년"
+if($now>$li_banner_start)
+{?>
+50,000원
+<?}?>  
+
+
+
++++ 프레임셋으로 만들어진 페이지에서 해당 페이지 새로고침해도 해당 페이지가 유지되는 방법 +++
+<script type="text/javascript">
+    document.onkeydown = function (e) {
+        var evtK = (e) ? e.which : window.event.keyCode;
+        var isCtrl = ((typeof isCtrl != 'undefiend' && isCtrl) || ((e && evtK == 17) || (!e && event.ctrlKey))) ? true : false;
+
+        if ((isCtrl && evtK == 82) || evtK == 116) {
+            if (e) { evtK = 505; } else { event.keyCode = evtK = 505; }
+        }
+
+        if (evtK == 505) {
+
+            // 자바스크립트에서 현재 경로는 받아내는 메소드로 대치.
+
+            location.reload(location.href);
+            return false;
+        }
+    }
+</script>
+
+
++++ D-day 설정 방법 +++
+<?
+    $end_date = date('2019-06-26'); //디데이 날짜
+    $d_day = floor(( strtotime(substr($end_date,0,10)) -
+    strtotime(date('Y-m-d')) )/86400);
+
+    if($d_day < 0){
+    $d_day = '00'; //D-Day 가 -로 넘어 갔을때 00으로 맞춤}
+?>
+
+<?= $d_day; ?>
+
+
++++ 해당 페이지에서 왼쪽 메뉴 불들어오게하는 소스 +++
+<li class="<?php if($_title==5){ echo "on";}?>
+<?php if ( $pcode == '06' ) echo " class='on' "; ?>
+
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
