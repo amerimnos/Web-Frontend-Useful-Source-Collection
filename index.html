@@ -11,6 +11,12 @@
 </head>
 
 <body>
+
+
+
+
+
+
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
@@ -110,8 +116,8 @@
                                         </div>
 
                                     </div>
-                                    <script
-                                        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+                                    </script>
                                     <script>
                                         $(function () {
 
@@ -279,8 +285,8 @@
                                         <div class="map1"></div>
                                         <div class="map2"></div>
                                     </div>
-                                    <script
-                                        src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+                                    </script>
                                     <script>
                                         $(document).ready(function () {
                                             $('.map2').mouseenter(function () {
@@ -568,10 +574,10 @@
                                         <div id="bm"></div>
                                     </div>
 
-                                    <script
-                                        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                                    <script
-                                        src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+                                    </script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js">
+                                    </script>
                                     <script>
                                         var ae_btn = document.querySelector('.ae_btn')
                                         var svgWarp = document.getElementById('bm')
@@ -832,6 +838,59 @@ Abstract Submision
 <span class='line-3'></span>
 <span class='line-4'></span>
                                                     </a>
+                                                </textarea>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">버튼6</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <div class="linear-bg-btn-wrap">
+                                        <div class="contact100-form-bgbtn"></div>
+                                        <button class="contact100-form-btn">Send Email</button>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal15-2">View
+                                            Code
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal15-2" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">View
+                                                    Code Details</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea class="code-view-box" readonly rows="25">
+                                                    <div class="linear-bg-btn-wrap">
+                                                        <div class="contact100-form-bgbtn"></div>
+                                                        <button class="contact100-form-btn">Send Email</button>
+                                                    </div>
                                                 </textarea>
                                             </div>
                                             <div class="modal-footer">
@@ -1812,8 +1871,8 @@ Abstract Submision
                                     <script>
                                         $(document).ready(function () {
                                             $(".hamburger").hover(function () {
-                                                $(this).toggleClass("is-active");
-                                            },
+                                                    $(this).toggleClass("is-active");
+                                                },
                                                 function () {
                                                     $(this).toggleClass("is-active");
                                                 });
@@ -1927,66 +1986,6 @@ crossorigin="anonymous"></script>
                             <h5 class="shadow p-3 mb-2 bg-white rounded">모달 팝업</h5>
                             <div class="card-body">
                                 <div class="card-text">
-                                    <div id="pos" class="pos_box">
-                                        <div id="popUp" class="popup_view">
-                                            <div class="pop_title"><input style="position:absolute;right:20px;"
-                                                    type="image"
-                                                    src="http://www.ophthalmology.org/abstract/2018_119/img/pop_x2.png"
-                                                    onclick="document.getElementById('pos').style.display='none';" />컨텐츠
-                                            </div>
-
-                                            <div class="ppo_close_today"><a href="javascript:void(0);"
-                                                    onclick="closePopupNotToday();" style="color:#000000">오늘 하루 열지
-                                                    않기</a></div>
-                                        </div>
-                                    </div>
-
-                                    <script
-                                        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-                                    <script>
-                                        function setCookie(name, value, expiredays) {
-                                            var today = new Date();
-                                            today.setDate(today.getDate() + expiredays);
-                                            document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + ';'
-                                        }
-
-                                        function getCookie(name) {
-                                            var cName = name + "=";
-                                            var x = 0;
-                                            var i = 0;
-                                            while (i <= document.cookie.length) {
-                                                var y = (x + cName.length);
-                                                if (document.cookie.substring(x, y) == cName) {
-                                                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
-                                                        endOfCookie = document.cookie.length;
-                                                    return unescape(document.cookie.substring(y, endOfCookie));
-                                                }
-                                                x = document.cookie.indexOf(" ", x) + 1;
-                                                if (x == 0)
-                                                    break;
-                                            }
-                                            return "";
-                                        }
-                                        function closePopupNotToday() {
-                                            setCookie('notToday', 'Y', 1);
-                                            $("#pos").hide('fade');
-                                        }
-                                        function closePopup() {
-                                            $("#pos").hide('fade');
-                                        }
-
-                                        $("#pos_close").click(function () {
-                                            closePopup();
-                                        });
-                                        $("#pos_close_today").click(function () {
-                                            closePopupNotToday();
-                                        });
-                                        if (getCookie("notToday") != "Y") {
-                                            $('#pos').show('fade');
-                                        } else {
-                                            $('#pos').hide('fade');
-                                        }
-                                    </script>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
                                     <div class="btn-group">
@@ -2009,61 +2008,7 @@ crossorigin="anonymous"></script>
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-
-                                                            <div id="pos" class="pos_box">	
-                                                                <div id="popUp" class="popup_view">
-                                                                    <div class="pop_title"><input style="position:absolute;right:20px;" type="image" src="http://www.ophthalmology.org/abstract/2018_119/img/pop_x2.png" onclick="document.getElementById('pos').style.display='none';" />컨텐츠</div>
-                                                        
-                                                                    <div class="ppo_close_today"><a href="javascript:void(0);" onclick="closePopupNotToday();"
-                                                                        style="color:#000000">오늘 하루 열지 않기</a></div>
-                                                                </div>
-                                                            </div>
-
-                                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-   <script>
-    function setCookie(name, value, expiredays) {
-        var today = new Date();
-        today.setDate(today.getDate() + expiredays);
-        document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + ';'
-    }
-
-    function getCookie(name) {
-        var cName = name + "=";
-        var x = 0;
-        var i = 0;
-        while (i <= document.cookie.length) {
-            var y = (x + cName.length);
-            if (document.cookie.substring(x, y) == cName) {
-                if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
-                    endOfCookie = document.cookie.length;
-                return unescape(document.cookie.substring(y, endOfCookie));
-            }
-            x = document.cookie.indexOf(" ", x) + 1;
-            if (x == 0)
-                break;
-        }
-        return "";
-    }
-    function closePopupNotToday() {
-        setCookie('notToday', 'Y', 1);
-        $("#pos").hide('fade');
-    }
-    function closePopup() {
-        $("#pos").hide('fade');
-    }
-
-    $("#pos_close").click(function () {
-        closePopup();
-    });
-    $("#pos_close_today").click(function () {
-        closePopupNotToday();
-    });
-    if (getCookie("notToday") != "Y") {
-        $('#pos').show('fade');
-    } else {
-        $('#pos').hide('fade');
-    }
-</script>
+                                                           각각의 소스 알아서 확인.
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -2107,7 +2052,8 @@ crossorigin="anonymous"></script>
                                                     h1.animNodes = [];
                                                     for (var i = 0; i < text.length; i++) {
                                                         var span = document.createElement('span');
-                                                        span.appendChild(document.createTextNode(text.substring(i, i + 1)));
+                                                        span.appendChild(document.createTextNode(text.substring(i, i +
+                                                            1)));
                                                         h1.appendChild(span);
                                                         h1.animNodes[h1.animNodes.length] = span
                                                     }
@@ -2128,7 +2074,9 @@ crossorigin="anonymous"></script>
                                                     var frac = Math.max(0, Math.min(1, (c - i) / 10));
                                                     if (s.animDone) continue;
                                                     noAnim = 0;
-                                                    s.style.color = 'rgb(' + parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) + ')';
+                                                    s.style.color = 'rgb(' + parseInt(255 - 255 * frac) + ',' +
+                                                        parseInt(255 - 255 * frac) + ',' + parseInt(255 - 255 * frac) +
+                                                        ')';
                                                     if (frac == 1) {
                                                         s.style.marginLeft = 'auto';
                                                         s.animDone = 1
@@ -2137,8 +2085,6 @@ crossorigin="anonymous"></script>
                                                 if (noAnim) clearInterval(h1.animTimer);
                                                 h1.style.visibility = 'visible'
                                             };
-
-
                                         </script>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-center mt-2">
@@ -2455,6 +2401,14 @@ if($now>$li_banner_start)
         </ul>
     </div>
 
+    
+    <div id="ex1" class="reponse-modal" style="display: block;">
+        <div><img src="http://www.sleepmed.or.kr/popup/img/pop190705.jpg" alt="" />
+            <span id="pos_close_today">하루 동안 않보기</span>
+        </div>
+    </div>
+
+
     <script src="js/jquery-3.3.1.js"></script>
 
     <script src="js/bootstrap.bundle.js"></script>
@@ -2478,6 +2432,59 @@ if($now>$li_banner_start)
             });
         });
     </script>
+
+
+    // 모달소스
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script>
+        function setCookie(name, value, expiredays) {
+            var today = new Date();
+            today.setDate(today.getDate() + expiredays);
+            document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today
+                .toGMTString() + ';'
+        }
+
+        function getCookie(name) {
+            var cName = name + "=";
+            var x = 0;
+            var i = 0;
+            while (i <= document.cookie.length) {
+                var y = (x + cName.length);
+                if (document.cookie.substring(x, y) == cName) {
+                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+                        endOfCookie = document.cookie.length;
+                    return unescape(document.cookie.substring(y, endOfCookie));
+                }
+                x = document.cookie.indexOf(" ", x) + 1;
+                if (x == 0)
+                    break;
+            }
+            return "";
+        }
+
+        function closePopupNotToday() {
+            setCookie('notToday', 'Y', 1);
+            $("#ex1").hide('fade');
+        }
+
+        $("#pos_close_today").click(function () {
+            closePopupNotToday();
+        });
+        if (getCookie("notToday") != "Y") {
+            $('#ex1').show('fade');
+        } else {
+            $('#ex1').hide();
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#ex1').modal();
+        });
+    </script>
+    // 모달소스
+
 </body>
 
 </html>
