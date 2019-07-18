@@ -2401,7 +2401,7 @@ if($now>$li_banner_start)
         </ul>
     </div>
 
-    
+
     <div id="ex1" class="reponse-modal" style="display: block;">
         <div><img src="http://www.sleepmed.or.kr/popup/img/pop190705.jpg" alt="" />
             <span id="pos_close_today">하루 동안 않보기</span>
@@ -2434,56 +2434,59 @@ if($now>$li_banner_start)
     </script>
 
 
-    // 모달소스
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
     </script>
+
     <script>
-        function setCookie(name, value, expiredays) {
-            var today = new Date();
-            today.setDate(today.getDate() + expiredays);
-            document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today
-                .toGMTString() + ';'
-        }
-
-        function getCookie(name) {
-            var cName = name + "=";
-            var x = 0;
-            var i = 0;
-            while (i <= document.cookie.length) {
-                var y = (x + cName.length);
-                if (document.cookie.substring(x, y) == cName) {
-                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
-                        endOfCookie = document.cookie.length;
-                    return unescape(document.cookie.substring(y, endOfCookie));
-                }
-                x = document.cookie.indexOf(" ", x) + 1;
-                if (x == 0)
-                    break;
-            }
-            return "";
-        }
-
-        function closePopupNotToday() {
-            setCookie('notToday', 'Y', 1);
-            $(".blocker").hide('fade');
-        }
-
-        $("#pos_close_today").click(function () {
-            closePopupNotToday();
-        });
-        if (getCookie("notToday") != "Y") {
-            $('#ex1').show('fade');
-        } else {
-            $('#ex1').hide();
-        }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <script type="text/javascript">
         $(document).ready(function () {
-            $('#ex1').modal();
+
+
+
+            function setCookie(name, value, expiredays) {
+                var today = new Date();
+                today.setDate(today.getDate() + expiredays);
+                document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today
+                    .toGMTString() + ';'
+            }
+
+            function getCookie(name) {
+                var cName = name + "=";
+                var x = 0;
+                var i = 0;
+                while (i <= document.cookie.length) {
+                    var y = (x + cName.length);
+                    if (document.cookie.substring(x, y) == cName) {
+                        if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+                            endOfCookie = document.cookie.length;
+                        return unescape(document.cookie.substring(y, endOfCookie));
+                    }
+                    x = document.cookie.indexOf(" ", x) + 1;
+                    if (x == 0)
+                        break;
+                }
+                return "";
+            }
+
+            function closePopupNotToday() {
+                setCookie('notToday', 'Y', 1);
+
+                $('#ex1').hide();
+            }
+            $("#pos_close_today").click(function () {
+                closePopupNotToday();
+            });
+            if (getCookie("notToday") != "Y") {
+                $('#ex1').show('fade');
+            } else {
+
+                $('#ex1').hide();
+            }
         });
     </script>
-    // 모달소스
+
 
 </body>
 
