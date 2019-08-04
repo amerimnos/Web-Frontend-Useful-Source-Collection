@@ -2008,7 +2008,7 @@ crossorigin="anonymous"></script>
                                                 </div>
                                                 <div class="modal-body">
                                                     <textarea class="code-view-box" readonly rows="25">
-                                                           각각의 소스 알아서 확인.
+                                                        스크립트는 하단에 있고, css는 알아서 확인. 따로 정리했기때문에 찾기는 수월할 것임.
                                                     </textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -2402,9 +2402,11 @@ if($now>$li_banner_start)
     </div>
 
 
-    <div id="ex1" class="reponse-modal" style="display: block;">
-        <div><img src="http://www.sleepmed.or.kr/popup/img/pop190705.jpg" alt="" />
-            <span id="pos_close_today">하루 동안 않보기</span>
+    <div id="modal-popup">
+        <div>
+            <img src="http://www.psk1946.or.kr/popup/img/pop190802.png" alt="" usemap="#Map-modal">
+            <span id="pos_close_today">하루 동안 안 보기</span>
+            <span class="close-modal">Close</span>
         </div>
     </div>
 
@@ -2442,16 +2444,12 @@ if($now>$li_banner_start)
 
     <script>
         $(document).ready(function () {
-
-
-
             function setCookie(name, value, expiredays) {
                 var today = new Date();
                 today.setDate(today.getDate() + expiredays);
                 document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today
                     .toGMTString() + ';'
             }
-
             function getCookie(name) {
                 var cName = name + "=";
                 var x = 0;
@@ -2469,21 +2467,26 @@ if($now>$li_banner_start)
                 }
                 return "";
             }
-
             function closePopupNotToday() {
                 setCookie('notToday', 'Y', 1);
-
-                $('#ex1').hide();
+                $('#modal-popup').fadeOut(500);
             }
             $("#pos_close_today").click(function () {
                 closePopupNotToday();
             });
             if (getCookie("notToday") != "Y") {
-                $('#ex1').show('fade');
+                $('#modal-popup').fadeIn(500);
             } else {
-
-                $('#ex1').hide();
+                $('#modal-popup').hide();
             }
+            $(".close-modal").click(function () {
+                $('#modal-popup').fadeOut(500);
+            });
+
+            $("#modal-popup").click(function () {
+                $(this).fadeOut(500);
+            });
+
         });
     </script>
 
