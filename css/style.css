@@ -1435,7 +1435,7 @@ video {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -0.05em;
+    margin-right: -0.35em;
     box-sizing: border-box;
 }
 #modal-popup > div{
@@ -1473,7 +1473,7 @@ video {
     transition: all 0.4s;
     border: solid 1px #ffffff;
     border-radius: 10px;
-    width: 142px;
+    width: 150px;
     margin: 11px auto 0;
 }
 #pos_close_today:hover{
