@@ -2192,6 +2192,190 @@ crossorigin="anonymous"></script>
 
                     <div class="col-xl-4 col-sm-12">
                         <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-2 bg-white rounded">동영상 랜덤 자동 재생</h5>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <video id="ygt-videos" width="200" height="200" controls autoplay>
+                                        <source src="" type="video/mp4">
+                                    </video>
+
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+                                    </script>
+                                    <script>
+                                        //배열 0~2까지 랜덤으로 섞어서 나타내는 소스
+                                        for (var a = [], i = 0; i < 3; ++i) a[i] = i;
+
+                                        function shuffle(array) {
+                                            var tmp, current, top = array.length;
+                                            if (top)
+                                                while (--top) {
+                                                    current = Math.floor(Math.random() * (top + 1));
+                                                    tmp = array[current];
+                                                    array[current] = array[top];
+                                                    array[top] = tmp;
+                                                }
+                                            return array;
+                                        }
+                                        a = shuffle(a);
+
+                                        var data = {
+                                            "playlist": [{
+                                                    "videoUrl": "v" + a[0] + ".mp4"
+                                                },
+                                                {
+                                                    "videoUrl": "v" + a[1] + ".mp4"
+                                                },
+                                                {
+                                                    "videoUrl": "v" + a[2] + ".mp4"
+                                                },
+                                            ]
+                                        };
+
+
+                                        var getvideo = document.getElementById('ygt-videos');
+                                        var videosource = new Array();
+                                        for (i = 0; i < data.playlist.length; i++) {
+                                            videosource[i] = data.playlist[i].videoUrl;
+
+                                        }
+                                        //비디오 처음 시작
+                                        getvideo.setAttribute('src', videosource[0]);
+                                        console.log(1);
+
+
+                                        //비디오 순차 재생 소스
+                                        getvideo.addEventListener('ended', videos2, false);
+
+                                        function videos2() {
+                                            console.log(2);
+                                            getvideo.setAttribute('src', videosource[1]);
+
+                                            getvideo.addEventListener('ended', videos3, false);
+
+                                            function videos3() {
+                                                console.log(3);
+                                                getvideo.setAttribute('src', videosource[2]);
+
+                                                getvideo.addEventListener('ended', v_end, false);
+
+                                                function v_end() {
+                                                    getvideo.setAttribute('src', videosource[0]);
+                                                    getvideo.pause();
+                                                }
+                                            }
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mt-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-toggle="modal" data-target="#exampleModal14-4">View
+                                            Code</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal14-4" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">View
+                                                        Code Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <textarea class="code-view-box" readonly rows="25">
+                                                            <video id="ygt-videos" width="200" height="200" controls autoplay>
+                                                                    <source src="" type="video/mp4">
+                                                                </video>
+                        
+                                                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+                                                                </script>
+                                                                <script>
+                                                                    //배열 0~2까지 랜덤으로 섞어서 나타내는 소스
+                                                                    for (var a = [], i = 0; i < 3; ++i) a[i] = i;
+                        
+                                                                    function shuffle(array) {
+                                                                        var tmp, current, top = array.length;
+                                                                        if (top)
+                                                                            while (--top) {
+                                                                                current = Math.floor(Math.random() * (top + 1));
+                                                                                tmp = array[current];
+                                                                                array[current] = array[top];
+                                                                                array[top] = tmp;
+                                                                            }
+                                                                        return array;
+                                                                    }
+                                                                    a = shuffle(a);
+                        
+                                                                    var data = {
+                                                                        "playlist": [{
+                                                                                "videoUrl": "/videos/v" + a[0] + ".mp4"
+                                                                            },
+                                                                            {
+                                                                                "videoUrl": "/videos/v" + a[1] + ".mp4"
+                                                                            },
+                                                                            {
+                                                                                "videoUrl": "/videos/v" + a[2] + ".mp4"
+                                                                            },
+                                                                        ]
+                                                                    };
+                        
+                        
+                                                                    var getvideo = document.getElementById('ygt-videos');
+                                                                    var videosource = new Array();
+                                                                    for (i = 0; i < data.playlist.length; i++) {
+                                                                        videosource[i] = data.playlist[i].videoUrl;
+                        
+                                                                    }
+                                                                    //비디오 처음 시작
+                                                                    getvideo.setAttribute('src', videosource[0]);
+                                                                    console.log(1);
+                        
+                        
+                                                                    //비디오 순차 재생 소스
+                                                                    getvideo.addEventListener('ended', videos2, false);
+                        
+                                                                    function videos2() {
+                                                                        console.log(2);
+                                                                        getvideo.setAttribute('src', videosource[1]);
+                        
+                                                                        getvideo.addEventListener('ended', videos3, false);
+                        
+                                                                        function videos3() {
+                                                                            console.log(3);
+                                                                            getvideo.setAttribute('src', videosource[2]);
+                        
+                                                                            getvideo.addEventListener('ended', v_end, false);
+                        
+                                                                            function v_end() {
+                                                                                getvideo.setAttribute('src', videosource[0]);
+                                                                                getvideo.pause();
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                </script>
+                                                    </textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="card mb-4 shadow-sm">
                             <h5 class="shadow p-3 mb-2 bg-white rounded">유용한 php 및 자바스크립트 코드</h5>
                             <div class="card-body">
                                 <div class="card-text">
@@ -2450,6 +2634,7 @@ if($now>$li_banner_start)
                 document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today
                     .toGMTString() + ';'
             }
+
             function getCookie(name) {
                 var cName = name + "=";
                 var x = 0;
@@ -2467,6 +2652,7 @@ if($now>$li_banner_start)
                 }
                 return "";
             }
+
             function closePopupNotToday() {
                 setCookie('notToday', 'Y', 1);
                 $('#modal-popup').fadeOut(500);
