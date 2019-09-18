@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Web design & Publishing</h4>
+                        <p class="text-muted">템플릿</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <ul class="list-unstyled">
+                            <li><a href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=0"
+                                    target="_blank" class="text-white">유용한 부품들</a></li>
+                            <li><a href="useful_php.html" class="text-white">유용한 PHP,javascript 코드</a></li>
+                            <li><a href="index.html" class="text-white">유용한 웹사이트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="index.html" class="navbar-brand d-flex align-items-center"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card mb-4 shadow-sm">
+                            <h5 class="shadow p-3 mb-5 bg-white rounded">유용한 PHP 코드</h5>
+                            <div class="card-body">
+                                <h6 class="card-title">FTP에 이미지 덮어씌우면 강력새로고침(ctrl + f5)하지 않고 새로고침해도 변경되어 보임</h6>
+                                    <div class="card-text">
+                                        <pre><code>
+&lt;img src="image".jpg
+?v=&lt;?php echo date('ymdhi')?&gt;" /&gt;
+                                            
+</code></pre>
+
+                                        <h6 class="card-title">특정 일시 이후에 해당 코드가 나타나는 것</h5>
+                                            <div class="card-text">
+                                                <pre><code>
+&lt;? if(date("Y-m-d H") &lt; "2018-09-10 08") { ?&lt;
+    html 코드
+&lt;? } ?&gt;
+</code></pre>
+
+
+                                                <h6 class="card-title">시작과 끝 일시 지정하여 해당 코드 나타나는 것</h6>
+                                                    <div class="card-text">
+                                                        <pre><code>
+&lt;? 
+$now = time();
+$li_banner_start=mktime(0,0,0,8,9,2018);//"시","분","초","월","일","년"
+$li_banner_finish=mktime(23,59,59,12,31,2018);
+if($now&gt;$li_banner_start && $now&lt;$li_banner_finish)
+{?&gt;
+
+html 코드1
+
+&lt;?}?&gt;
+&lt;? 
+$now = time();
+$li_banner_start=mktime(23,59,59,12,31,2018);//"시","분","초","월","일","년"
+if($now&gt;$li_banner_start)
+{?&gt;
+
+html 코드2
+
+&lt;?}?&gt;    
+                                                                
+</code></pre>
+
+
+
+
+                                                        <h6 class="card-title">해당 페이지로 이동시 css class 추가</h6>
+                                                            <div class="card-text">
+                                                                <pre><code>
+&lt;?=($PHP_SELF==$Abs_dir."/intro.html")?"_over":""?&gt; 
+
+&lt;li class="&lt;?php if($_title==5){ echo "on";}?&gt;
+</code></pre>
+
+                                                                </code></pre>
+
+
+                                                                <h6 class="card-title">디데이</h5>
+                                                                    <div class="card-text">
+                                                                        <pre><code>
+&lt;?
+$end_date = date('2019-06-26'); //디데이 날짜
+    $d_day = floor(( strtotime(substr($end_date,0,10)) -
+
+            strtotime(date('Y-m-d')) )/86400);
+    if($d_day &lt; 0){
+        $d_day = '00'; //D-Day 가 -로 넘어 갔을때 00으로 맞춤}
+?&gt;
+
+&lt;?= $d_day; ?&gt;
+                                                                              
+</code></pre>
+
+
+
+                                                                        <h6 class="card-title">프레임셋으로 만들어진 페이지 새로고침해도 해당
+                                                                            페이지 유지</h6>
+                                                                            <div class="card-text">
+                                                                                <pre><code>
+
+document.onkeydown = function (e) {
+    var evtK = (e) ? e.which : window.event.keyCode;
+    var isCtrl = ((typeof isCtrl != 'undefiend' && isCtrl) || ((e && evtK == 17) || (!e && event.ctrlKey))) ? true :
+        false;
+
+    if ((isCtrl && evtK == 82) || evtK == 116) {
+        if (e) {
+        evtK = 505;
+        } else {
+        event.keyCode = evtK = 505;
+        }
+    }
+
+    if (evtK == 505) {
+
+        // 자바스크립트에서 현재 경로는 받아내는 메소드로 대치.
+
+        location.reload(location.href);
+        return false;
+    }
+    }
+              
+</code></pre>
+
+
+
+                                                    <h6 class="card-title">url 이동했을때 클릭해야지만 열리는 영역 열리는 방법</h6>
+                                                                                    <div class="card-text">
+                                                                                        <pre><code>
+
+http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예시 형식으로 각각 링크 가능
+
+&lt;? if($_GET['view']) { ?&gt;
+&lt;script&gt;
+        $("#popup,.dimmed").fadeIn();
+        $("body").addClass("hidden");
+        $("#&lt;?=$_GET['view']?&gt;").fadeIn();
+&lt;/script&gt;
+&lt;? } ?&gt;
+                                                                                                
+
+</code></pre>
+
+
+
+
+
+                                                                                    </div>
+                                                                            </div>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="w-100"></div>
+
+                                                    </div>
+
+                                            </div>
+                                    </div>
+                            </div>
+
+    </main>
+
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">위로</a>
+            </p>
+            <p><b>email</b> : <a href="mailto:yanggitak@naver.com">yanggitak@naver.com</a>
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</body>
+
+</html>
