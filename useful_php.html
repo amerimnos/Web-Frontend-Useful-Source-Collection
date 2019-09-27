@@ -51,25 +51,25 @@
                             <h5 class="shadow p-3 mb-5 bg-white rounded">유용한 PHP 코드</h5>
                             <div class="card-body">
                                 <h6 class="card-title">FTP에 이미지 덮어씌우면 강력새로고침(ctrl + f5)하지 않고 새로고침해도 변경되어 보임</h6>
-                                    <div class="card-text">
-                                        <pre><code>
+                                <div class="card-text">
+                                    <pre><code>
 &lt;img src="image".jpg
 ?v=&lt;?php echo date('ymdhi')?&gt;" /&gt;
                                             
 </code></pre>
 
-                                        <h6 class="card-title">특정 일시 이후에 해당 코드가 나타나는 것</h5>
-                                            <div class="card-text">
-                                                <pre><code>
+                                    <h6 class="card-title">특정 일시 이후에 해당 코드가 나타나는 것</h5>
+                                        <div class="card-text">
+                                            <pre><code>
 &lt;? if(date("Y-m-d H") &lt; "2018-09-10 08") { ?&lt;
     html 코드
 &lt;? } ?&gt;
 </code></pre>
 
 
-                                                <h6 class="card-title">시작과 끝 일시 지정하여 해당 코드 나타나는 것</h6>
-                                                    <div class="card-text">
-                                                        <pre><code>
+                                            <h6 class="card-title">시작과 끝 일시 지정하여 해당 코드 나타나는 것</h6>
+                                            <div class="card-text">
+                                                <pre><code>
 &lt;? 
 $now = time();
 $li_banner_start=mktime(0,0,0,8,9,2018);//"시","분","초","월","일","년"
@@ -95,20 +95,20 @@ html 코드2
 
 
 
-                                                        <h6 class="card-title">해당 페이지로 이동시 css class 추가</h6>
-                                                            <div class="card-text">
-                                                                <pre><code>
+                                                <h6 class="card-title">해당 페이지로 이동시 css class 추가</h6>
+                                                <div class="card-text">
+                                                    <pre><code>
 &lt;?=($PHP_SELF==$Abs_dir."/intro.html")?"_over":""?&gt; 
 
 &lt;li class="&lt;?php if($_title==5){ echo "on";}?&gt;
 </code></pre>
 
-                                                                </code></pre>
+                                                    </code></pre>
 
 
-                                                                <h6 class="card-title">디데이</h5>
-                                                                    <div class="card-text">
-                                                                        <pre><code>
+                                                    <h6 class="card-title">디데이</h5>
+                                                        <div class="card-text">
+                                                            <pre><code>
 &lt;?
 $end_date = date('2019-06-26'); //디데이 날짜
     $d_day = floor(( strtotime(substr($end_date,0,10)) -
@@ -124,10 +124,10 @@ $end_date = date('2019-06-26'); //디데이 날짜
 
 
 
-                                                                        <h6 class="card-title">프레임셋으로 만들어진 페이지 새로고침해도 해당
-                                                                            페이지 유지</h6>
-                                                                            <div class="card-text">
-                                                                                <pre><code>
+                                                            <h6 class="card-title">프레임셋으로 만들어진 페이지 새로고침해도 해당
+                                                                페이지 유지</h6>
+                                                            <div class="card-text">
+                                                                <pre><code>
 
 document.onkeydown = function (e) {
     var evtK = (e) ? e.which : window.event.keyCode;
@@ -155,9 +155,10 @@ document.onkeydown = function (e) {
 
 
 
-                                                    <h6 class="card-title">url 이동했을때 클릭해야지만 열리는 영역 열리는 방법</h6>
-                                                                                    <div class="card-text">
-                                                                                        <pre><code>
+                                                                <h6 class="card-title">url 이동했을때 클릭해야지만 열리는 영역 열리는 방법
+                                                                </h6>
+                                                                <div class="card-text">
+                                                                    <pre><code>
 
 http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예시 형식으로 각각 링크 가능
 
@@ -169,23 +170,44 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
 &lt;/script&gt;
 &lt;? } ?&gt;
                                                                                                 
+</code></pre>
 
+
+
+<h6 class="card-title">url에 특정 값(#123)을 넣어서 이동했을때 특정 함수 실행하는 방법 [javascript 버전]
+</h6>
+<div class="card-text">
+    <pre><code>
+
+&lt;script&gt;
+    $(document).ready(function(){
+        url = $(location).attr('href');
+        var hash = url.substring(url.indexOf("#")+1);
+        console.log(hash);
+        if ( hash == "Session8" || hash == "Session9")
+        {
+            //함수 실행
+            openCity(event, 'Ara_Hall');
+        }
+    })
+&lt;/script&gt;
+                                
 </code></pre>
 
 
 
 
 
-                                                                                    </div>
-                                                                            </div>
-                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="w-100"></div>
-
-                                                    </div>
+                                                        </div>
+                                                </div>
+                                                <div class="w-100"></div>
 
                                             </div>
-                                    </div>
+
+                                        </div>
+                                </div>
                             </div>
 
     </main>
