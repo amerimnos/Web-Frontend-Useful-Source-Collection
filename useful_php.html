@@ -177,7 +177,7 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
 <h6 class="card-title">url에 특정 값(#123)을 넣어서 이동했을때 특정 함수 실행하는 방법 [javascript 버전]
 </h6>
 <div class="card-text">
-    <pre><code>
+<pre><code>
 
 &lt;script&gt;
     $(document).ready(function(){
@@ -193,6 +193,70 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
 &lt;/script&gt;
                                 
 </code></pre>
+
+
+
+<h6 class="card-title">반응형 제작시, 오른쪽 끝에있는 스크롤바 공간 생각한 jqeury 스크립트 (출처: Do it 자바스크립트 제이쿼리 전면개정판)
+</h6>
+<div class="card-text">
+<pre><code>
+(function (win, $) {
+    var $html = $("html");
+    var deviceSize = {
+      pc: 1009,
+      tablet: 801,
+      mobile: 800
+    };
+  
+    function scrollShowHide(status) {
+      $html.css({
+        "overflow-y": status
+      });
+      return $html.width();
+    }
+  
+    var sc_w1 = scrollShowHide("hidden"),
+      sc_w2 = scrollShowHide("scroll"),
+      sc_w3 = sc_w1 - sc_w2;
+  
+    if (sc_w3 &gt; 0) {
+      deviceSize.pc = deviceSize.pc - sc_w3;
+      deviceSize.tablet = deviceSize.tablet - sc_w3;
+      deviceSize.mobile = deviceSize.mobile - sc_w3;
+    }
+    //console.log(deviceSize.pc);
+  
+    $(win).on("resize", function () {
+      var w_size = $(win).width();
+      if (w_size &gt;= deviceSize.pc &&
+        !$("html").hasClass("pc")) {
+        $html.removeClass("mobile tablet").addClass("pc");
+        scrollShowHide("scroll");
+      } else if (w_size &lt; deviceSize.pc &&
+        w_size &gt;= deviceSize.tablet &&
+        !$("html").hasClass("tablet")) {
+        $html.removeClass("mobile pc").addClass("tablet");
+        scrollShowHide("scroll");
+      } else if (w_size &lt;= deviceSize.mobile &&
+        !$html.hasClass("mobile")) {
+        $html.removeClass("pc tablet").addClass("mobile");
+        var menu_pos = parseInt($(".mobile-menu-wrap").css("left"));
+        if (menu_pos &gt;= 0) {
+          scrollShowHide("hidden");
+        }
+      }
+    });
+  
+    $(function () {
+      $(win).trigger("resize");
+    });
+  
+  
+  }(window, jQuery));
+</code></pre>
+
+
+
 
 
 
