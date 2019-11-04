@@ -255,10 +255,25 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
   }(window, jQuery));
 </code></pre>
 
-
-
-
-
+<h6 class="card-title">브라우저 소스코드 보기 방지 스크립트
+</h6>
+<div class="card-text">
+<pre><code>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    window.oncontextmenu = function () {
+        return false;
+    }
+    $(document).keydown(function (event) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+            return false;
+        }
+    });
+</script>
+</code></pre>
 
 
 
