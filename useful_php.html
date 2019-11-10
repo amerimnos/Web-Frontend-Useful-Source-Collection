@@ -48,7 +48,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="card mb-4 shadow-sm">
-                            <h5 class="shadow p-3 mb-5 bg-white rounded">유용한 PHP 코드</h5>
+                            <h5 class="shadow p-3 mb-5 bg-white rounded">유용한 PHP & Jquery & Javascript 코드</h5>
                             <div class="card-body">
                                 <h6 class="card-title">FTP에 이미지 덮어씌우면 강력새로고침(ctrl + f5)하지 않고 새로고침해도 변경되어 보임</h6>
                                 <div class="card-text">
@@ -275,6 +275,33 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
 &lt;/script&gt;
 </code></pre>
 
+<h6 class="card-title">현재 사용하고있는 사이트의 제이쿼리가 낮은 버전으로 돌아가고있을때 더 높은 버전을 사용하고 싶은 경우 사용하면 되는 소스(서로 영향 주는일 없음). <br><br>
+    var newJquery = $.noConflict(true);를 선언하고 $대신 newJquery넣어주면 됨(변수는 아무거나 바꿔도 상관없음[단, 변수 정의 규칙은 지켜야함]]).<br><br> 아래는 사용 예시.
+</h6>
+<div class="card-text">
+<pre><code>
+&lt;script&gt;
+var newJquery = $.noConflict(true);
+
+newJquery(function () {
+
+    newJquery(".tab_content").hide();
+    newJquery(".tab_content:first").show();
+
+    newJquery(".nav a").click(function () {
+        newJquery(".nav a").removeClass("active");
+        newJquery(this).addClass("active");
+        newJquery(".tab_content").hide()
+        var activeTab = newJquery(this).attr("rel");
+        newJquery("#" + activeTab).fadeIn()
+    });
+});
+&lt;/script&gt;
+</code></pre>
+
+
+
+
 
 
                                                                 </div>
@@ -297,7 +324,7 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
             <p class="float-right">
                 <a href="#">위로</a>
             </p>
-            <p><b>email</b> : <a href="mailto:yanggitak@naver.com">yanggitak@naver.com</a>
+            <p><b>문의</b> : <a href="mailto:yanggitak@naver.com">yanggitak@naver.com</a>
             </p>
 
         </div>
