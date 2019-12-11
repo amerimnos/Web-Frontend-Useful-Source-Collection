@@ -275,8 +275,7 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
 &lt;/script&gt;
 </code></pre>
 
-<h6 class="card-title">현재 사용하고있는 사이트의 제이쿼리가 낮은 버전으로 돌아가고있을때 더 높은 버전을 사용하고 싶은 경우 사용하면 되는 소스(서로 영향 주는일 없음). <br><br>
-    var newJquery = $.noConflict(true);를 선언하고 $대신 newJquery넣어주면 됨(변수는 아무거나 바꿔도 상관없음[단, 변수 정의 규칙은 지켜야함]]).<br><br> 아래는 사용 예시.
+<h6 class="card-title">현재 사용하고있는 사이트의 제이쿼리가 낮은 버전으로 돌아가고있을때 더 높은 버전을 사용하고 싶은 경우 사용하면 되는 소스(서로 영향 주는일 없음). var newJquery = $.noConflict(true);를 선언하고 $대신 newJquery넣어주면 됨(변수는 아무거나 바꿔도 상관없음[단, 변수 정의 규칙은 지켜야함]]).<br><br> 아래는 사용 예시.
 </h6>
 <div class="card-text">
 <pre><code>
@@ -298,6 +297,27 @@ newJquery(function () {
 });
 &lt;/script&gt;
 </code></pre>
+
+
+
+<h6 class="card-title">웹 상에서는 마우스 올렸을때 메뉴가 나타나고, 모바일에서는 터치했을때 메뉴가 나타나도록 하는 스크립트
+</h6>
+<div class="card-text">
+<pre><code>
+&lt;/script&gt;
+document.getElementById("sub1_main").addEventListener("touchstart", myFunction);
+function myFunction() {
+    event.preventDefault()
+    //아래 소스는 jquery 필요.
+    $('#sub1').show();
+}
+&lt;/script&gt;
+</code></pre>
+
+
+
+
+
 
 
 
