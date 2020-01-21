@@ -95,10 +95,10 @@ html 코드2
 
 
 
-                                                <h6 class="card-title">해당 페이지로 이동시 css class 추가</h6>
+                                                <h6 class="card-title">해당 페이지로 이동시 해당부분에 class _over 추가</h6>
                                                 <div class="card-text">
                                                     <pre><code>
-&lt;?=($PHP_SELF==$Abs_dir."/intro.html")?"_over":""?&gt; 
+&lt;?=($_SERVER["PHP_SELF"]=="/intro.html")?"_over":""?&gt; 
 
 &lt;li class="&lt;?php if($_title==5){ echo "on";}?&gt;
 </code></pre>
