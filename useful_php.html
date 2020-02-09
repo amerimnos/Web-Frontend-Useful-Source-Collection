@@ -21,8 +21,8 @@
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
                         <ul class="list-unstyled">
-                            <li><a href="https://codepen.io/amerimnos/pens/public?grid_type=list"
-                                    target="_blank" class="text-white">부품들</a></li>
+                            <li><a href="https://codepen.io/amerimnos/pens/public?grid_type=list" target="_blank"
+                                    class="text-white">유용한 부품들</a></li>
                             <li><a href="useful_php.html" class="text-white">PHP, Javascript, Jquery 코드</a></li>
                             <li><a href="index.html" class="text-white">좋은 웹사이트</a></li>
                         </ul>
@@ -57,19 +57,19 @@
 ?v=&lt;?php echo date('ymdhi')?&gt;" /&gt;
                                             
 </code></pre>
-
-                                    <h6 class="card-title">특정 일시 이후에 해당 코드가 나타나는 것</h5>
-                                        <div class="card-text">
-                                            <pre><code>
+                                </div>
+                                <h6 class="card-title">특정 일시 이후에 해당 코드가 나타나는 것</h5>
+                                    <div class="card-text">
+                                        <pre><code>
 &lt;? if(date("Y-m-d H") &lt; "2018-09-10 08") { ?&lt;
     html 코드
 &lt;? } ?&gt;
 </code></pre>
+                                    </div>
 
-
-                                            <h6 class="card-title">시작과 끝 일시 지정하여 해당 코드 나타나는 것</h6>
-                                            <div class="card-text">
-                                                <pre><code>
+                                    <h6 class="card-title">시작과 끝 일시 지정하여 해당 코드 나타나는 것</h6>
+                                    <div class="card-text">
+                                        <pre><code>
 &lt;? 
 $now = time();
 $li_banner_start=mktime(0,0,0,8,9,2018);//"시","분","초","월","일","년"
@@ -91,24 +91,24 @@ html 코드2
 &lt;?}?&gt;    
                                                                 
 </code></pre>
+                                    </div>
 
 
 
-
-                                                <h6 class="card-title">해당 페이지로 이동시 해당부분에 class _over 추가</h6>
-                                                <div class="card-text">
-                                                    <pre><code>
+                                    <h6 class="card-title">해당 페이지로 이동시 해당부분에 class _over 추가</h6>
+                                    <div class="card-text">
+                                        <pre><code>
 &lt;?=($_SERVER["PHP_SELF"]=="/intro.html")?"_over":""?&gt; 
 
 &lt;li class="&lt;?php if($_title==5){ echo "on";}?&gt;
 </code></pre>
 
-                                                    </code></pre>
+                                        </code></pre>
 
-
-                                                    <h6 class="card-title">디데이</h5>
-                                                        <div class="card-text">
-                                                            <pre><code>
+                                    </div>
+                                    <h6 class="card-title">디데이</h5>
+                                        <div class="card-text">
+                                            <pre><code>
 &lt;?
 $end_date = date('2019-06-26'); //디데이 날짜
     $d_day = floor(( strtotime(substr($end_date,0,10)) -
@@ -122,12 +122,12 @@ $end_date = date('2019-06-26'); //디데이 날짜
                                                                               
 </code></pre>
 
+                                        </div>
 
-
-                                                            <h6 class="card-title">프레임셋으로 만들어진 페이지 새로고침해도 해당
-                                                                페이지 유지</h6>
-                                                            <div class="card-text">
-                                                                <pre><code>
+                                        <h6 class="card-title">프레임셋으로 만들어진 페이지 새로고침해도 해당
+                                            페이지 유지</h6>
+                                        <div class="card-text">
+                                            <pre><code>
 
 document.onkeydown = function (e) {
     var evtK = (e) ? e.which : window.event.keyCode;
@@ -153,12 +153,12 @@ document.onkeydown = function (e) {
               
 </code></pre>
 
+                                        </div>
 
-
-                                                                <h6 class="card-title">url 이동했을때 클릭해야지만 열리는 영역 열리는 방법
-                                                                </h6>
-                                                                <div class="card-text">
-                                                                    <pre><code>
+                                        <h6 class="card-title">url 이동했을때 클릭해야지만 열리는 영역 열리는 방법
+                                        </h6>
+                                        <div class="card-text">
+                                            <pre><code>
 
 http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예시 형식으로 각각 링크 가능
 
@@ -172,12 +172,13 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
                                                                                                 
 </code></pre>
 
+                                        </div>
 
-
-<h6 class="card-title">url에 특정 값(#123)을 넣어서 이동했을때 특정 함수 실행하는 방법 [javascript 버전]
-</h6>
-<div class="card-text">
-<pre><code>
+                                        <h6 class="card-title">url에 특정 값(#123)을 넣어서 이동했을때 특정 함수
+                                            실행하는 방법 [javascript 버전]
+                                        </h6>
+                                        <div class="card-text">
+                                            <pre><code>
 
 &lt;script&gt;
     $(document).ready(function(){
@@ -194,12 +195,13 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
                                 
 </code></pre>
 
+                                        </div>
 
-
-<h6 class="card-title">반응형 제작시, 오른쪽 끝에있는 스크롤바 공간 생각한 jqeury 스크립트 (출처: Do it 자바스크립트 제이쿼리 전면개정판)
-</h6>
-<div class="card-text">
-<pre><code>
+                                        <h6 class="card-title">반응형 제작시, 오른쪽 끝에있는 스크롤바 공간 생각한
+                                            jqeury 스크립트 (출처: Do it 자바스크립트 제이쿼리 전면개정판)
+                                        </h6>
+                                        <div class="card-text">
+                                            <pre><code>
 (function (win, $) {
     var $html = $("html");
     var deviceSize = {
@@ -254,11 +256,11 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
   
   }(window, jQuery));
 </code></pre>
-
-<h6 class="card-title">브라우저 소스코드 보기 방지 스크립트
-</h6>
-<div class="card-text">
-<pre><code>
+                                        </div>
+                                        <h6 class="card-title">브라우저 소스코드 보기 방지 스크립트
+                                        </h6>
+                                        <div class="card-text">
+                                            <pre><code>
 &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
     window.oncontextmenu = function () {
@@ -274,11 +276,16 @@ http://archives.otologicalsociety.or.kr/index4.html?view=popup01 와 같은 예�
     });
 &lt;/script&gt;
 </code></pre>
-
-<h6 class="card-title">현재 사용하고있는 사이트의 제이쿼리가 낮은 버전으로 돌아가고있을때 더 높은 버전을 사용하고 싶은 경우 사용하면 되는 소스(서로 영향 주는일 없음). var newJquery = $.noConflict(true);를 선언하고 $대신 newJquery넣어주면 됨(변수는 아무거나 바꿔도 상관없음[단, 변수 정의 규칙은 지켜야함]]).<br><br> 아래는 사용 예시.
-</h6>
-<div class="card-text">
-<pre><code>
+                                        </div>
+                                        <h6 class="card-title">현재 사용하고있는 사이트의 제이쿼리가
+                                            낮은 버전으로 돌아가고 있을때 더 높은 버전을 사용하고 싶은 경우 사용하면
+                                            되는 소스(서로 영향 주는일 없음). var newJquery =
+                                            $.noConflict(true);를 선언하고 $대신
+                                            newJquery넣어주면 됨(변수는 아무거나 바꿔도 상관없음[단, 변수
+                                            정의 규칙은 지켜야함]]).<br><br> 아래는 사용 예시.
+                                        </h6>
+                                        <div class="card-text">
+                                            <pre><code>
 &lt;script&gt;
 var newJquery = $.noConflict(true);
 
@@ -298,12 +305,14 @@ newJquery(function () {
 &lt;/script&gt;
 </code></pre>
 
+                                        </div>
 
-
-<h6 class="card-title">웹 상에서는 마우스 올렸을때 메뉴가 나타나고, 모바일에서는 터치했을때 메뉴가 나타나도록 하는 스크립트
-</h6>
-<div class="card-text">
-<pre><code>
+                                        <h6 class="card-title">웹 상에서는 마우스 올렸을때
+                                            메뉴가 나타나고, 모바일에서는 터치했을때 메뉴가 나타나도록 하는
+                                            스크립트
+                                        </h6>
+                                        <div class="card-text">
+                                            <pre><code>
 &lt;/script&gt;
 document.getElementById("sub1_main").addEventListener("touchstart", myFunction);
 function myFunction() {
@@ -313,28 +322,17 @@ function myFunction() {
 }
 &lt;/script&gt;
 </code></pre>
-
-
-
-
-
-
-
-
-
-
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class="w-100"></div>
-
-                                            </div>
-
                                         </div>
-                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
 
     </main>
 

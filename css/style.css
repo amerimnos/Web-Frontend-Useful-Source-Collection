@@ -9,6 +9,9 @@
     color: #c3c8be;
     margin-left: -10px;
 }
+.card-text{
+    margin-bottom: 30px;
+}
 
 .h-big {
     max-height: 432px;
