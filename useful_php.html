@@ -106,7 +106,7 @@ html 코드2
                                         </code></pre>
 
                                     </div>
-                                    <h6 class="card-title">디데이</h5>
+                                    <h6 class="card-title">디데이 - php 버전이며, 새로고침해서 날짜가 반영됨.</h5>
                                         <div class="card-text">
                                             <pre><code>
 &lt;?
@@ -119,6 +119,49 @@ $end_date = date('2019-06-26'); //디데이 날짜
 ?&gt;
 
 &lt;?= $d_day; ?&gt;
+                                                                              
+</code></pre>
+
+                                        </div>
+                                    <h6 class="card-title">디데이 - 자바스크립트 버전이며, 실시간 반영됨.</h5>
+                                        <div class="card-text">
+                                            <pre><code>
+&lt;script&gt;
+
+(function () {
+  setInterval(CountDown, 1000);
+})();
+
+function CountDown() {
+	
+	var now = new Date();
+	var then = new Date("july 25,2020"); // 원하는 날짜
+	var gap = then.getTime() - now.getTime();
+	gap = Math.floor(gap / (1000 * 60 * 60 * 24));
+	
+	var diffTime = 0;
+	
+	var deadline = new Date(2020, 7, 25); //원하는 날짜
+	var now = new Date();
+	diffTime = (deadline.getTime() - now.getTime()) / 1000;
+
+
+	var hours = Math.floor(diffTime / 3600) % 24;
+	diffTime -= hours * 3600;
+
+	var minutes = Math.floor(diffTime / 60) % 60;
+	diffTime -= minutes * 60;
+
+
+	var seconds = Math.floor(diffTime % 60)
+
+	$(".d_days").html(gap);
+	$(".d_hours").html(("0" + hours).slice(-2));
+	$(".d_minutes").html(("0" + minutes).slice(-2));
+	$(".d_seconds").html(("0" + seconds).slice(-2));
+}
+
+&lt;/script&gt;
                                                                               
 </code></pre>
 
