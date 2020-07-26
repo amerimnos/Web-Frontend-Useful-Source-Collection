@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <script type="text/javascript"> 
+        window.onload=function() {
+            STLViewerEnable("stlviewer");
+         } 
+        </script>
+    <script src=/stl/webgl.min.js></script>
+    <script src=/stl/three.min.js></script>
+    <script src=/stl/stlloader.min.js></script>
+    <script src=/stl/orbitcontrols.min.js></script>
+    <script src=/stl/stlviewer.js></script>
+    <title>A Simple STL Viewer with Three.js</title>
+    <style>
+        html {
+            height: 1000px;
+        }
+
+        .stlviewer {
+            height: 600px;
+            width: 100%;
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="stlviewer" data-src="/stl/keystone.stl" data-rotate="x" data-zdistance="3"></div>
+    
+</body>
+
+</html>
