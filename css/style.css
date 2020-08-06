@@ -6,7 +6,7 @@ common start
     padding: 0;
 }
 /*=================
-common end
+common end 
 =================*/
 
 .code-view-box {
@@ -16,7 +16,7 @@ common end
     margin-left: -10px;
 }
 .card-text{
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 }
 
 .h-big {
