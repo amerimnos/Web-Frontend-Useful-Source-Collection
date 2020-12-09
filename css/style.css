@@ -58,9 +58,6 @@ p.text-muted > a {
         font-size: 15px;
     }
 
-    .ygt-nav {
-    min-width: 390px;
-    }
 }
 
 .ygt-nav a.active {
