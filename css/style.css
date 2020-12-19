@@ -40,7 +40,7 @@ p.text-muted > a {
     margin-bottom: 32px;
     display: table;
     overflow: hidden;
-    border: 4px solid #ffbf60;
+    border: 4px solid #e7a94e;
     border-radius: 40px;
     background-color: #ffbf60;
 }
@@ -61,7 +61,7 @@ p.text-muted > a {
 }
 
 .ygt-nav a.active {
-    color: #2196F3;
+    color: #c58b33;
 }
 
 .ygt-nav a.highlight {
