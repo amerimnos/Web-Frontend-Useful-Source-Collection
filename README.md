@@ -1,3 +1,3 @@
 # Amerimnos
 
-https://yanggitak.github.io/Amerimnos/
+https://yanggitak.github.io/Amerimnos
