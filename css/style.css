@@ -14,7 +14,7 @@ p.text-muted > a{color:#979797;}
 .github-icon path{fill: #fff; transform: scale(1.5);}
 
 /* top menu */
-header {position: sticky; z-index: 1; top: 0; }
+header {position: sticky; z-index: 2; top: 0; }
 
 .list-unstyled {color:#fff;}
 .list-unstyled a{color:#fff; transition:all 0.3s;}
