@@ -1,39 +1,56 @@
 /* reset */
-*{margin:0;padding:0;}
-a{text-decoration:none;color:inherit;}
-a:link{text-decoration:none;}
-a:visited{text-decoration:none;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: none;
+}
+
+/* // reset */
+
 
 /* common */
-.code-view-box{width:100%;background-color:rgba(31,31,31,0.726);color:#c3c8be;margin-left:-10px;}
-.card-text{margin-bottom:25px;}
-.h-big{max-height:432px;}
-.h-middle{height:100px;}
-p.text-muted>a{color:#979797;}
-.title a{font-size:20px;margin:11px 0;color:#fff;}
-.github-icon path{fill:#fff;transform:scale(1.5);}
-
-/* top menu */
-header{position:sticky;z-index:2;top:0;}
-.list-unstyled{color:#fff;}
-.list-unstyled a{color:#fff;transition:all 0.3s;}
-.list-unstyled li{list-style-type:disc;}
-.list-unstyled a.on{color:#ffbf60;}
-.list-unstyled a:hover{color:#ffbf60;}
-
-/* tab */
-.ygt-nav{margin:0 auto;cursor:pointer;position:relative;z-index:1;margin-bottom:32px;display:table;overflow:hidden;border:4px solid #e7a94e;border-radius:40px;background-color:#ffbf60;}
-.ygt-nav a{text-align:center;display:inline-block;padding:0.3em 0.9em;transition:color .4s;color:#fff;}
-@media (max-width:576px){
-    .ygt-nav a{font-size:15px;}
+.sr-only:not(:focus):not(:active) {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    white-space: nowrap;
 }
-.ygt-nav a.active{color:#b47b24;}
-.ygt-nav a.highlight{position:absolute;z-index:-1;top:0;left:0;padding:0;transition:left .4s,width .4s;border-radius:37px;background-color:#fff;}
-.tab_container{border-top:none;width:100%;background:#FFFFFF;margin-top:20px;padding:10px;}
-.tab_content{padding:5px;font-size:14px;display:none;}
-
-/* media query */
-@media (max-width:575.98px){
-    .title a{font-size:15px;}
-.title a .mobile-txt-none{display:none;}
+.wrapper {
+    width: 1500px;
+    margin:0 auto;
 }
+/* // common */
+
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 1500px;
+    padding: 20px;
+    background-color: #ccc;
+}
+/* // header */
