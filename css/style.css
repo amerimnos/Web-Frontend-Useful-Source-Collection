@@ -167,7 +167,9 @@ span[class*="material"] {
 }
 
 .main-content__article-wrap {
-    padding-bottom: 30px;
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
 .main-content__title {
@@ -183,6 +185,7 @@ span[class*="material"] {
     padding-bottom: 10px;
     font-size: 1.6rem;
 }
+
 .main-content__icon--new-tab {
     padding-left: 5px;
     font-weight: 300;
@@ -207,3 +210,15 @@ span[class*="material"] {
 }
 
 /* // footer */
+
+
+@media (max-width: 750px) {
+    .main {
+        padding: 0;
+    }
+
+    .main-content__title {
+        margin: 0px 20px 30px;
+        padding-top: 30px;
+    }
+}
