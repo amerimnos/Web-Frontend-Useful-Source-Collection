@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/highlight.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
     <button onclick="alert('준비중')" class="gnb-btn" aria-label="전체 메뉴 버튼"></button>
     <nav class="gnb">
         <ul class="gnb__list">
-            <li class="gnb__item"><a href="https://codepen.io/amerimnos/collections/" title="go to website" target="_blank">유용할 수도 있는 UI Components</a></li>
+            <li class="gnb__item"><a href="https://codepen.io/amerimnos/collections/" title="사이트 바로가기" target="_blank">유용할 수도 있는 UI Components</a></li>
         </ul>
     </nav>
 </header>
@@ -34,458 +35,296 @@
     <section class="main-content">
         <h2 id="referrence" class="main-content__title">관련 서적 및 레퍼런스</h2>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://developer.mozilla.org/ko" title="go to website" target="_blank" class="btn btn-primary">MDN<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://developer.mozilla.org/ko" title="사이트 바로가기" target="_blank">MDN<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">Web에 대한 거의 모든 정보가 있는 곳. <br>구글 검색창에 "mdn charset"과 같이 검색하면 상세한 정보를 얻을 수 있고 해당 페이지 하단에 크로스 브라우징 정보까지 얻을 수 있어 좋음.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://ko.javascript.info/" title="go to website" target="_blank" class="btn btn-primary">javascript.info<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://ko.javascript.info/" title="사이트 바로가기" target="_blank">javascript.info<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">자바스크립트 안내서(해외 저자)</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://poiemaweb.com/" title="go to website" target="_blank" class="btn btn-primary">poiemaweb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://poiemaweb.com/" title="사이트 바로가기" target="_blank">poiemaweb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">Web 언어에 대한 안내서(국내 저자)</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.youtube.com/@coohde" title="go to website" target="_blank" class="btn btn-primary">생활코딩<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.youtube.com/@coohde" title="사이트 바로가기" target="_blank">생활코딩<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">Web 언어를 영상으로 알기쉽게 안내</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://api.jquery.com/" title="go to website" target="_blank" class="btn btn-primary">jQuery API<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://api.jquery.com/" title="사이트 바로가기" target="_blank">jQuery API<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">jQuery 공식 문서. <br>요즘 javascript로 충분하고 성능까지 좋으며 현대 브라우저 대부분이 지원하기 때문에 시들어 졌지만, 아직까지 굉장히 많은 사이트에서 jquery를 활용하고 있음.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3schools.com/" title="go to website" target="_blank" class="btn btn-primary">W3Schools<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3schools.com/" title="사이트 바로가기" target="_blank">W3Schools<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">심플한 예제와 해설로 웹 관련 언어들을 쉽게 배울 수 있는곳</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/bradtraversy/50projects50days" title="go to website" target="_blank" class="btn btn-primary">50projects50days<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/bradtraversy/50projects50days" title="사이트 바로가기" target="_blank">50projects50days<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">자바스크립트 다양한 개념을 활용하여 알찬 예제를 구현</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/qkraudghgh/clean-code-javascript-ko" title="go to website" target="_blank" class="btn btn-primary">clean code javascript<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/qkraudghgh/clean-code-javascript-ko" title="사이트 바로가기" target="_blank">clean code javascript<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">자바스크립트 깔끔하게 작성하기</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/TheAlgorithms/JavaScript/blob/master/DIRECTORY.md" title="go to website" target="_blank" class="btn btn-primary">Algorithms JavaScript<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/TheAlgorithms/JavaScript/blob/master/DIRECTORY.md" title="사이트 바로가기" target="_blank">Algorithms JavaScript<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">일반적으로 쓰이는 알고리즘을 자바스크립트로 구현하여 모은 곳</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://nuli.navercorp.com/" title="go to website" target="_blank" class="btn btn-primary">nuli<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://nuli.navercorp.com/" title="사이트 바로가기" target="_blank">nuli<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">웹 접근성에 대해 자세히 알 수 있는 곳</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3.org/WAI/ARIA/apg/" title="go to website" target="_blank" class="btn btn-primary">ARIA Authoring Practices Guide<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3.org/WAI/ARIA/apg/" title="사이트 바로가기" target="_blank">ARIA Authoring Practices Guide<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">기능을 구현 할때 ARIA role을 활용하여 접근성에 맞게 구현한 예제 모음</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="aaa" title="go to website" target="_blank" class="btn btn-primary">git tutorial<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="aaa" title="사이트 바로가기" target="_blank">git tutorial<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">Git 사용 방법을 쉽게 설명함.<br>공식 문서(<a href="https://git-scm.com/book/ko/v2" target="_blank">https://git-scm.com/book/ko/v2</a>)도 있지만 너무 많은것이 있어 오히려 처음 배우기엔 무리. <br>차라리 기본적인 개념만 익히고 소스트리 활용하는것을 추천.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://youtube.com/playlist?list=PLZKTXPmaJk8Lx3TqPlcEAzTL8zcpBz7NP" title="go to website" target="_blank" class="btn btn-primary">코딩악마<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://youtube.com/playlist?list=PLZKTXPmaJk8Lx3TqPlcEAzTL8zcpBz7NP" title="사이트 바로가기" target="_blank">코딩악마<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">웹 관련 다양한 주제를 무료로 쉽게 배울 수 있는 곳</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://sass-lang.com/" title="go to website" target="_blank" class="btn btn-primary">SCSS<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://sass-lang.com/" title="사이트 바로가기" target="_blank">SCSS<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">CSS를 편하게 쓸 수 있게해주는 도구인 SCSS(≒Sass) 공식 문서</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://9elements.com/bem-cheat-sheet" title="go to website" target="_blank" class="btn btn-primary">9elements - BEM best practice<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://9elements.com/bem-cheat-sheet" title="사이트 바로가기" target="_blank">9elements - BEM best practice<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">CSS의 BEM 방법론에 대한 best practice</div>
         </article>
     </section>
     <section class="main-content">
         <h2 id="referrence" class="main-content__title">컴포넌트 UI 모음</h2>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://codepen.io/" title="go to website" target="_blank" class="btn btn-primary">codepen<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://codepen.io/" title="사이트 바로가기" target="_blank">codepen<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">굉장히 다양함. <br>타의 추종을 불허할 만큼 다양하고 방대하여 무엇을 구현하려고 할 때 구글 검색창에 "codepen scroll animation" 등과 같이 1순위로 검색하여 작업할 때 영감을 얻으기 좋은 곳.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3schools.com/howto/default.asp" title="go to website" target="_blank" class="btn btn-primary">w3schools<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3schools.com/howto/default.asp" title="사이트 바로가기" target="_blank">w3schools<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">꽤 다양함. <br>영어로 되어있지만 DeepL과 함께라면 두렵지 않음</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore" title="go to website" target="_blank" class="btn btn-primary">You Don't Need Lodash Underscore<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore" title="사이트 바로가기" target="_blank">You Don't Need Lodash Underscore<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">프론트엔드에게 익숙한 lodash, underscore 없이 순수 js만으로 구현한 예제 모음</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://jqueryui.com/demos/" title="go to website" target="_blank" class="btn btn-primary">jqueryui<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://jqueryui.com/demos/" title="사이트 바로가기" target="_blank">jqueryui<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">제이쿼리를 활용한 곳 - 01</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.jqueryscript.net/" title="go to website" target="_blank" class="btn btn-primary">jqueryscript<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.jqueryscript.net/" title="사이트 바로가기" target="_blank">jqueryscript<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">제이쿼리를 활용한 곳 - 02</div>
         </article>
     </section>
     <section class="main-content">
         <h2 id="referrence" class="main-content__title">플러그인(라이브러리)</h2>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://swiperjs.com/" title="go to website" target="_blank" class="btn btn-primary">Swiper.js<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://swiperjs.com/" title="사이트 바로가기" target="_blank">Swiper.js<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">가장 널리 사용되고 인기있는 슬라이드</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/studio-freight/lenis" title="go to website" target="_blank" class="btn btn-primary">lenis<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/studio-freight/lenis" title="사이트 바로가기" target="_blank">lenis<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">smooth scroll(부드러운 스크롤). <br>패드나 폰에서는 기본 부드러운 스크롤이 되지만 pc에서는 딱딱하기 때문에 scroll 모션이 있는 사이트에 함께 적용하면 효과가 극대화 됨.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/VerbalExpressions/JSVerbalExpressions" title="go to website" target="_blank" class="btn btn-primary">VerbalExpressions<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/VerbalExpressions/JSVerbalExpressions" title="사이트 바로가기" target="_blank">VerbalExpressions<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">정규식을 쉽게 사용하는 방법. ChatGPT 등 여러곳을 활용할 수 있지만 정확하지 않을 수 있어 이곳에서 직접 구현하는 것도 좋을 수 있음.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://fonts.google.com/?subset=korean" title="go to website" target="_blank" class="btn btn-primary">google font<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://fonts.google.com/?subset=korean" title="사이트 바로가기" target="_blank">google font<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">무료로 쉽게 웹 폰트 사용할 수 있는 곳</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://google-webfonts-helper.herokuapp.com/fonts" title="go to website" target="_blank" class="btn btn-primary">google webfonts helper<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://google-webfonts-helper.herokuapp.com/fonts" title="사이트 바로가기" target="_blank">google webfonts helper<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">구글폰트가 아닌 직접 폰트를 서버에 올려서 쉽게 적용할 수 있게 도와주는 사이트</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/davidjbradshaw/image-map-resizer" title="go to website" target="_blank" class="btn btn-primary">Image Map Resize<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/davidjbradshaw/image-map-resizer" title="사이트 바로가기" target="_blank">Image Map Resize<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">반응형 이미지 맵으로 어떤 해상도에서도 이미지맵 적용되게함. jQuery-rwdImageMaps는 ios 특정 상황에서 NaN 이슈가 있어 관련 보완 코드를 넣어야해서 비추천</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://videojs.com/" title="go to website" target="_blank" class="btn btn-primary">video.js<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://videojs.com/" title="사이트 바로가기" target="_blank">video.js<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">다양한 기능으로 일관되게 비디오 재생할 수 있는 UI 제공</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://greensock.com/get-started-js" title="go to website" target="_blank" class="btn btn-primary">greensock<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://greensock.com/get-started-js" title="사이트 바로가기" target="_blank">greensock<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">scroll 모션 등 세계적으로 많이 사용하는 모션 라이브러리. 상업적 이용시 유료임.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/bqworks/slider-pro" title="go to website" target="_blank" class="btn btn-primary">slider-pro<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/bqworks/slider-pro" title="사이트 바로가기" target="_blank">slider-pro<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">갤러리 게시판 형태</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://disqus.com" title="go to website" target="_blank" class="btn btn-primary">disqus<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://disqus.com" title="사이트 바로가기" target="_blank">disqus<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">정식 한글 지원하지 않지만(한글 적용하는 꼼수가 있음) 강력한 댓글 라이브러리. livere 보단 무료화 성향이 있음.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://kingsora.github.io/OverlayScrollbars/" title="go to website" target="_blank" class="btn btn-primary">OverlayScrollbars<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://kingsora.github.io/OverlayScrollbars/" title="사이트 바로가기" target="_blank">OverlayScrollbars<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">스크롤바 커스텀 할 수 있음.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/airbnb/lottie-web" title="go to website" target="_blank" class="btn btn-primary">lottie web<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/airbnb/lottie-web" title="사이트 바로가기" target="_blank">lottie web<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">에프터 이팩트와 SVG를 활용한 멋진 모션그래픽 제작</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/haltu/muuri" title="go to website" target="_blank" class="btn btn-primary">muuri<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/haltu/muuri" title="사이트 바로가기" target="_blank">muuri<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">여러 박스 컨텐츠들을 반응형에 맞게 알아서 정렬해주고, 필터링, 드래그 엔 드랍 등 다양한 레이아웃을 제공</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://alvarotrigo.com/fullPage/ko/" title="go to website" target="_blank" class="btn btn-primary">fullPage.js<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://alvarotrigo.com/fullPage/ko/" title="사이트 바로가기" target="_blank">fullPage.js<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">GNU GPL 라이선스 v3 허용하는 한(소스코드 공개 등) 막강한 풀페이지 레이아웃을 제공함.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://place.map.daum.net/1913983226" title="go to website" target="_blank" class="btn btn-primary">kakao map<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://place.map.daum.net/1913983226" title="사이트 바로가기" target="_blank">kakao map<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">간편하게 넣을 수 있는 지도 API. 다음 지도 > 위치 검색 > 왼쪽 상세보기 클릭 > 오른쪽 상단 깃발 표시 누를면 됨.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/stl" title="go to website" target="_blank" class="btn btn-primary">stlviewer<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">.stl 파일을 활용하여 3D 물체를 조작할 수 있음. https://github.com/tonyb486/stlviewer 사이트의 원본 소스를 활용하여 정상적으로 작동되는 소스 직접 올림. 스크립트 오류로 직접 다운받아서 로컬환경에서 확인 해야함. 새로운 버전도 나와서 이곳 참고(<a href="https://github.com/brentyi/stl_web_viewer2" title="stl viewer 업그레이드 버전 사이트 바로가기" target="_blank">https://github.com/brentyi/stl_web_viewer2</a> )</div>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/stl" title="사이트 바로가기" target="_blank">stlviewer<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">.stl 파일을 활용하여 3D 물체를 조작할 수 있음. <a href="https://github.com/tonyb486/stlviewer" class="btn-linker" target="_blank">사이트 <span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a>의 원본 소스를 활용하여 정상적으로 작동되는 소스 직접 올림. 스크립트 오류로 직접 다운받아서 로컬환경에서 확인 해야함. <a href="https://github.com/brentyi/stl_web_viewer2" class="btn-linker" title="stl viewer 업그레이드 버전 사이트 바로가기" target="_blank">새로운 버전<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="aaa" title="go to website" target="_blank" class="btn btn-primary">bbb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">ccc</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="aaa" title="go to website" target="_blank" class="btn btn-primary">bbb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">ccc</div>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://blobanimation.com/" title="사이트 바로가기" target="_blank">blob animation<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">svg 만으로 움직이는 애니메이션 구현(안에 이미지까지 넣을 수 있음)</div>
         </article>
     </section>
     <section class="main-content">
         <h2 id="referrence" class="main-content__title">디자인</h2>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.figma.com" title="go to website" target="_blank" class="btn btn-primary">figma<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">코딩 가이드 제작 등 포토샵을 대체할 정도로 디자인 제작툴로 상당히 유용함.</div>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.figma.com" title="사이트 바로가기" target="_blank">figma<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">코딩 가이드 제작 등 포토샵을 대체할 정도로 디자인 제작툴로 상당히 유용함. 포토샵 처럼 무겁지 않아서 더욱더 빛을 발함.</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="aaa" title="go to website" target="_blank" class="btn btn-primary">bbb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3schools.com/colors/colors_monochromatic.asp" title="사이트 바로가기" target="_blank">w3schools - colors monochromatic<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">한가지 컬러 정하면 알아서 조화로운 컬러 생성</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://color.adobe.com/ko/explore/" title="사이트 바로가기" target="_blank">adobe - color<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">인기있는 색 조합 모음</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://fonts.google.com/icons" title="사이트 바로가기" target="_blank">material icon<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">쉽게 웹에 icon을 넣을 수 있는 곳 01</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://ionic.io/ionicons" title="사이트 바로가기" target="_blank">ionicons<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">쉽게 웹에 icon을 넣을 수 있는 곳 02</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://heropatterns.com/" title="사이트 바로가기" target="_blank">heropatterns<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">패턴 생성</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.toptal.com/designers/htmlarrows" title="사이트 바로가기" target="_blank">html 심볼/특수문자<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">다양한 html 심볼/특수문자 모음</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://emojipedia.org/" title="사이트 바로가기" target="_blank">emojipedia<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">다양한 이모지 아이콘 모음</div>
+        </article>
+
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://neumorphism.io/" title="사이트 바로가기" target="_blank">Neumorphism<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">Neumorphism 생성기</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.colorzilla.com/gradient-editor/" title="사이트 바로가기" target="_blank">colorzilla<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">그라디언트 생성기</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://realfavicongenerator.net" title="사이트 바로가기" target="_blank">Favicon Generator<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">파피콘 쉽게 만들 수 있는 곳</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://unsplash.com/" title="사이트 바로가기" target="_blank">unsplash<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">상업적으로 이용 가능한 무료 이미지 모음</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.webdesign-inspiration.com/" title="사이트 바로가기" target="_blank">webdesign-inspiration<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">해외 감각적인 웹사이트 벤치마킹 할 수 있는 곳</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.gdweb.co.kr/main" title="사이트 바로가기" target="_blank">gdweb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">국내 감각적인 웹사이트 벤치마킹 할 수 있는 곳</div>
+        </article>
+    </section>
+    <section class="main-content">
+        <h2 id="referrence" class="main-content__title">개발 Tip</h2>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://chat.openai.com" title="사이트 바로가기" target="_blank">ChatGPT<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">정확하고 자세히 물어야 하며, 이어서 다시 질문하면 이전 내용을 학습하여 더 정교한 답변을 얻을 수 있음. <br>코드 리팩토링/코드 분석/성능 개선/잠재적 문제점 개선도 시킬 수 있음. <br> 사실이 아닌 정보를 사실 인냥 답변하는 경우가 있어 검증은 필수</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="aaa" title="사이트 바로가기" target="_blank">Bing 채팅<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">ChatGPT와 비견되는 AI 검색 툴로 edge 브라우저와 전용 앱에서 실행 가능</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://code.visualstudio.com" title="사이트 바로가기" target="_blank">visual studio code<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">대세인 텍스트 에디터. 참고로, 복잡한 테이블 작업과 이미지맵 작업할때는 Adobe Dreamweaver 추천</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title">vscode 추천 extension</h3>
+            <div class="main-content__desc">GitHub Copilot X, TabOut, Live Server, Project Manager, GitLens, Nested Comments, IntelliCode, Auto Rename Tag, CSS Navigation, ESLint, Nested Comments, css-format-one-line</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title">vscode 사용 팁</h3>
+            <div class="main-content__desc">
+                <ul class="main-content__list main-content__list--type01">
+                    <li class="main-content__item">class 더블 클릭시 - 기호 때문에 class 전체가 선택 안되는 번거로움이 있으므로, ctrl + , > editor.wordSeparators 에서 - 기호는 빼면 편함.</li>
+                    <li class="main-content__item">설정에서 detect indentation 체크하면 원하는 부분에 범위 지정 후 (ctrl + k) + f로 코드 포맷시 해당 파일의 들여쓰기에 맡게 알아서 포맷되어 편리함.</li>
+                    <li class="main-content__item">우측 상단에 '...' 기호 클릭 > [편집기 열어 두기] 체크하면 파일 열때 새창으로 열림.</li>
+                    <li class="main-content__item">ctrl + d : 원하는 부분에서 계속 입력시 인접한 코드 선택</li>
+                    <li class="main-content__item">나만의 Snippet 만들기 : ctrl + shift + p > Snippets: Configure User Snippets > javascript.json 들어간 후 아래와 같이 코드 입력하면 javascript 파일 내에서 'cl' 입력 후 tab 누르면 쉽게 콘솔 로그 작업 가능함.
+                        <pre><code class="json">
+"Print to console": {
+    "prefix": "cl",
+    "body": [
+        "console.log('$1', $2);",
+    ],
+    "description": "Log output to console"
+}
+                          </code></pre>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://mid.ebs.co.kr/course/series/list?stdyStdCd=&lvlCd=&viewType=normal&studyPhaseCode=&sortSequence=0&clsfsSysId=&orderClsfsSysId=22000018&sch_check=&searchKeyword=&seriesId=S00017" title="사이트 바로가기" target="_blank">EBS 중학 영어 문법<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">영어독해 실력이 곧 코딩 실력과 직결됨. DeepL, 구글번역, 파파고가 있지만 2% 부족하여 문맥을 온전히 받아들일 수 없기 때문에, 기본적인 영어 문법 공부를 해야함. 필자가 봤을땐 중학교 영문법만 알면 독해하는데 문제없으며, 무료 강좌인 EBS 중학 뉴런 영어1,2,3 시리즈 추천함.</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://jsfiddle.net" title="사이트 바로가기" target="_blank">JSFiddle<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">바로바로 코딩을 테스트할 수 있는 도구</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://frontendfoc.us/" title="사이트 바로가기" target="_blank">frontendfoc<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">웹 프론트엔드 관련 유용한 정보를 뉴스레터 형식으로 주1회 받을 수 있음.</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://ckeditor.com/ckeditor-5/demo/" title="사이트 바로가기" target="_blank">ckeditor<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">엑셀에 html로 변환해주는 기능이 있지만, 엑셀 내용 여기 게시판에 붙여넣으면 테이블 코드가 자동 생성됨.</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://yesviz.com/viewport" title="사이트 바로가기" target="_blank">yesviz - viewport<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">모바일 기기의 해상도, viewport 등 알 수 있는 곳</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="aaa" title="사이트 바로가기" target="_blank">bbb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">ccc</div>
         </article>
     </section>
 
 
 
-
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">material.io</h6>
-                    <div class="card-body">
-                        <p class="card-text">구글에서 제공하는 색 조합 찾기</p>
-                        <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0" title="go to website"
-                            target="_blank" class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">2colors</h6>
-                    <div class="card-body">
-                        <p class="card-text">두가지 색으로 깔끔하게 표현</p>
-                        <a href="https://2colors.colorion.co/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">w3schools - colors_monochromatic</h6>
-                    <div class="card-body">
-                        <p class="card-text">한가지 컬러 정하면 알아서 조화로운 컬러 생성해줌</p>
-                        <a href="https://www.w3schools.com/colors/colors_monochromatic.asp" title="go to website"
-                            target="_blank" class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">blob animation</h6>
-                    <div class="card-body">
-                        <p class="card-text">svg 만으로 움직이는 애니메이션 구현(안에 이미지까지 넣을 수 있음)</p>
-                        <a href="https://blobanimatio   n.com/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">adobe - color</h6>
-                    <div class="card-body">
-                        <p class="card-text">인기있는 색 조합 모음</p>
-                        <a href="https://color.adobe.com/ko/explore/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">ionicons</h6>
-                    <div class="card-body">
-                        <p class="card-text">쉽게 웹에 icon을 넣을 수 있음1</p>
-                        <a href="https://ionic.io/ionicons" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">material icon</h6>
-                    <div class="card-body">
-                        <p class="card-text">쉽게 웹에 icon을 넣을 수 있음2</p>
-                        <a href="https://material.io/resources/icons/?icon=accessibility_new&style=baseline"
-                            title="go to website" target="_blank" class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">heropatterns</h6>
-                    <div class="card-body">
-                        <p class="card-text">버튼이나 뒷배경에 코딩으로 패턴 넣을 수 있는 곳</p>
-                        <a href="https://www.heropatterns.com/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">html 심볼/특수문자</h6>
-                    <div class="card-body">
-                        <p class="card-text">다양한 html 심볼/특수문자 모음</p>
-                        <a href="https://www.toptal.com/designers/htmlarrows/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">emojipedia</h6>
-                    <div class="card-body">
-                        <p class="card-text">다양한 이모지 아이콘 모음</p>
-                        <a href="https://emojipedia.org/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">Neumorphism</h6>
-                    <div class="card-body">
-                        <p class="card-text">Neumorphism 생성기</p>
-                        <a href="https://neumorphism.io/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">colorzilla</h6>
-                    <div class="card-body">
-                        <p class="card-text">그라디언트 생성기</p>
-                        <a href="https://www.colorzilla.com/gradient-editor/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">Favicon Generator</h6>
-                    <div class="card-body">
-                        <p class="card-text">쉽게 모든 브라우저 호환되도록 파피콘 쉽게 만들 수 있는 곳</p>
-                        <a href="https://realfavicongenerator.net" title="go to website" target="_blank"
-                            class="btn btn-primary">Go </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">unsplash</h6>
-                    <div class="card-body">
-                        <p class="card-text">상업적으로 이용 가능한 무료 이미지 모음</p>
-                        <a href="https://unsplash.com/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">webdesign-inspiration</h6>
-                    <div class="card-body">
-                        <p class="card-text">해외 감각적인 웹사이트 벤치마킹 할 수 있는 곳</p>
-                        <a href="https://www.webdesign-inspiration.com/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">gdweb</h6>
-                    <div class="card-body">
-                        <p class="card-text">국내 감각적인 웹사이트 벤치마킹 할 수 있는 곳</p>
-                        <a href="https://www.gdweb.co.kr/main" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- // tab3 -->
-    <!-- tab4 -->
-    <div id="tab4" class="tab_content">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 mb-3">
-                <div class="card">
-                    <h6 class="card-header">ChatGPT</h6>
-                    <div class="card-body">
-                        <p class="card-text">자세히 물어보고, 이어서 다시 질문하면 이전 내용을 학습하여 더 정교한 답변을 얻을 수 있음. <br>코드 리팩토링/분석/성능개선/보완
-                            및 원하는 코드 구현을 할 수 있게 답변 해줌. <br> 사실이 아닌 정보를 사실 인냥 답변하는 경우가 있어 검증은 필수.</p>
-                        <a href="https://chat.openai.com" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 mb-3">
-                <div class="card">
-                    <h6 class="card-header">visual studio code</h6>
-                    <div class="card-body">
-                        <p class="card-text">대세인 텍스트 에디터. 참고로, 복잡한 테이블 작업과 이미지맵 작업할때는 Adobe Dreamweaver 추천</p>
-                        <a href="https://code.visualstudio.com/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 mb-3">
-                <div class="card">
-                    <h6 class="card-header">vscode 추천 extension</h6>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <br>TabOut, Live Server, GitLens, Git graph, Project Manager, Nested Comments, IntelliCode,
-                            Auto Rename Tag, CSS Navigation, ESLint, css-format-one-line
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 mb-3">
-                <div class="card">
-                    <h6 class="card-header">vscode 사용 팁</h6>
-                    <div class="card-body">
-                        <p class="card-text">
-                            1. class 더블 클릭시 - 기호 때문에 class 전체가 선택 안되는 번거로움이 있으므로, ctrl + , > editor.wordSeparators 에서 -
-                            기호는 빼면 편함.<br>
-                            2. 설정에서 detect indentation 체크하면 원하는 부분에 범위 지정 후 (ctrl + k) + f로 코드 포맷시 해당 파일의 들여쓰기에 맡게 알아서
-                            포맷되어 편리함.<br>
-                            3. 우측 상단에 '...' 기호 클릭 > [편집기 열어 두기] 체크하면 파일 열때 새창으로 열림.<br>
-                            4. ctrl + d : 원하는 부분에서 계속 입력시 인접한 코드 선택
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-8 mb-3">
-                <div class="card">
-                    <h6 class="card-header">EBS 중학 영어 문법</h6>
-                    <div class="card-body">
-                        <p class="card-text">영어독해 실력이 곧 코딩 실력과 직결됨. DeepL, 구글번역, 파파고가 있지만 2% 부족하여 문맥을 온전히 받아들일 수 없기 때문에,
-                            기본적인 영어 문법 공부를 해야함. 필자가 봤을땐 중학교 영문법만 알면 독해하는데 문제없으며, 무료 강좌인 EBS 중학 뉴런 영어1,2,3 시리즈 추천함.
-                        </p>
-                        <a href="https://mid.ebs.co.kr/course/series/list?seriesId=S00017" title="go to website"
-                            target="_blank" class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">JSFiddle</h6>
-                    <div class="card-body">
-                        <p class="card-text">바로바로 코딩을 테스트할 수 있는 도구</p>
-                        <a href="https://jsfiddle.net" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">frontendfoc</h6>
-                    <div class="card-body">
-                        <p class="card-text">웹 프론트엔드 관련 유용한 정보를 뉴스레터 형식으로 주1회 받을 수 있음.</p>
-                        <a href="https://frontendfoc.us/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">ckeditor</h6>
-                    <div class="card-body">
-                        <p class="card-text">엑셀에 html로 변환해주는 기능이 있지만, 엑셀 내용 여기 게시판에 붙여넣으면 테이블 자동 생성됨.</p>
-                        <a href="https://ckeditor.com/ckeditor-5/demo" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card">
-                    <h6 class="card-header">yesviz - viewport</h6>
-                    <div class="card-body">
-                        <p class="card-text">모바일 기기의 해상도, viewport 등 알 수 있는 곳
-                        </p>
-                        <a href="https://yesviz.com/viewport" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
-                    </div>
-                </div>
-            </div>
             <div class="col-md-6 col-lg-4 mb-3">
                 <div class="card">
                     <h6 class="card-header">stackoverflow</h6>
                     <div class="card-body">
                         <p class="card-text">정말 거의 모든 답을 찾을 수 있음. 번역기로 영어로 변환 후 구글링 하자. 한글 보다 더 유용한 검색 결과를 얻을 수 있다.
                         </p>
-                        <a href="https://stackoverflow.com/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="https://stackoverflow.com/" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -494,8 +333,8 @@
                     <h6 class="card-header">can i use</h6>
                     <div class="card-body">
                         <p class="card-text">크로스 브라우징 문제를 파악 및 대처할 수 있는 곳</p>
-                        <a href="https://caniuse.com/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="https://caniuse.com/" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -504,8 +343,8 @@
                     <h6 class="card-header">apple developer archive</h6>
                     <div class="card-body">
                         <p class="card-text">IOS 사파리 관련하여 태그/속성 지원 여부 확인 하는 곳(2018년 이전 버전임)</p>
-                        <a href="https://developer.apple.com/library/archive/navigation/" title="go to website"
-                            target="_blank" class="btn btn-primary">Go</a>
+                        <a href="https://developer.apple.com/library/archive/navigation/" title="사이트 바로가기"
+                            target="_blank">Go</a>
                     </div>
                 </div>
             </div>
@@ -515,8 +354,8 @@
                     <div class="card-body">
                         <p class="card-text">웹 페이지의 품질을 개선하기 위한 오픈 소스 자동화 도구
                         </p>
-                        <a href="https://developer.chrome.com/docs/lighthouse/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="https://developer.chrome.com/docs/lighthouse/" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -526,8 +365,8 @@
                     <div class="card-body">
                         <p class="card-text">전세계에서 전처리기, 스타일, 프레임워크 등 CSS에 대한 세계적인 트렌드를 확인 할 수 있는 곳
                         </p>
-                        <a href="https://2021.stateofcss.com/ko-KR" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="https://2021.stateofcss.com/ko-KR" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -536,8 +375,8 @@
                     <h6 class="card-header">state of js</h6>
                     <div class="card-body">
                         <p class="card-text">전세계에서 Javascript 프레임워크/라이브러리 동향을 확인할 수 있는 곳</p>
-                        <a href="https://stateofjs.com" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="https://stateofjs.com" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -548,8 +387,8 @@
                         <p class="card-text">DeepL(파파고,구글번역 보다 번역 품질 좋고 긴 문장도 단축키 설정으로 바로 번역 가능), Full Page Screen
                             Capture(스크롤 전체 캡처), AdBlock(간혹 이것 때문에 콘텐츠가 안보여서 주의), axe DevTools - Web Accessibility
                             Testing(웹접근성 체크)</p>
-                        <a href="https://chrome.google.com/webstore/category/extensions?hl=ko" title="go to website"
-                            target="_blank" class="btn btn-primary">Go</a>
+                        <a href="https://chrome.google.com/webstore/category/extensions?hl=ko" title="사이트 바로가기"
+                            target="_blank">Go</a>
                     </div>
                 </div>
             </div>
@@ -560,8 +399,8 @@
                         <p class="card-text">윈도우 창을 투명화, 윈도우 창 가장 위로 고정 할 수 있는 도구. 웹 퍼블리싱 마무리 작업할때
                             포토샵, xd, pigma 등을 투명화해서 마진, 패팅, 크기 등등 그대로 배낄 수 있음. 귀찮으면 alt + shift + s로 캡처 후 포토샵에서 opacity
                             줄여도 됨.</p>
-                        <a href="https://chime.tv/products/glass2k.shtml" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="https://chime.tv/products/glass2k.shtml" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -572,7 +411,7 @@
                         <p class="card-text">세계 브라우저 점유율 특히 한국 현재의 브라우저 점유율 및 버전 사용량을
                             확인할 수 있음</p>
                         <a href="http://gs.statcounter.com/browser-market-share/all/south-korea/#monthly-201701-201812"
-                            title="go to website" target="_blank" class="btn btn-primary">Go</a>
+                            title="사이트 바로가기" target="_blank">Go</a>
                     </div>
                 </div>
             </div>
@@ -582,8 +421,8 @@
                     <h6 class="card-header">google calendar</h6>
                     <div class="card-body">
                         <p class="card-text">업무/생활 계획 짜기</p>
-                        <a href="https://calendar.google.com/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="https://calendar.google.com/" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -593,8 +432,8 @@
                     <div class="card-body">
                         <p class="card-text">업무/생활 메모장으로 활용. 따로 저장하지 않아도 되며, 자동으로
                             버전 관리를 해주므로 지난 작업 내역을 확인할 수 있어 keep 보다 훨씬 좋음.</p>
-                        <a href="https://docs.google.com/document/u/0/" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="https://docs.google.com/document/u/0/" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -604,7 +443,7 @@
                     <div class="card-body">
                         <p class="card-text">한 줄로 만들어 버리는 툴</p>
                         <a href="https://tools.knowledgewalls.com/online-multiline-to-single-line-converter"
-                            title="go to website" target="_blank" class="btn btn-primary">Go</a>
+                            title="사이트 바로가기" target="_blank">Go</a>
                     </div>
                 </div>
             </div>
@@ -613,8 +452,8 @@
                     <h6 class="card-header">맞춤법</h6>
                     <div class="card-body">
                         <p class="card-text">한글 맞춤법 검사기</p>
-                        <a href="http://speller.cs.pusan.ac.kr" title="go to website" target="_blank"
-                            class="btn btn-primary">Go</a>
+                        <a href="http://speller.cs.pusan.ac.kr" title="사이트 바로가기" target="_blank"
+                           >Go</a>
                     </div>
                 </div>
             </div>
@@ -623,65 +462,28 @@
                     <h6 class="card-header">svg-to-background-image-conversion</h6>
                     <div class="card-body">
                         <p class="card-text">SVG를 background-image로 변환해주는 곳</p>
-                        <a href="https://websemantics.uk/tools/svg-to-background-image-conversion" title="go to website"
-                            target="_blank" class="btn btn-primary">Go</a>
+                        <a href="https://websemantics.uk/tools/svg-to-background-image-conversion" title="사이트 바로가기"
+                            target="_blank">Go</a>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-    <!-- // tab4 -->
-
-
-
-
-
-
-
-
-
-        </article>
-    </section>
-
-
-
-
 </main>
-
-
-
-
 <footer class="footer">
     <ul class="footer__list">
         <li class="footer__item"><a href="mailto:yanggitak@naver.com">문의 : yanggitak@naver.com</a></li>
     </ul>
 </footer>
-
-
-
-
 <a class="btn-top" href="#document">제일 위로 가기</a>
-
-
-
-
-
-
-
-
-
-
 </div>
-<script src="js/jquery-3.6.3.js"></script>
-<script src="js/script.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script defer src="js/jquery-3.6.3.js"></script>
+<script defer src="js/script.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ8XLR68BJ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-WQ8XLR68BJ');
 </script>
 </body>

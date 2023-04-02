@@ -6,5 +6,5 @@ let nav = $(".ygt-nav"),
 initialize();
 
 function initialize() {
-    
+    hljs.highlightAll();
 }
