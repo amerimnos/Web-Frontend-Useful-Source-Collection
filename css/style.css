@@ -76,6 +76,7 @@ ul {
     font-size: 1.3rem;
     color: #fff;
 }
+
 .btn-linker {
     padding: 0 3px;
     border-radius: 3px;
@@ -222,6 +223,24 @@ span[class*="material"] {
     margin-left: 15px;
     margin-bottom: 7px;
     color: #b5d692;
+}
+
+.main-content__table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.main-content__table th {
+    border: solid 1px #8d8d8d;
+    padding: 2px 5px;
+    background-color: #282c34;
+}
+
+.main-content__table td {
+    border: solid 1px #8d8d8d;
+    padding: 2px 5px;
 }
 
 
