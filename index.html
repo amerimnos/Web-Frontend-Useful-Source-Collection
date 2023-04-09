@@ -268,7 +268,7 @@
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title">vscode 추천 extension</h3>
-            <div class="main-content__desc">GitHub Copilot X, TabOut, Live Server, Project Manager, GitLens, Nested Comments, IntelliCode, Auto Rename Tag, CSS Navigation, ESLint, Nested Comments, css-format-one-line</div>
+            <div class="main-content__desc">GitHub Copilot X(유료), TabOut, Live Server, Project Manager, GitLens, Nested Comments, IntelliCode, Auto Rename Tag, CSS Navigation, ESLint, Nested Comments, css-format-one-line</div>
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title">vscode 사용 팁</h3>
@@ -277,15 +277,13 @@
                     <li class="main-content__item">class 더블 클릭시 - 기호 때문에 class 전체가 선택 안되는 번거로움이 있으므로, ctrl + , > editor.wordSeparators 에서 - 기호는 빼면 편함.</li>
                     <li class="main-content__item">우측 상단에 '...' 기호 클릭 > [편집기 열어 두기] 체크하면 파일 열때 새창으로 열림.</li>
                     <li class="main-content__item">나만의 Snippet 만들기 : ctrl + shift + p > Snippets: Configure User Snippets > javascript.json 들어간 후 아래와 같이 코드 입력하면 javascript 파일 내에서 'cl' 입력 후 tab 누르면 쉽게 콘솔 로그 작업 가능함.
-                        <pre><code class="json">
-"Print to console": {
+                        <pre><code class="json">"Print to console": {
     "prefix": "cl",
     "body": [
                 "console.log('$1', $2);",
             ],
     "description": "Log output to console"
-}
-</code></pre>
+}</code></pre>
                     </li>
                     <li class="main-content__item">
                         자주쓰는 단축키
@@ -298,6 +296,10 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <td>vscode에서 계산하기</td>
+                                    <td>ctrl + shift + p > evaluate math expression 입력</td>
+                                </tr>
                                 <tr>
                                     <td>선택한 코드와 동일한 것을 인접한 순서대로 선택하기</td>
                                     <td>(ctrl + d) + d + d ...</td>
@@ -318,6 +320,14 @@
                                     <td>특정 폴더에서 찾기</td>
                                     <td>탐색기에서 폴더 선택 > alt + shift + f</td>
                                 </tr>
+                                <tr>
+                                    <td>스크롤 이동</td>
+                                    <td>shift + 마우스 휠</td>
+                                </tr>
+                                <tr>
+                                    <td>줄바꿈 제거</td>
+                                    <td>alt + z</td>
+                                </tr>
                                 <!-- <tr>
                                     <td>aa</td>
                                     <td>bb</td>
@@ -333,7 +343,17 @@
             <h3 class="main-content__sub-title">source tree 사용 팁</h3>
             <div class="main-content__desc">
                 <ul class="main-content__list main-content__list--type01">
-                    <li class="main-content__item">...</li>
+                    <li class="main-content__item">해당 툴은 방대한 git 명령어에 의존하지 않고 실무에서 필요한 모든 git 기능을 아주 쉽게 사용할 수 있음. 검색 기능 또한 막강하여 꼭 사용하기를 추천함.</li>
+                    <li class="main-content__item">원하는 범위에 있는 커밋의 수정된 파일만 추출 방법 : <br>
+                        해당 폴더에서 터미널 열기 > 추출하고 싶은 부분에 커밋에 태그 추가 <br>
+                        예시 : 아래 이미지와 같이 11과 22 태그를 추가하면 11 초과 22 이하의 수정된 폴더 경로와 파일만 추출 후 압축 파일 생성됨.
+                        <img src="./source/img/img_source_tree_tip01.png" alt="소스트리에서 태그 추가한 모습" class="main-content__img">
+                        <pre><code class="PowerShell">git archive -o archive.zip HEAD $(git diff --name-only 11..22)</code></pre>
+                    </li>
+                    <li class="main-content__item">해당 도구는 한줄에서 특정 부분 수정사항을 표기해 주지 않고 변경 사항을 검색할 수도 없어서 꼭 연동하는 것이 좋음.
+                        <a class="btn-linker" href="https://iyerl.github.io/dev/sourcetree-compare.html" title="vscode로 source tree 변경 사항 설정할 수 있는 것을 상세히 볼 수 있는 사이트" target="_blank">사이트</a>에서 따라하여 설정 후 원하는 파일 선택 > ctrl + d
+                    </li>
+                    <!-- <li class="main-content__item"></li> -->
                 </ul>
             </div>
         </article>

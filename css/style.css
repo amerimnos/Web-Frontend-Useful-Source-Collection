@@ -78,12 +78,13 @@ ul {
 }
 
 .btn-linker {
-    padding: 0 3px;
+    padding: 0px 3px 2px;
     border-radius: 3px;
     border: solid 1px #747474;
     background-color: #3c3c3c;
     transition: all .3s;
     color: #cfcfcf;
+    font-size: 1.3rem;
 }
 
 .btn-linker:hover {
@@ -223,6 +224,12 @@ span[class*="material"] {
     margin-left: 15px;
     margin-bottom: 7px;
     color: #b5d692;
+}
+
+.main-content__img {
+    display: block;
+    margin: 5px 0 10px 0;
+    border-radius: 5px;
 }
 
 .main-content__table {

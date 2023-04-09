@@ -16,12 +16,12 @@ hue-6-2: #e6c07b
 */
 
 .hljs {
-    color: #abb2bf;
-    background: #282c34;
     display: block;
     overflow-x: auto;
     margin: 7px 0;
-    padding: 0 15px;
+    padding: 10px;
+    color: #abb2bf;
+    background: #282c34;
 }
 
 .hljs-comment,
