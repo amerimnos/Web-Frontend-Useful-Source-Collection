@@ -1,0 +1,20 @@
+# 모든 css, image, html, js 파일에 대한 설정입니다.
+<FilesMatch "\.(css|jpg|jpeg|png|gif|html|js)(\?.*)?$">
+    # 캐싱 시간을 4개월로 설정합니다.
+    ExpiresDefault "access plus 4 months"
+
+    # ETag를 사용하여 캐시된 파일의 버전을 확인합니다.
+    FileETag MTime Size
+
+    # 만약 If-None-Match 헤더가 존재하면 캐시된 파일의 ETag와 비교하여 새로운 파일이 있는지 확인합니다.
+    RewriteCond %{HTTP:If-None-Match} !=""
+    RewriteCond %{HTTP:If-None-Match} !="%{HTTP:ETag}"
+    RewriteRule .* - [E=NEED_UPDATE:1]
+
+    # NEED_UPDATE 환경 변수가 설정된 경우 새로운 파일을 제공합니다.
+    <If "%{ENV:NEED_UPDATE} == '1'">
+        Header set Cache-Control "no-cache, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+    </If>
+</FilesMatch>
