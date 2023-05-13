@@ -128,6 +128,7 @@ span[class*="material"] {
 
 .header .gnb-btn {
     display: flex;
+    box-sizing: content-box;
     position: relative;
     flex-direction: column;
     width: 32px;
@@ -136,7 +137,6 @@ span[class*="material"] {
     border-bottom: 2px solid #fff;
     background-color: transparent;
     cursor: pointer;
-    box-sizing: content-box;
 }
 
 .header .gnb-btn::before,
@@ -179,9 +179,9 @@ span[class*="material"] {
 }
 
 .main-content__article-wrap {
-    background-color: #3c3c3c;
     padding: 20px;
     margin-bottom: 10px;
+    background-color: #3c3c3c;
 }
 
 .main-content__article-wrap:last-of-type {
@@ -191,14 +191,14 @@ span[class*="material"] {
 .main-content__title {
     position: sticky;
     top: 0px;
-    background-color: #2c2c2c;
     margin-bottom: 30px;
     padding-top: 10px;
     padding-bottom: 5px;
+    background-color: #2c2c2c;
+    border-bottom: double 4px;
     font-size: 2rem;
     font-weight: 500;
     color: #e3e3e3;
-    border-bottom: double 4px;
 }
 
 .main-content__sub-title {
@@ -220,10 +220,10 @@ span[class*="material"] {
 }
 
 .main-content__list--type01 .main-content__item {
-    list-style-type: decimal;
     margin-left: 15px;
     margin-bottom: 7px;
     color: #b5d692;
+    list-style-type: decimal;
 }
 
 .main-content__img {
@@ -234,21 +234,21 @@ span[class*="material"] {
 }
 
 .main-content__table {
-    border-collapse: collapse;
     width: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
+    border-collapse: collapse;
 }
 
 .main-content__table th {
-    border: solid 1px #8d8d8d;
     padding: 2px 5px;
     background-color: #282c34;
+    border: solid 1px #8d8d8d;
 }
 
 .main-content__table td {
-    border: solid 1px #8d8d8d;
     padding: 2px 5px;
+    border: solid 1px #8d8d8d;
 }
 
 
