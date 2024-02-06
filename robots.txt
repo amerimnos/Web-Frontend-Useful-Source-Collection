@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/sitemap-image.xml

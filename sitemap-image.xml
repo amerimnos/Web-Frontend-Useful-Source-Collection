@@ -1,47 +1,51 @@
-<url>
-    <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=may</loc>
-    <image:image>
-        <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-may.jpg</image:loc>
-        <image:title>5월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
-    </image:image>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=may</loc>
+        <image:image>
+            <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-may.jpg</image:loc>
+            <image:title>5월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
+        </image:image>
+    </url>
 
-<url>
-    <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=june</loc>
-    <image:image>
-        <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-june.jpg</image:loc>
-        <image:title>6월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
-    </image:image>
-</url>
+    <url>
+        <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=june</loc>
+        <image:image>
+            <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-june.jpg</image:loc>
+            <image:title>6월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
+        </image:image>
+    </url>
 
-<url>
-    <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=july</loc>
-    <image:image>
-        <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-july.jpg</image:loc>
-        <image:title>7월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
-    </image:image>
-</url>
+    <url>
+        <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=july</loc>
+        <image:image>
+            <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-july.jpg</image:loc>
+            <image:title>7월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
+        </image:image>
+    </url>
 
-<url>
-    <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=august</loc>
-    <image:image>
-        <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-august.jpg</image:loc>
-        <image:title>8월에 관악산 맑은 바위에서 바라본 정상 풍경</image:title>
-    </image:image>
-</url>
+    <url>
+        <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=august</loc>
+        <image:image>
+            <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-august.jpg</image:loc>
+            <image:title>8월에 관악산 맑은 바위에서 바라본 정상 풍경</image:title>
+        </image:image>
+    </url>
 
-<url>
-    <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=september</loc>
-    <image:image>
-        <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-september.jpg</image:loc>
-        <image:title>9월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
-    </image:image>
-</url>
+    <url>
+        <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=september</loc>
+        <image:image>
+            <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-september.jpg</image:loc>
+            <image:title>9월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
+        </image:image>
+    </url>
 
-<url>
-    <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=october</loc>
-    <image:image>
-        <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-october.jpg</image:loc>
-        <image:title>10월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
-    </image:image>
-</url>
+    <url>
+        <loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gallery.html?season=october</loc>
+        <image:image>
+            <image:loc>https://amerimnos.github.io/Web-Frontend-Useful-Source-Collection/gwanaksan-clear-summit/gwanaksan-clear-summit-october.jpg</image:loc>
+            <image:title>10월에 관악산 맑은 바위에서 바라본 과천시의 풍경</image:title>
+        </image:image>
+    </url>
+</urlset>
