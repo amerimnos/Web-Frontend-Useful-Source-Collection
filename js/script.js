@@ -1,10 +1,15 @@
-// VARIABLE
-let nav = $(".ygt-nav"),
-    navigation_links = $(".ygt-nav a"),
-    highlight = $(".ygt-nav a.highlight");
+// GLOABAL VARIABLE
+let $GNBBtn = document.querySelector('.gnb-btn'),
+    $GNB    = document.querySelector('.gnb');
 
 initialize();
 
 function initialize() {
-    hljs.highlightAll();
+    if(typeof hljs !== 'undefined') {
+        hljs.highlightAll();
+    }
+
+    $GNBBtn.addEventListener('click', function () {
+        $GNB.classList.toggle('active');
+    })
 }
