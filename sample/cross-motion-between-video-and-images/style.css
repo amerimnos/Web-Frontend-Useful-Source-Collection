@@ -1,0 +1,95 @@
+#root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrap {
+    position: relative;
+    width: 250px;
+    height: 0;
+    padding-bottom: 250px;
+}
+
+.icon-wrap.active .icon__video {
+    animation: icon-fade--video 1.8s linear 0s infinite forwards;
+}
+
+.icon-wrap.active .icon__img--type01 {
+    animation: icon-fade--img 1.8s linear .6s infinite forwards;
+}
+
+.icon-wrap.active .icon__img--type02 {
+    animation: icon-fade--img 1.8s linear 1.2s infinite forwards;
+}
+
+.icon__video {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.icon__img--type01 {
+    z-index: 2;
+}
+
+@keyframes icon-fade--video {
+    0% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    66.66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes icon-fade--img {
+    0% {
+        opacity: 0;
+    }
+
+    11.11% {
+        opacity: 1;
+    }
+
+    22.22% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    66.66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

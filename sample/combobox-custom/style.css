@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.c-combobox {}
+
+.c-combobox--drop-down-list {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 1.5em;
+}
+
+.c-combobox--drop-down-list.on .c-combobox__input {
+    border-radius: 4px 4px 0 0;
+}
+
+.c-combobox--drop-down-list.on .c-combobox__menu {
+    display: block;
+}
+
+.c-combobox--drop-down-list .c-combobox__label {
+    display: block;
+    margin-bottom: 0.25em;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.c-combobox--drop-down-list .c-combobox__input {
+    display: block;
+    width: 100%;
+    min-height: calc(1.4em + 26px);
+    padding: 12px 16px 14px;
+    background-color: #f5f5f5;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    font-size: 1em;
+    text-align: left;
+}
+
+.c-combobox--drop-down-list .c-combobox__input::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 57%;
+    height: 12px;
+    width: 12px;
+    right: 16px;
+    transform: translate(0, -65%) rotate(45deg);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.75);
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    pointer-events: none;
+}
+
+.c-combobox--drop-down-list .c-combobox__menu {
+    display: none;
+    overflow-y: scroll;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    width: 100%;
+    max-height: 300px;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    border-radius: 0 0 4px 4px;
+}
+
+.c-combobox--drop-down-list .c-combobox__option {
+    padding: 10px 12px 12px;
+}
+
+.c-combobox--drop-down-list .c-combobox__option[aria-selected="true"] {
+    padding-right: 30px;
+    position: relative;
+}
+
+.c-combobox--drop-down-list .c-combobox__option[aria-selected="true"]::after {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+    width: 8px;
+}
+
+.c-combobox--drop-down-list .c-combobox__option--current {
+    outline-offset: -3px;
+    outline: rgb(0, 103, 184) solid 3px;
+}

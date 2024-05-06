@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="document">
+        <div class="btn-wrap">
+            <button data-mode="flat" class="flat-btn">평면 패널로 변신</button>
+            <button data-mode="curv" class="curv-btn">커브드 패널로 변신</button>
+        </div>
+        <svg class="svg" width="100%" viewBox="0 0 661 361" xmlns="http://www.w3.org/2000/svg">
+
+            <defs>
+                <linearGradient id="myGradient">
+                    <stop offset="0%" stop-color="pink" />
+                    <stop offset="100%" stop-color="black" />
+                </linearGradient>
+            </defs>
+
+            <title>버튼을 눌렀을 때 커브드와 평면 패널로 바뀌는 모션을 보여줍니다.</title>
+            <path d="M659.999 1C659.999 1 197 1.50018 0.998535 1V207C269.5 207.5 659.999 207 659.999 207V1Z"
+                fill="url(#myGradient)" fill="black" fill-opacity="0.1" stroke="red" stroke-width="5"
+                stroke-dasharray="4 1 2 3">
+                <animate class="curv" attributeName="d" begin="indefinite" dur="0.5" fill="freeze"
+                    to="M659.999 1.99988C659.999 1.99988 346.501 347.502 0.998535 1.99988V208C343 550.001 659.999 208 659.999 208V1.99988Z" />
+                <animate class="curv" attributeName="fill-opacity" begin="indefinite" dur="500ms" to="0.1"
+                    fill="freeze" />
+                <animate class="curv" attributeName="stroke-dasharray" begin="indefinite" dur="1000ms" to="4 40 0 0"
+                    fill="freeze" />
+
+                <animate class="flat" attributeName="d" begin="indefinite" dur="0.5" fill="freeze"
+                    to="M659.999 1C659.999 1 197 1.50018 0.998535 1V207C269.5 207.5 659.999 207 659.999 207V1Z" />
+                <animate class="flat" attributeName="fill-opacity" begin="indefinite" dur="500ms" to=".4"
+                    fill="freeze" />
+                <animate class="flat" attributeName="stroke-dasharray" begin="indefinite" dur="1000ms" to="4 0 0 20"
+                    fill="freeze" />
+            </path>
+        </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
