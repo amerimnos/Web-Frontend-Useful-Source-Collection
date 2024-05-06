@@ -35,6 +35,10 @@
     <section class="main-content">
         <h2 id="referrence" class="main-content__title">관련 서적 및 레퍼런스</h2>
         <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://web.dev/learn?hl=ko" title="사이트 바로가기" target="_blank">Web.dev<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">Web에 대하여 친절하게 알려주는 곳.</div>
+        </article>
+        <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://developer.mozilla.org/ko" title="사이트 바로가기" target="_blank">MDN<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">Web 언어에 대한 거의 모든 정보 모음. <br>구글 검색창에 "mdn charset"과 같이 검색하면 상세한 정보를 얻을 수 있고 해당 페이지 하단에 크로스 브라우징 정보까지 얻을 수 있어 좋음.</div>
         </article>
@@ -139,22 +143,26 @@
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://jqueryui.com/demos/" title="사이트 바로가기" target="_blank">jqueryui<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">제이쿼리를 활용한 곳 - 01</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.jqueryscript.net/" title="사이트 바로가기" target="_blank">jqueryscript<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">제이쿼리를 활용한 곳 - 02</div>
+            <div class="main-content__desc">제이쿼리를 활용한 UI - 01 <br>개인적으로 제이쿼리는 이제 보내야할 때인듯...? 4.0이 나올 예정이지만...</div>
         </article>
     </section>
     <section class="main-content">
         <h2 id="referrence" class="main-content__title">플러그인(라이브러리)</h2>
         <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/quilljs/quill" title="사이트 바로가기" target="_blank">Quill Rich Text Editor<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">텍스트 에디터 <br>인지도 높고 좀 핫한 듯함. 사용하지 않았지만 심플하고 깔끔해 보임.</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/bubkoo/html-to-image" title="사이트 바로가기" target="_blank">html to image<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">html의 특정 요소를 이미지로 저장하는 것. <br>niklasvh / html2canvas는 비추천함. 2024년 3월 5일 시점에서 2년 동안 이슈 관리나 업데이트가 없었고 복잡한 레이아웃(영상, 이미지, fixed 혼합 등)에서 특정 요소가 깨저보임.</div>
+        </article>
+        <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://swiperjs.com/" title="사이트 바로가기" target="_blank">Swiper.js<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">가장 널리 사용되고 인기있는 슬라이드</div>
         </article>
         <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/studio-freight/lenis" title="사이트 바로가기" target="_blank">lenis<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">smooth scroll(부드러운 스크롤). <br>패드나 폰에서는 기본 부드러운 스크롤이 되지만 pc에서는 딱딱하기 때문에 scroll 모션이 있는 사이트에 함께 적용하면 효과가 극대화 됨.</div>
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/darkroomengineering/lenis" title="사이트 바로가기" target="_blank">lenis<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">smooth scroll(부드러운 스크롤). <br> <a href="https://github.com/darkroomengineering/lenis/issues/103" title="새창 열기" target="_blank">몇 가지 제약사항이 있는 상태(2024년 3월 5일 기준으로 1년 전에도 해결 안 된것 같은데...)</a> 이지만, <br>pc 크롬 브라우저의 딱딱 끊기는 스크롤 이동에서 scroll 모션이 있는 사이트에 함께 적용하면 효과가 극대화 됨. <br>필자는 개인적으로 smooth scroll을 비추천함. 스크롤에 따른 모션과 궁합이 좋긴하나, 사이드 이펙트가 발생할 가능성이 있고 우회하려면 코드가 복잡해지거나 유지보수가 힘들어질 가능성이 있음. 역시, 순정 상태가 가장 깔끔함. 스크롤 모션을 좀 더 부드럽게 움직이려 한다면, 움직이는 요소에 CSS transition 처리하는 방향이 좋을듯함.</div>
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://github.com/VerbalExpressions/JSVerbalExpressions" title="사이트 바로가기" target="_blank">VerbalExpressions<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
@@ -226,85 +234,22 @@
         </article>
     </section>
     <section class="main-content">
-        <h2 id="referrence" class="main-content__title">디자인</h2>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.figma.com" title="사이트 바로가기" target="_blank">figma<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">코딩 가이드 제작 등 포토샵을 대체할 정도로 상당히 유용함. 포토샵 처럼 무겁지 않고 최근 웹퍼블리셔 친화적으로 바뀌어 상당한 대세가 되었음.</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3schools.com/colors/colors_monochromatic.asp" title="사이트 바로가기" target="_blank">w3schools - colors monochromatic<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">한가지 컬러 정하면 알아서 조화로운 컬러 생성</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://color.adobe.com/ko/explore/" title="사이트 바로가기" target="_blank">adobe - color<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">인기있는 색 조합 모음</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://fonts.google.com/icons" title="사이트 바로가기" target="_blank">material icon<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">쉽게 웹에 icon을 넣을 수 있는 곳 01</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.iconhunt.site" title="사이트 바로가기" target="_blank">iconhunt<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">쉽게 웹에 icon을 넣을 수 있는 곳 02</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://ionic.io/ionicons" title="사이트 바로가기" target="_blank">ionicons<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">쉽게 웹에 icon을 넣을 수 있는 곳 03</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://heropatterns.com/" title="사이트 바로가기" target="_blank">heropatterns<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">패턴 생성</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.toptal.com/designers/htmlarrows" title="사이트 바로가기" target="_blank">html 심볼/특수문자<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">다양한 html 심볼/특수문자 모음</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://emojipedia.org/" title="사이트 바로가기" target="_blank">emojipedia<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">다양한 이모지 아이콘 모음</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://neumorphism.io/" title="사이트 바로가기" target="_blank">Neumorphism<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">Neumorphism 생성기</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.colorzilla.com/gradient-editor/" title="사이트 바로가기" target="_blank">colorzilla<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">그라디언트 생성기</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://realfavicongenerator.net" title="사이트 바로가기" target="_blank">Favicon Generator<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">파피콘 쉽게 만들 수 있는 곳</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://unsplash.com/" title="사이트 바로가기" target="_blank">unsplash<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">상업적으로 이용 가능한 무료 이미지 모음</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.webdesign-inspiration.com/" title="사이트 바로가기" target="_blank">webdesign-inspiration<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">해외 감각적인 웹사이트 벤치마킹 할 수 있는 곳</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.gdweb.co.kr/main" title="사이트 바로가기" target="_blank">gdweb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">국내 감각적인 웹사이트 벤치마킹 할 수 있는 곳</div>
-        </article>
-    </section>
-    <section class="main-content">
         <h2 id="referrence" class="main-content__title">개발 Tip</h2>
         <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.drawio.com" title="사이트 바로가기" target="_blank">drawio<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">복잡한 스크립트 쉽게 이해하기 <br>때떄로, 얼기설기 꼬여있는 복잡한 코드를 본다면 이 순서도 도구를 활용하면 많은 도움이 될것이다.</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://regexr.com" title="사이트 바로가기" target="_blank">regexr<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">정규식 확인 <br>LLM으로 얻은 정규식을 검증하는 곳</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://claude.ai" title="사이트 바로가기" target="_blank">Claude<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">AI coding 보조 도구 01 <br>무료 버전 중에서 가장 성능 좋음. LLM 평가 지표에서 chatGPT 3.5를 코드 부분에서 훨씬 능가한 성능을 발휘함.</div>
+        </article>
+        <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.phind.com/" title="사이트 바로가기" target="_blank">phind<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">AI coding 보조 도구 01<br>'Export' 모드 활성화 하면 GPT-4 모델 활용할 수 있으며, Bing 채팅과 같이 최신 정보를 탐색하여 정보를 전달 해줌. 무엇보다, 검색되는 사이트의 가중치를 추가할 수 있는 등 개발자 친화적임. 정확하고 자세히 물어야 하며, 이어서 다시 질문하면 이전 내용을 학습하여 더 정교한 답변을 얻을 수 있음. 코드 리팩토링/코드 분석/성능 개선/잠재적 문제점 개선도 시킬 수 있음. 사실이 아닌 정보를 사실 인냥 답변하는 경우가 있어 검증은 필수</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://chat.openai.com" title="사이트 바로가기" target="_blank">ChatGPT<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">AI coding 보조 도구 02</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx" title="사이트 바로가기" target="_blank">Bing 채팅<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">AI coding 보조 도구 03 <br>GPT-4 모델 사용하고 있음.</div>
-        </article>
-        <article class="main-content__article-wrap">
-            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://bard.google.com/" title="사이트 바로가기" target="_blank">Bard<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
-            <div class="main-content__desc">AI coding 보조 도구 04</div>
+            <div class="main-content__desc">AI coding 보조 도구 02<br>무엇 보다 VSCode extension이 발군이나, 파일 통째로 넘겨서 문맥에 맞게 보안해주는 방식이라 API key 털리지 않도록 주의요망.</div>
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://code.visualstudio.com" title="사이트 바로가기" target="_blank">visual studio code<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
@@ -312,7 +257,7 @@
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title">vscode 추천 extension</h3>
-            <div class="main-content__desc">TabOut, Live Server, Project Manager, GitLens, Git History, Auto Rename Tag, CSS Navigation, ESLint, Nested Comments, css-format-one-line, IntelliCode, Bookmarks</div>
+            <div class="main-content__desc">Phind.com, Git graph, Git History, TabOut, Live Server, Project Manager, Auto Rename Tag, CSS Navigation, ESLint, Nested Comments, css-format-one-line, Bookmarks</div>
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title">vscode 사용 팁</h3>
@@ -411,7 +356,7 @@
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title">chrome 추천 확장 프로그램</h3>
-            <div class="main-content__desc">Phind.com(브라우저  AI Search Engine에서 물어봐도 되지만 상당히 편리한 기능이 많아서 코드 옮겨가며 물어보지 않아도됨), DeepL(파파고,구글번역 보다 번역 품질 좋고 긴 문장도 단축키 설정으로 바로 번역 가능. 하지만 실제 성능은 AI Search Engine에서 번역 맞기는게 더 퀄리티 있음), Full Page Screen Capture(스크롤 전체 캡처), AdBlock(간혹 이것 때문에 콘텐츠가 안보여서 주의), axe DevTools - Web Accessibility Testing(웹접근성 체크), php(php 개발자라면 필수라고 생각됨)</div>
+            <div class="main-content__desc">DeepL(현재까지 클로바X/Cluade LLM이 더 품질이 좋지만, 그래도 단축키 설정으로 바로 번역 가능해서 편함.), AdBlock(간혹 이것 때문에 콘텐츠가 안보여서 개발시 주의), axe DevTools - Web Accessibility Testing(웹접근성 체크)</div>
         </article>
         <article class="main-content__article-wrap">
             <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.devart.com/codecompare/download.html" title="사이트 바로가기" target="_blank">Code Compare<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
@@ -485,6 +430,73 @@
             <h3 class="main-content__sub-title"><a class="main-content__linker" href="aaa" title="사이트 바로가기" target="_blank">bbb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
             <div class="main-content__desc">ccc</div>
         </article> -->
+    </section>
+    <section class="main-content">
+        <h2 id="referrence" class="main-content__title">디자인</h2>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://css-shape.com" title="사이트 바로가기" target="_blank">css-shape<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">css로 기상천외한 모양 구현할 수 있음. <br>mask 등을 활용한 정말 다양한 도형과 모양을 구현할 수 있는 예제 모음</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.figma.com" title="사이트 바로가기" target="_blank">figma<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">코딩 가이드 제작 등 포토샵을 대체할 정도로 상당히 유용함. 포토샵 처럼 무겁지 않고 최근 웹퍼블리셔 친화적으로 바뀌어 상당한 대세가 되었음.</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.w3schools.com/colors/colors_monochromatic.asp" title="사이트 바로가기" target="_blank">w3schools - colors monochromatic<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">한가지 컬러 정하면 알아서 조화로운 컬러 생성</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://color.adobe.com/ko/explore/" title="사이트 바로가기" target="_blank">adobe - color<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">인기있는 색 조합 모음</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://fonts.google.com/icons" title="사이트 바로가기" target="_blank">material icon<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">쉽게 웹에 icon을 넣을 수 있는 곳 01</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.iconhunt.site" title="사이트 바로가기" target="_blank">iconhunt<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">쉽게 웹에 icon을 넣을 수 있는 곳 02</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://ionic.io/ionicons" title="사이트 바로가기" target="_blank">ionicons<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">쉽게 웹에 icon을 넣을 수 있는 곳 03</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://heropatterns.com/" title="사이트 바로가기" target="_blank">heropatterns<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">패턴 생성</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.toptal.com/designers/htmlarrows" title="사이트 바로가기" target="_blank">html 심볼/특수문자<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">다양한 html 심볼/특수문자 모음</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://emojipedia.org/" title="사이트 바로가기" target="_blank">emojipedia<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">다양한 이모지 아이콘 모음</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://neumorphism.io/" title="사이트 바로가기" target="_blank">Neumorphism<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">Neumorphism 생성기</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.colorzilla.com/gradient-editor/" title="사이트 바로가기" target="_blank">colorzilla<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">그라디언트 생성기</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://realfavicongenerator.net" title="사이트 바로가기" target="_blank">Favicon Generator<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">파피콘 쉽게 만들 수 있는 곳</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://unsplash.com/" title="사이트 바로가기" target="_blank">unsplash<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">상업적으로 이용 가능한 무료 이미지 모음</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.webdesign-inspiration.com/" title="사이트 바로가기" target="_blank">webdesign-inspiration<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">해외 감각적인 웹사이트 벤치마킹 할 수 있는 곳</div>
+        </article>
+        <article class="main-content__article-wrap">
+            <h3 class="main-content__sub-title"><a class="main-content__linker" href="https://www.gdweb.co.kr/main" title="사이트 바로가기" target="_blank">gdweb<span class="main-content__icon--new-tab material-symbols-outlined">open_in_new</span></a></h3>
+            <div class="main-content__desc">국내 감각적인 웹사이트 벤치마킹 할 수 있는 곳</div>
+        </article>
     </section>
 </main>
 <footer class="footer">
