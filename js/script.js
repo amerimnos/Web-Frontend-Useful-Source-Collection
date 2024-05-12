@@ -1,6 +1,6 @@
 // GLOABAL VARIABLE
-let $GNBBtn = document.querySelector('.gnb-btn'),
-    $GNB    = document.querySelector('.gnb');
+let $GNBBtn = document.querySelector('.c-gnb-btn'),
+    $GNB    = document.querySelector('.c-gnb');
 
 initialize();
 
