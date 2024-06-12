@@ -178,23 +178,16 @@ YGT.setParallaxScrollMotion = function setParallaxScrollMotion() {
 
 // TODO : 모두 비활성일 때 animate는 멈춰야함.
 YGT.setCubicBazierMotion = function setCubicBazierMotion() {
-    const boxs = document.querySelectorAll('.section04 .box');
-    let pos = { y: 0 };
-    let sensitive = 500;
+    const elBoxs = document.querySelectorAll('.section04 .box');
+    const sensitive = 500;
     const speed = 0.08;
-
-    if(YGT['section04-ratio'] === undefined) YGT['section04-ratio'] = 0;
-
-    function easeInOut(t) {
-        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-    }
-
+    let posY = 0;
+    
     function animate() {
-        console.log('ection04-rat: ' + YGT['section04-ratio']);
-        pos.y += (YGT['section04-ratio'] * sensitive - pos.y) * speed;
+        posY += (YGT['section04-ratio'] * sensitive - posY) * speed; // YGT['section04-ratio'] 값은 스크롤, 마우스 움직임 좌표 등 가변 값임.
 
-        boxs.forEach(element => {
-            element.style.transform = "translate3d(0px ," + pos.y + "px, 0)";
+        elBoxs.forEach(elBox => {
+            elBox.style.transform = "translate3d(0px ," + posY + "px, 0)";
         });
 
         requestAnimationFrame(animate);
