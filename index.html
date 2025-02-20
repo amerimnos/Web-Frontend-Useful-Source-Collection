@@ -351,7 +351,14 @@
                         아래 표시한 버튼을 잘 활용하면 커밋하기전/원격에 커밋한 코드에서 파일의 특정 부분만 커밋(Shift + 클릭 활용)할 수 있으며 특정 부분만 되돌릴 수 있음. 해당 버튼을 상황에 따라서 유동적으로 바뀌므로 잘 활용하면 편하고 좋음.  
                         <img src="./source/img/img_source_tree_tip02.png" alt="소스트리에서 코드 제거/수정 방법" class="main-content__img">
                     </li>
-                    <!-- <li class="main-content__item"></li> -->
+                    <li class="main-content__item">소스트리 비교 도구를 VScode로 설정하기 : <br>
+                        해당 파일 누르고 Ctrl + D를 누르면 VSCODE에서 전체 수정사항 보여줘서 더 가독성이 좋음. <br><br>
+                        관련 텍스트 : <br>
+                        C:\Users\yangg\AppData\Local\Programs\Microsoft VS Code\Code.exe <br>
+                        --diff --wait "$LOCAL" "$REMOTE" <br>
+                        -n --wait "$MERGED"
+                        <img src="./source/img/img_source_tree_tip03.png" alt="소스트리에서 코드 비교하기를 VScode에서 하기" class="main-content__img">
+                    </li>
                 </ul>
             </div>
         </article>
