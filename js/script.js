@@ -136,17 +136,5 @@
         visibility_threshold: threshold, // 사용된 가시성 임계값
       });
     }
-
-    // 데이터 전송 로직 (예시)
-    sendData(elementId, totalDwellTime) {
-      console.log(
-        `Sending data to server: { elementId: '${elementId}', dwellTime: ${Math.round(
-          totalDwellTime / 1000
-        )}s }`
-      );
-      // 여기에 실제 서버 전송 로직(fetch, axios 등)을 구현합니다.
-      // 예를 들어, Google Tag Manager의 dataLayer로 푸시할 수 있습니다.
-      // window.dataLayer.push({ event: 'element_dwell_time',... });
-    }
   }
 })();
