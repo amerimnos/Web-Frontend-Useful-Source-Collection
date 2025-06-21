@@ -1,16 +1,11 @@
 (function () {
-
   // VARIABLE
   let elGNBBtn = document.querySelector(".c-gnb-btn");
   let elGNB = document.querySelector(".c-gnb");
 
-
   document.addEventListener("DOMContentLoaded", () => {
     initialize();
   });
-
-
-  
 
   function initialize() {
     if (typeof hljs !== "undefined") {
@@ -26,7 +21,7 @@
     elementsToTrack.forEach((el) => tracker.track(el));
   }
 
-    class ElementDwellTimeTracker {
+  class ElementDwellTimeTracker {
     constructor(options = { threshold: 0.5 }) {
       this.observer = null;
       this.elementData = new Map(); // 각 요소의 데이터를 저장 (entryTime, totalDwellTime)
