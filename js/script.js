@@ -65,6 +65,39 @@
 
       this.observer = new IntersectionObserver(callback, this.options);
 
+      // Page Visibility API 이벤트 리스너 추가
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          // 페이지가 숨겨지면, 현재 활성화된 모든 타이머를 일시 중지
+          this.elementData.forEach((data, elementId) => {
+            if (data.entryTime !== null) {
+              const exitTime = Date.now();
+              const dwellTime = exitTime - data.entryTime;
+              data.totalDwellTime += dwellTime;
+              data.entryTime = null; // 타이머를 멈추지만, '숨김' 상태임을 표시하기 위해 별도 플래그 사용 가능
+              data.pausedByVisibility = true; // 페이지 숨김으로 인한 일시정지 상태 표시
+              this.elementData.set(elementId, data);
+              console.log(` Page hidden. Pausing timer for '${elementId}'.`);
+            }
+          });
+        } else {
+          // 페이지가 다시 보이게 되면, 일시 중지된 타이머를 재개
+          this.elementData.forEach((data, elementId) => {
+            // 요소가 여전히 뷰포트 안에 있고, 페이지 숨김으로 인해 일시정지된 경우
+            const element = document.querySelector(
+              `[data-track-id="${elementId}"]`
+            );
+            if (element && data.pausedByVisibility) {
+              // isIntersecting 상태를 다시 확인해야 하지만, 간단한 재개를 위해 바로 시작
+              data.entryTime = Date.now();
+              data.pausedByVisibility = false;
+              this.elementData.set(elementId, data);
+              console.log(` Page visible. Resuming timer for '${elementId}'.`);
+            }
+          });
+        }
+      });
+
       // 페이지 이탈 시 마지막 체류 시간 기록
       window.addEventListener("beforeunload", () => {
         this.elementData.forEach((data, elementId) => {
