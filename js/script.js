@@ -127,6 +127,16 @@
       this.observer.observe(element);
     }
 
+    sendData(elementId, totalDwellTime, pageVariant, threshold) {
+      window.dataLayer.push({
+        event: "element_dwell_time", // GTM에서 사용할 커스텀 이벤트 이름
+        element_id: elementId,
+        dwell_time_seconds: Math.round(totalDwellTime / 1000),
+        page_variant: pageVariant, // A/B 테스트 변형 식별자
+        visibility_threshold: threshold, // 사용된 가시성 임계값
+      });
+    }
+
     // 데이터 전송 로직 (예시)
     sendData(elementId, totalDwellTime) {
       console.log(
