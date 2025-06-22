@@ -105,7 +105,7 @@
         //   if (data.entryTime !== null) {
             // const exitTime = Date.now();
             // const dwellTime = exitTime - data.entryTime;
-            data.totalDwellTime += dwellTime;
+            // data.totalDwellTime += dwellTime;
             // 이 시점에서 최종 누적 시간을 서버로 전송할 수 있습니다.
             console.log(
               ` Finalizing for '${elementId}' on unload. Total: ${data.totalDwellTime}ms`
