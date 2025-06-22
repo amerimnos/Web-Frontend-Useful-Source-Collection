@@ -101,7 +101,7 @@
       // 페이지 이탈 시 마지막 체류 시간 기록
       window.addEventListener("beforeunload", () => {
         this.elementData.forEach((data, elementId) => {
-          if (data.entryTime !== null) {
+        //   if (data.entryTime !== null) {
             const exitTime = Date.now();
             const dwellTime = exitTime - data.entryTime;
             data.totalDwellTime += dwellTime;
@@ -109,8 +109,13 @@
             console.log(
               ` Finalizing for '${elementId}' on unload. Total: ${data.totalDwellTime}ms`
             );
-            this.sendData(elementId, data.totalDwellTime, '', this.options.threshold);
-          }
+            this.sendData(
+              elementId,
+              data.totalDwellTime,
+              "",
+              this.options.threshold
+            );
+        //   }
         });
       });
     }
