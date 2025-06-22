@@ -100,6 +100,7 @@
 
       // 페이지 이탈 시 마지막 체류 시간 기록
       window.addEventListener("beforeunload", () => {
+        alert('111');
         this.elementData.forEach((data, elementId) => {
         //   if (data.entryTime !== null) {
             const exitTime = Date.now();
