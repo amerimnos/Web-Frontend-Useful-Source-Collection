@@ -109,7 +109,7 @@
             console.log(
               ` Finalizing for '${elementId}' on unload. Total: ${data.totalDwellTime}ms`
             );
-            this.sendData(elementId, data.totalDwellTime, '', threshold);
+            this.sendData(elementId, data.totalDwellTime, '', this.options.threshold);
           }
         });
       });
