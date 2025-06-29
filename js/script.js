@@ -43,8 +43,19 @@
     }
 
     init() {
+      const thresholds = [];
+      const numSteps = 20; // 호출 횟수
+      for (let i = 1; i <= numSteps; i++) {
+        thresholds.push(i / numSteps);
+      }
+
       const callback = (entries) => {
         entries.forEach((entry) => {
+          console.log(
+            `Element '${entry.target.dataset.trackId}' visibility:`,
+            `${Math.round(entry.intersectionRatio * 100)}%`
+          );
+
           const elementId = entry.target.dataset.trackId;
           if (!elementId) return;
 
@@ -88,7 +99,7 @@
       const observerOptions = {
         root: this.options.root || null,
         rootMargin: this.options.rootMargin || "0px",
-        threshold: this.options.threshold,
+        threshold: thresholds,
       };
 
       this.observer = new IntersectionObserver(callback, observerOptions);
