@@ -17,7 +17,7 @@
     });
 
     const tracker = new ElementDwellTimeTracker({
-      minVisibleHeight: 100,
+      minVisibleHeight: 200,
       minVisibleRatio: 0.2,
     });
     const elementsToTrack = document.querySelectorAll("[data-track-id]");
@@ -57,7 +57,7 @@
 
           // 새로운 노출 기준: 최소 높이와 최소 뷰포트 비율을 모두 만족하는가?
           const isSufficientlyVisible =
-            visibleHeight >= this.options.minVisibleHeight &&
+            visibleHeight >= this.options.minVisibleHeight ||
             visibleHeight / viewportHeight >= this.options.minVisibleRatio;
 
           if (isSufficientlyVisible) {
