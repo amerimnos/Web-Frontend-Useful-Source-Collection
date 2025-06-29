@@ -51,10 +51,10 @@
 
       const callback = (entries) => {
         entries.forEach((entry) => {
-          console.log(
-            `Element '${entry.target.dataset.trackId}' visibility:`,
-            `${Math.round(entry.intersectionRatio * 100)}%`
-          );
+        //   console.log(
+        //     `Element '${entry.target.dataset.trackId}' visibility:`,
+        //     `${Math.round(entry.intersectionRatio * 100)}%`
+        //   );
 
           const elementId = entry.target.dataset.trackId;
           if (!elementId) return;
