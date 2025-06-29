@@ -85,10 +85,10 @@
         });
       };
 
-      // threshold는 내부적으로 0으로 고정하고, 다른 옵션은 그대로 전달
       const observerOptions = {
         root: this.options.root || null,
         rootMargin: this.options.rootMargin || "0px",
+        threshold: this.threshold
       };
 
       this.observer = new IntersectionObserver(callback, observerOptions);
@@ -141,7 +141,6 @@
           this.sendData(
             elementId,
             data.totalDwellTime,
-            this.threshold
           );
           //   }
         });
@@ -160,12 +159,11 @@
       this.observer.observe(element);
     }
 
-    sendData(elementId, totalDwellTime, threshold) {
+    sendData(elementId, totalDwellTime) {
       window.dataLayer.push({
         event: "element_dwell_time", // GTM에서 사용할 커스텀 이벤트 이름
         element_id: elementId,
         dwell_time_seconds: Math.round(totalDwellTime / 1000),
-        visibility_threshold: threshold, // 사용된 가시성 임계값
       });
     }
   }
