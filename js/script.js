@@ -16,16 +16,29 @@
       elGNB.classList.toggle("active");
     });
 
-    const tracker = new ElementDwellTimeTracker({ threshold: 0.1 }); // 50% 이상 보일 때
+    const tracker = new ElementDwellTimeTracker({
+      minVisibleHeight: 100,
+      minVisibleRatio: 0.2,
+    });
     const elementsToTrack = document.querySelectorAll("[data-track-id]");
     elementsToTrack.forEach((el) => tracker.track(el));
   }
 
   class ElementDwellTimeTracker {
-    constructor(options = { threshold: 0.5 }) {
+    constructor(
+      options = {
+        minVisibleHeight: 50, // 최소 50px 이상 보여야 함
+        minVisibleRatio: 0.1, // 뷰포트 높이의 10% 이상을 차지해야 함
+      }
+    ) {
       this.observer = null;
-      this.elementData = new Map(); // 각 요소의 데이터를 저장 (entryTime, totalDwellTime)
-      this.options = options;
+      this.elementData = new Map();
+      this.options = {
+        minVisibleHeight: 50,
+        minVisibleRatio: 0.1,
+        ...options,
+        threshold: 0, // threshold는 0으로 고정하여 항상 콜백 실행
+      };
       this.init();
     }
 
@@ -38,18 +51,26 @@
           const data = this.elementData.get(elementId);
           if (!data) return;
 
-          if (entry.isIntersecting) {
-            // 요소가 뷰포트에 진입
+          const visibleHeight = entry.intersectionRect.height;
+          const viewportHeight = entry.rootBounds.height;
+
+          // 새로운 노출 기준: 최소 높이와 최소 뷰포트 비율을 모두 만족하는가?
+          const isSufficientlyVisible =
+            visibleHeight >= this.options.minVisibleHeight &&
+            visibleHeight / viewportHeight >= this.options.minVisibleRatio;
+
+          if (isSufficientlyVisible) {
+            // 요소가 '유효하게' 뷰포트에 진입
             if (data.entryTime === null) {
-              // 타이머가 꺼져있을 때만 시작
               data.entryTime = Date.now();
               this.elementData.set(elementId, data);
-              console.log(` Element '${elementId}' entered viewport.`);
+              console.log(
+                ` Element '${elementId}' entered viewport sufficiently.`
+              );
             }
           } else {
-            // 요소가 뷰포트에서 이탈
+            // 요소가 뷰포트에서 이탈했거나 '유효한 노출'이 아님
             if (data.entryTime !== null) {
-              // 타이머가 켜져있을 때만 중지 및 계산
               const exitTime = Date.now();
               const dwellTime = exitTime - data.entryTime;
               data.totalDwellTime += dwellTime;
@@ -63,7 +84,14 @@
         });
       };
 
-      this.observer = new IntersectionObserver(callback, this.options);
+      // threshold는 내부적으로 0으로 고정하고, 다른 옵션은 그대로 전달
+      const observerOptions = {
+        root: this.options.root || null,
+        rootMargin: this.options.rootMargin || "0px",
+        threshold: this.options.threshold,
+      };
+
+      this.observer = new IntersectionObserver(callback, observerOptions);
 
       // Page Visibility API 이벤트 리스너 추가
       document.addEventListener("visibilitychange", () => {
