@@ -16,7 +16,7 @@
       elGNB.classList.toggle("active");
     });
 
-    const tracker = new ElementDwellTimeTracker({ threshold: 0.5 }); // 50% 이상 보일 때
+    const tracker = new ElementDwellTimeTracker({ threshold: 0.1 }); // 50% 이상 보일 때
     const elementsToTrack = document.querySelectorAll("[data-track-id]");
     elementsToTrack.forEach((el) => tracker.track(el));
   }
@@ -100,23 +100,23 @@
 
       // 페이지 이탈 시 마지막 체류 시간 기록
       window.addEventListener("beforeunload", () => {
-        alert('111');
+        alert("111");
         this.elementData.forEach((data, elementId) => {
-        //   if (data.entryTime !== null) {
-            // const exitTime = Date.now();
-            // const dwellTime = exitTime - data.entryTime;
-            // data.totalDwellTime += dwellTime;
-            // 이 시점에서 최종 누적 시간을 서버로 전송할 수 있습니다.
-            console.log(
-              ` Finalizing for '${elementId}' on unload. Total: ${data.totalDwellTime}ms`
-            );
-            this.sendData(
-              elementId,
-              data.totalDwellTime,
-              "",
-              this.options.threshold
-            );
-        //   }
+          //   if (data.entryTime !== null) {
+          // const exitTime = Date.now();
+          // const dwellTime = exitTime - data.entryTime;
+          // data.totalDwellTime += dwellTime;
+          // 이 시점에서 최종 누적 시간을 서버로 전송할 수 있습니다.
+          console.log(
+            ` Finalizing for '${elementId}' on unload. Total: ${data.totalDwellTime}ms`
+          );
+          this.sendData(
+            elementId,
+            data.totalDwellTime,
+            "",
+            this.options.threshold
+          );
+          //   }
         });
       });
     }
