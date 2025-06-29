@@ -25,20 +25,10 @@
   }
 
   class ElementDwellTimeTracker {
-    constructor(
-      options = {
-        minVisibleHeight: 50, // 최소 50px 이상 보여야 함
-        minVisibleRatio: 0.1, // 뷰포트 높이의 10% 이상을 차지해야 함
-      }
-    ) {
+    constructor(options) {
       this.observer = null;
       this.elementData = new Map();
-      this.options = {
-        minVisibleHeight: 50,
-        minVisibleRatio: 0.1,
-        ...options,
-        threshold: 0, // threshold는 0으로 고정하여 항상 콜백 실행
-      };
+      this.options = options;
       this.init();
     }
 
