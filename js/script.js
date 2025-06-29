@@ -29,14 +29,14 @@
       this.observer = null;
       this.elementData = new Map();
       this.options = options;
+      this.threshold = [];
       this.init();
     }
 
     init() {
-      const thresholds = [];
       const numSteps = 20; // 호출 횟수
       for (let i = 1; i <= numSteps; i++) {
-        thresholds.push(i / numSteps);
+        this.threshold.push(i / numSteps);
       }
 
       const callback = (entries) => {
@@ -89,7 +89,6 @@
       const observerOptions = {
         root: this.options.root || null,
         rootMargin: this.options.rootMargin || "0px",
-        threshold: thresholds,
       };
 
       this.observer = new IntersectionObserver(callback, observerOptions);
@@ -142,8 +141,7 @@
           this.sendData(
             elementId,
             data.totalDwellTime,
-            "",
-            this.options.threshold
+            this.threshold
           );
           //   }
         });
@@ -162,12 +160,11 @@
       this.observer.observe(element);
     }
 
-    sendData(elementId, totalDwellTime, pageVariant, threshold) {
+    sendData(elementId, totalDwellTime, threshold) {
       window.dataLayer.push({
         event: "element_dwell_time", // GTM에서 사용할 커스텀 이벤트 이름
         element_id: elementId,
         dwell_time_seconds: Math.round(totalDwellTime / 1000),
-        page_variant: pageVariant, // A/B 테스트 변형 식별자
         visibility_threshold: threshold, // 사용된 가시성 임계값
       });
     }
