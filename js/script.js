@@ -34,7 +34,7 @@
     }
 
     init() {
-      const numSteps = 20; // 호출 횟수
+      const numSteps = 100; // 호출 횟수
       for (let i = 1; i <= numSteps; i++) {
         this.threshold.push(i / numSteps);
       }
