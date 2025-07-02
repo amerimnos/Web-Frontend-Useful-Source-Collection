@@ -2,12 +2,15 @@
   // VARIABLE
   let elGNBBtn = document.querySelector(".c-gnb-btn");
   let elGNB = document.querySelector(".c-gnb");
+  let userId = "";
 
   document.addEventListener("DOMContentLoaded", () => {
     initialize();
   });
 
   function initialize() {
+    setUserID();
+    
     if (typeof hljs !== "undefined") {
       hljs.highlightAll();
     }
@@ -22,6 +25,16 @@
     });
     const elementsToTrack = document.querySelectorAll("[data-track-id]");
     elementsToTrack.forEach((el) => tracker.track(el));
+  }
+
+  function setUserID() {
+    const userIdKey = "dwell_time_user_id";
+    userId = localStorage.getItem(userIdKey);
+
+    if (!userId) {
+      userId = self.crypto.randomUUID();
+      localStorage.setItem(userIdKey, userId);
+    }
   }
 
   class ElementDwellTimeTracker {
@@ -88,7 +101,7 @@
       const observerOptions = {
         root: this.options.root || null,
         rootMargin: this.options.rootMargin || "0px",
-        threshold: this.threshold
+        threshold: this.threshold,
       };
 
       this.observer = new IntersectionObserver(callback, observerOptions);
@@ -128,7 +141,6 @@
 
       // 페이지 이탈 시 마지막 체류 시간 기록
       window.addEventListener("beforeunload", () => {
-        alert("111");
         this.elementData.forEach((data, elementId) => {
           //   if (data.entryTime !== null) {
           // const exitTime = Date.now();
@@ -138,10 +150,7 @@
           console.log(
             ` Finalizing for '${elementId}' on unload. Total: ${data.totalDwellTime}ms`
           );
-          this.sendData(
-            elementId,
-            data.totalDwellTime,
-          );
+          this.sendData(elementId, data.totalDwellTime, userId);
           //   }
         });
       });
@@ -159,11 +168,12 @@
       this.observer.observe(element);
     }
 
-    sendData(elementId, totalDwellTime) {
+    sendData(elementId, totalDwellTime, userId) {
       window.dataLayer.push({
         event: "element_dwell_time", // GTM에서 사용할 커스텀 이벤트 이름
         element_id: elementId,
         dwell_time_seconds: Math.round(totalDwellTime / 1000),
+        dwell_time_user_id: userId,
       });
     }
   }
