@@ -80,6 +80,24 @@
 </head>
 
 <body>
+
+
+<iframe class="study-life__video" title="가전 주부 유튜브" width="560" height="315" src="https://www.youtube.com/embed/vJTsFycxMQ8?si=vUuwf7OCmS5A9Pgn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe class="study-life__video" title="조승연의 탐구생활 x LGE.COM" width="560" height="315" src="https://www.youtube.com/embed/0RYKp_zCLGU?si=6DjD9bpvkqLqx0YN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<script>
+setInterval(() => {
+        // 활성화된 탭 패널 내의 모든 iframe을 다시 로드하여 썸네일 깨짐 현상 방지
+    const iframes = document.querySelectorAll('.study-life__video');
+    iframes.forEach((iframe) => {
+        iframe.src = iframe.src;
+    });
+}, 5000);
+</script>
+
+    
     <div class="container">
         <h1>관악산 맑은바위 갤러리</h1>
         <p>5월부터 10월까지 관악산 맑은바위에서 바라본 과천시의 풍경을 감상하세요. 맑은 바위와 함께 만끽하는 풍경, 정상에서 내려다보는 서울의 전경, 야경 등을 만끽하며 힐링하는 시간을 가져보세요.</p>        
