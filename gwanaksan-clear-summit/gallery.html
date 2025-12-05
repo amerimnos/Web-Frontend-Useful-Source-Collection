@@ -120,6 +120,25 @@
             <div class="swiper-button-next"></div>
         </div>
 
+
+
+<iframe class="study-life__video" title="가전 주부 유튜브" width="560" height="315" src="https://www.youtube.com/embed/vJTsFycxMQ8?si=vUuwf7OCmS5A9Pgn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe class="study-life__video" title="조승연의 탐구생활 x LGE.COM" width="560" height="315" src="https://www.youtube.com/embed/0RYKp_zCLGU?si=6DjD9bpvkqLqx0YN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<script>
+setInterval(() => {
+        // 활성화된 탭 패널 내의 모든 iframe을 다시 로드하여 썸네일 깨짐 현상 방지
+    const iframes = document.querySelectorAll('.study-life__video');
+    iframes.forEach((iframe) => {
+        iframe.src = iframe.src;
+    });
+}, 5000);
+</script>
+
+        
+
         <script>
             var swiper = new Swiper(".swiper-container", {
                 pagination: {
